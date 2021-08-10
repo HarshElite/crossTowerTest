@@ -136,7 +136,7 @@ const Section2 = () => {
                     <span className="generic-title-para-red"> Profit</span>
                   </p>
                   <p className="generic-title-heading primary-color-blue-dark">
-                    Why Trade ?
+                    Liquidity makes a market
                   </p>
                   <p className="generic-para-text">
                     We offer tight bid-ask spreads, deep order books,

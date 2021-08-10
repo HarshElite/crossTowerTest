@@ -1,11 +1,10 @@
 import React from "react";
-import Section4bg from "../../images/section4bg.png";
 
 const Section4 = () => {
   return (
     <section className="py-3">
-      <div className="image-section-4 px-3 py-3">
-        <div className="row d-flex align-items-center">
+      <div className="image-section-4 p-md-5 p-0">
+        <div className="row d-flex align-items-center p-md-5 p-3">
           <div className="col-md-6 col-sm-12">
             <p className="generic-title-heading text-white">
               Trusted by Verified Users

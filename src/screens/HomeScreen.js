@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Section1 from "../components/HomeScreen_Components/Section1";
 import Section2 from "../components/HomeScreen_Components/Section2";
 import Section3 from "../components/HomeScreen_Components/Section3";
@@ -22,8 +21,8 @@ const HomeScreen = () => {
         <Section3 />
         <Section4 />
         <Section5 />
-        <Section6 />
         <Section7 />
+        <Section6 />
         <Section8 />
         <Section9 />
         <Section10 />

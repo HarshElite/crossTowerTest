@@ -2,10 +2,10 @@ import React from "react";
 import Iphone from "../../images/section10image.png";
 const Section10 = () => {
   return (
-    <section>
-      <div className="image-section-10 pt-5">
-        <div className="row d-flex justify-content-center  px-3">
-          <div className="col-md-6 col-sm-12 mt-5">
+    <section className="mt-5">
+      <div className="image-section-10 pt-md-5 pt-3 px-md-5 px-3">
+        <div className="row d-flex justify-content-center ">
+          <div className="col-md-6 col-sm-12 p-md-5  d-flex justify-content-center align-items-center">
             <div className="mx-3 section-10-maxwidth">
               <p className="generic-title-heading text-white">
                 Ready To get Started
@@ -24,7 +24,7 @@ const Section10 = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-sm-12 d-flex align-items-center justify-content-center   ">
+          <div className="col-md-6 col-sm-12 d-flex align-items-end justify-content-center   ">
             <div className="image-container-iphone-section10  ">
               <img src={Iphone} className="image-iphone-section10" />
             </div>

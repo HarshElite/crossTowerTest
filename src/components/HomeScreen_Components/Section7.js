@@ -3,19 +3,19 @@ import React from "react";
 const Section7 = () => {
   return (
     <section className="py-5">
-      <div className="container">
-        <div className="row">
+      <div className="container p-md-5 p-3">
+        <div className="row p-md-5 p-3">
           <p>
             <span className="generic-title-para-blue">The</span>
             <span className="generic-title-para-red"> Process</span>
           </p>
-          <div className="col-sm-12 col-md-5">
+          <div className="col-sm-12 col-md-6">
             <p className="generic-title-heading primary-color-blue-dark">
               Get Started investment With in few Minutes
             </p>
           </div>
         </div>
-        <div className="row">
+        <div className="row p-md-5 p-3">
           <div className="col-md-4 col-sm-12">
             <p className="generic-medium-text primary-color-blue">
               Register In crosstower

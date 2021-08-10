@@ -2,8 +2,8 @@ import React from "react";
 import feedbackCircle from "../../images/feedbackcircle.png";
 const Section6 = () => {
   return (
-    <section className="section-6-main-section px-3 py-5">
-      <div className="container py-5">
+    <section className="section-6-main-section p-md-5 p-3">
+      <div className="container py-5 p-md-5 p-3">
         <div className="row">
           <p>
             <span className="generic-title-para text-white">USER</span>

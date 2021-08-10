@@ -3,8 +3,8 @@ import VideoPlaceHolder from "../../images/VideoPlaceholder.jpg";
 
 const Section5 = () => {
   return (
-    <section className="py-5">
-      <div className="row px-3 d-flex align-items-center">
+    <section className="py-5 p-md-5 p-3">
+      <div className="row p-md-5 p-3 d-flex align-items-center">
         <div className="col-md-6 col-sm-12">
           <img src={VideoPlaceHolder} alt="" className="w-100" />
         </div>

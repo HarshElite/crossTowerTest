@@ -4,8 +4,8 @@ import NewsLogo2 from "../../images/logo-news2.png";
 import NewsLogo3 from "../../images/logo-news3.png";
 const NewsCard = () => {
   return (
-    <section className="news-card-section py-5">
-      <div className="container">
+    <section className="news-card-section p-md-5 p-0">
+      <div className="container p-md-5 p-0">
         <p className="text-center section-3-heading1">
           <span>Media</span>
         </p>
@@ -15,7 +15,7 @@ const NewsCard = () => {
         </p>
         <div className="row d-flex justify-space-between">
           <div className="col-md-4 col-sm-12 mt-3">
-            <div class="card">
+            <div class="card border-0 shadow-lg rounded-3">
               <div class="card-body">
                 <p class="card-news-logo">Business Insider</p>
                 <p class="generic-text-bold">
@@ -31,7 +31,7 @@ const NewsCard = () => {
             </div>
           </div>
           <div className="col-md-4 col-sm-12 mt-3">
-            <div class="card">
+            <div class="card border-0 shadow-lg rounded-3">
               <div class="card-body">
                 <p class="card-news-logo">Business Insider</p>
                 <p class="generic-text-bold">
@@ -47,7 +47,7 @@ const NewsCard = () => {
             </div>
           </div>
           <div className="col-md-4 col-sm-12 mt-3">
-            <div class="card">
+            <div class="card border-0 shadow-lg rounded-3">
               <div class="card-body">
                 <p class="card-news-logo">Business Insider</p>
                 <p class="generic-text-bold">

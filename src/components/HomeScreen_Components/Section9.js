@@ -25,14 +25,14 @@ const Section9 = () => {
   };
 
   return (
-    <section className="section9-homescreen px-5 mb-5">
+    <section className="section9-homescreen  p-md-5 p-3">
       <p className="homescreen-section-1-para pt-5">
         <span className="generic-title-para-blue">General</span>
         <span className="generic-title-para-red"> Queries</span>
       </p>
       <p className="generic-title-heading">Frequently asked questions</p>
 
-      <div className="accordian-container-main">
+      <div className="accordian-container-main p-md-5 p-0">
         <div className="accordian-container">
           <div id="accordion my-5">
             <div class="card accordain-tag-1-c ">

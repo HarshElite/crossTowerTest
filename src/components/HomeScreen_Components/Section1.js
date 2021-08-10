@@ -35,61 +35,121 @@ const Section1 = () => {
       </div>
       <div className="row px-md-5 px-4 row-card-top-section-1">
         <div className="card card-top-section1-homepage shadow-lg rounded">
-          <div className="card-body">
-            <div class="section-footer group-footer-footer">
-              <div class="col-footer span_1_of_5-footer p-2">
+          <div className="card-body currency-buy-flexbox">
+            <div class="card-currency-buy-section1">
+              <div className="card-body">
                 <div className="d-flex justify-content-between">
-                  <p className="currency-text-card-section1">Btc</p>
-                  <p className="currency-rate-card-section1"> 0.42</p>
+                  <p className="currency-text-card-section1 mb-0">Btc</p>
+                  <p className="currency-rate-card-section1 mb-0">-0.42%</p>
                 </div>
-                <div className="d-flex justify-content-between">
-                  <p className="currency-rupees-card-section1">₹33,230.30</p>
+                <div className="d-flex justify-content-between align-items-center mt-3">
+                  <p className="currency-rupees-card-section1 mb-0">
+                    ₹33,230.30
+                  </p>
                   <button className="currency-buy-card-section1">buy</button>
                 </div>
               </div>
-              <div class="col-footer span_1_of_5-footer border-rigt-card p-2">
+            </div>
+            <div class="card-currency-buy-section1">
+              <div className="card-body">
                 <div className="d-flex justify-content-between">
-                  <p className="currency-text-card-section1">Btc</p>
-                  <p className="currency-rate-card-section1"> 0.42</p>
+                  <p className="currency-text-card-section1 mb-0">Btc</p>
+                  <p className="currency-rate-card-section1 mb-0">-0.42%</p>
                 </div>
-                <div className="d-flex justify-content-between">
-                  <p className="currency-rupees-card-section1">₹33,230.30</p>
+                <div className="d-flex justify-content-between align-items-center mt-3">
+                  <p className="currency-rupees-card-section1 mb-0">
+                    ₹33,230.30
+                  </p>
                   <button className="currency-buy-card-section1">buy</button>
                 </div>
               </div>
-              <div class="col-footer span_1_of_5-footer border-rigt-card p-2">
+            </div>
+            <div class="card-currency-buy-section1">
+              <div className="card-body">
                 <div className="d-flex justify-content-between">
-                  <p className="currency-text-card-section1">Btc</p>
-                  <p className="currency-rate-card-section1"> 0.42</p>
+                  <p className="currency-text-card-section1 mb-0">Btc</p>
+                  <p className="currency-rate-card-section1 mb-0">-0.42%</p>
                 </div>
-                <div className="d-flex justify-content-between">
-                  <p className="currency-rupees-card-section1">₹33,230.30</p>
+                <div className="d-flex justify-content-between align-items-center mt-3">
+                  <p className="currency-rupees-card-section1 mb-0">
+                    ₹33,230.30
+                  </p>
                   <button className="currency-buy-card-section1">buy</button>
                 </div>
               </div>
-              <div class="col-footer span_1_of_5-footer border-rigt-card p-2">
+            </div>
+            <div class="card-currency-buy-section1">
+              <div className="card-body">
                 <div className="d-flex justify-content-between">
-                  <p className="currency-text-card-section1">Btc</p>
-                  <p className="currency-rate-card-section1"> 0.42</p>
+                  <p className="currency-text-card-section1 mb-0">Btc</p>
+                  <p className="currency-rate-card-section1 mb-0">-0.42%</p>
                 </div>
-                <div className="d-flex justify-content-between">
-                  <p className="currency-rupees-card-section1">₹33,230.30</p>
+                <div className="d-flex justify-content-between align-items-center mt-3">
+                  <p className="currency-rupees-card-section1 mb-0">
+                    ₹33,230.30
+                  </p>
                   <button className="currency-buy-card-section1">buy</button>
                 </div>
               </div>
-              <div class="col-footer span_1_of_5-footer border-rigt-card p-2">
+            </div>
+            <div class="card-currency-buy-section1">
+              <div className="card-body">
                 <div className="d-flex justify-content-between">
-                  <p className="currency-text-card-section1">Btc</p>
-                  <p className="currency-rate-card-section1"> 0.42</p>
+                  <p className="currency-text-card-section1 mb-0">Btc</p>
+                  <p className="currency-rate-card-section1 mb-0">-0.42%</p>
                 </div>
+                <div className="d-flex justify-content-between align-items-center mt-3">
+                  <p className="currency-rupees-card-section1 mb-0">
+                    ₹33,230.30
+                  </p>
+                  <button className="currency-buy-card-section1">buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-currency-buy-section1">
+              <div className="card-body">
                 <div className="d-flex justify-content-between">
-                  <p className="currency-rupees-card-section1">₹33,230.30</p>
+                  <p className="currency-text-card-section1 mb-0">Btc</p>
+                  <p className="currency-rate-card-section1 mb-0">-0.42%</p>
+                </div>
+                <div className="d-flex justify-content-between align-items-center mt-3">
+                  <p className="currency-rupees-card-section1 mb-0">
+                    ₹33,230.30
+                  </p>
+                  <button className="currency-buy-card-section1">buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-currency-buy-section1">
+              <div className="card-body">
+                <div className="d-flex justify-content-between">
+                  <p className="currency-text-card-section1 mb-0">Btc</p>
+                  <p className="currency-rate-card-section1 mb-0">-0.42%</p>
+                </div>
+                <div className="d-flex justify-content-between align-items-center mt-3">
+                  <p className="currency-rupees-card-section1 mb-0">
+                    ₹33,230.30
+                  </p>
+                  <button className="currency-buy-card-section1">buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-currency-buy-section1">
+              <div className="card-body">
+                <div className="d-flex justify-content-between">
+                  <p className="currency-text-card-section1 mb-0">Btc</p>
+                  <p className="currency-rate-card-section1 mb-0">-0.42%</p>
+                </div>
+                <div className="d-flex justify-content-between align-items-center mt-3">
+                  <p className="currency-rupees-card-section1 mb-0">
+                    ₹33,230.30
+                  </p>
                   <button className="currency-buy-card-section1">buy</button>
                 </div>
               </div>
             </div>
           </div>
-          <p className="ms-3">
+          <p className="ms-3 mt-3">
             <span className="span-green-text">&#x25CF;Live</span>{" "}
             <span className="span-grey-text">
               (Prices Will update in 15 min.)
