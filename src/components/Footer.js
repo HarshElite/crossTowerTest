@@ -2,6 +2,11 @@ import React from "react";
 import LogoDark from "../images/logodark.png";
 import AppStore from "../images/appstore.png";
 import PlayStore from "../images/playstore.png";
+import Facebook from "../images/homepage/Footer/face.png";
+import Twitter from "../images/homepage/Footer/tw.png";
+import Instagram from "../images/homepage/Footer/insta.png";
+import Youtube from "../images/homepage/Footer/yt.png";
+import LinkedIn from "../images/homepage/Footer/lk.png";
 
 const Footer = () => {
   return (
@@ -24,7 +29,6 @@ const Footer = () => {
                   <img src={AppStore} alt="" className="logo-playstore" />
                 </div>
                 <div className="col-md-6 mt-2">
-                  {" "}
                   <img src={PlayStore} alt="" className="logo-appstore" />
                 </div>
               </div>
@@ -62,7 +66,6 @@ const Footer = () => {
               </div>
             </div>
             <div class="col-footer span_1_of_5-footer">
-              {" "}
               <div class="d-flex flex-column">
                 <div class="p-2 header-text-col5-footer">Support</div>
                 <div class="p-2 secondary-text-col5-footer">Help & Support</div>
@@ -79,14 +82,13 @@ const Footer = () => {
               </div>
             </div>
             <div class="col-footer span_1_of_5-footer">
-              {" "}
               <div class="d-flex flex-column">
                 <div class="p-2 header-text-col5-footer">Resources</div>
                 <div class="p-2 secondary-text-col5-footer">
                   Market Insights
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
-                  Research Reports{" "}
+                  Research Reports
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
                   Learning and Education
@@ -97,20 +99,44 @@ const Footer = () => {
               <div class="d-flex flex-column">
                 <div class="p-2 header-text-col5-footer"> SOCIAL</div>
                 <div class="p-2 secondary-text-col5-footer">
-                  <i class="fab marginright10 fa-facebook"></i>Facebook
+                  <img
+                    src={Facebook}
+                    alt=""
+                    className="footer-social-icons-img marginright10"
+                  />
+                  Facebook
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
-                  {" "}
-                  <i class="fab marginright10 fa-instagram"></i>Instagram
+                  <img
+                    src={Instagram}
+                    alt=""
+                    className="footer-social-icons-img marginright10"
+                  />
+                  Instagram
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
-                  <i class="fab marginright10 fa-twitter"></i> Twitter
+                  <img
+                    src={Twitter}
+                    alt=""
+                    className="footer-social-icons-img marginright10"
+                  />
+                  Twitter
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
-                  <i class="fab marginright10 fa-youtube"></i> Youtube
+                  <img
+                    src={Youtube}
+                    alt=""
+                    className="footer-social-icons-img marginright10"
+                  />
+                  Youtube
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
-                  <i class="fab marginright10 fa-linkedin"></i> Linkedin
+                  <img
+                    src={LinkedIn}
+                    alt=""
+                    className="footer-social-icons-img marginright10"
+                  />
+                  Linkedin
                 </div>
               </div>
             </div>
@@ -118,7 +144,7 @@ const Footer = () => {
           <hr />
           <div className="row">
             <p className="col-md-6 col-xs-12 d-flex justify-content-start">
-              Copyright © 2021 CrossTower. All rights reserved.
+              Built With ❤️ In India
             </p>
             <p className="col-md-6 col-xs-12 d-flex justify-content-end">
               <div className="d-flex flex-wrap">

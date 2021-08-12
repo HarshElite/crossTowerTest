@@ -1,5 +1,10 @@
 import React from "react";
-import Bitcoin1 from "../../images/bitcoinsec3.png";
+import Bitcoin1 from "../../images/homepage/section3_1.png";
+import Bitcoin2 from "../../images/homepage/section3_2.png";
+import Bitcoin3 from "../../images/homepage/section3_3.png";
+import Bitcoin4 from "../../images/homepage/section3_4.png";
+import Bitcoin5 from "../../images/homepage/section3_5.png";
+import Bitcoin6 from "../../images/homepage/section3_6.png";
 
 const Section3 = () => {
   return (
@@ -14,8 +19,8 @@ const Section3 = () => {
       </p>
       <div className="row p-md-5 p-3">
         <div className="col-sm-12 col-md-4  d-flex flex-column">
-          <div className="image-section-3 mb-3 d-flex justify-content-center">
-            <img src={Bitcoin1} alt="" className="" />
+          <div className=" mb-3 d-flex justify-content-center">
+            <img src={Bitcoin1} alt="" className="image-section-3" />
           </div>
 
           <p className="text-center primary-color-blue-dark generic-text-bold">
@@ -27,8 +32,8 @@ const Section3 = () => {
           </p>
         </div>
         <div className="col-sm-12 col-md-4 ">
-          <div className="image-section-3 mb-3 d-flex justify-content-center">
-            <img src={Bitcoin1} alt="" className="" />
+          <div className=" mb-3 d-flex justify-content-center">
+            <img src={Bitcoin2} alt="" className="image-section-3" />
           </div>
 
           <p
@@ -43,8 +48,8 @@ const Section3 = () => {
           </p>
         </div>
         <div className="col-sm-12 col-md-4 ">
-          <div className="image-section-3 mb-3 d-flex justify-content-center">
-            <img src={Bitcoin1} alt="" className="" />
+          <div className=" mb-3 d-flex justify-content-center">
+            <img src={Bitcoin3} alt="" className="image-section-3" />
           </div>
 
           <p
@@ -61,8 +66,8 @@ const Section3 = () => {
       </div>
       <div className="row p-md-5 p-3">
         <div className="col-sm-12 col-md-4 ">
-          <div className="image-section-3 mb-3 d-flex justify-content-center">
-            <img src={Bitcoin1} alt="" className="" />
+          <div className=" mb-3 d-flex justify-content-center">
+            <img src={Bitcoin4} alt="" className="image-section-3" />
           </div>
 
           <p
@@ -77,8 +82,8 @@ const Section3 = () => {
           </p>
         </div>
         <div className="col-sm-12 col-md-4 ">
-          <div className="image-section-3 mb-3 d-flex justify-content-center">
-            <img src={Bitcoin1} alt="" className="" />
+          <div className=" mb-3 d-flex justify-content-center">
+            <img src={Bitcoin5} alt="" className="image-section-3" />
           </div>
 
           <p
@@ -93,8 +98,8 @@ const Section3 = () => {
           </p>
         </div>
         <div className="col-sm-12 col-md-4 ">
-          <div className="image-section-3 mb-3 d-flex justify-content-center">
-            <img src={Bitcoin1} alt="" className="" />
+          <div className=" mb-3 d-flex justify-content-center align-items-center">
+            <img src={Bitcoin6} alt="" className="image-section-3" />
           </div>
 
           <p

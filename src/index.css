@@ -50,6 +50,7 @@ code {
 .generic-title-heading {
   font-size: 64px;
   font-weight: 700;
+  line-height: 70px;
 }
 
 .generic-text-bold {
@@ -95,7 +96,7 @@ code {
 
 .generic-medium-text {
   font-family: Inter;
-  font-size: 32px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 39px;
@@ -152,7 +153,7 @@ code {
 .home-image-top {
   position: relative;
   height: 100%;
-  background-image: url(./images/section1-bg.png);
+  background-image: url(./images/homepage/section1.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 7px;
@@ -294,7 +295,7 @@ code {
 }
 
 .image-section-3 {
-  width: 100%;
+  height: 72px;
 }
 /*----------------------------------------------------------------------End Section 3 ----------------------------------------------------------------------*/
 
@@ -730,12 +731,20 @@ code {
 
 .text-blue-section7 {
   font-family: Inter;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 41px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.image-container-section7 {
+  width: 100%;
+}
+
+.image-container-section7-image {
+  width: 100%;
 }
 
 /* ---------------------------------------------------------------- End Section 7 ---------------------------------------------------------------- */
@@ -822,6 +831,10 @@ code {
 /*  ----------------------------------------------------------------------------------Start of Footer  ----------------------------------------------------------------------------------*/
 .logo-playstore {
   object-fit: cover;
+}
+
+.footer-social-icons-img {
+  width: 30px;
 }
 
 .logo-playstore {
@@ -913,15 +926,214 @@ code {
   font-weight: 300;
   font-family: Inter;
 }
-
 /*  ----------------------------------------------------------------------------------End of Footer ---------------------------------------------------------------------------------- */
+
+/*  ----------------------------------------------------------------------------------Start of About Us ---------------------------------------------------------------------------------- */
+/*  ----------------------------------------------------------------------------------Start of Section 1 of About Us ---------------------------------------------------------------------------------- */
+.img-aboutus-sec1-container {
+  width: 100%;
+}
+.img-aboutus-sec1-img {
+  width: 100%;
+}
+
+/*  ----------------------------------------------------------------------------------End of Section 1 of About Us ---------------------------------------------------------------------------------- */
+/*  ----------------------------------------------------------------------------------Start of Section 2 of About Us ---------------------------------------------------------------------------------- */
+.parent-div-section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.img-backg-img1-blue {
+  background-image: url(./images/aboutus/blueimage.png);
+  border-radius: 7px;
+  background-repeat: no-repeat;
+  width: 400px;
+  background-size: cover;
+  height: 380px;
+}
+
+.img-backg-img2 {
+  width: 400px;
+  transform: translate(40px, -40px);
+}
+
+/*  ----------------------------------------------------------------------------------End of Section 2 of About Us ---------------------------------------------------------------------------------- */
+/*  ----------------------------------------------------------------------------------Start of Section 3 of About Us ---------------------------------------------------------------------------------- */
+.row-top-aboutus-section-3 {
+  background: linear-gradient(
+    49.96deg,
+    #9caed7 -2.34%,
+    #eaf4ff 50.19%,
+    #a0b2d9 98.93%
+  );
+
+  height: 100%;
+}
+
+.accordion-toggle:focus {
+  outline: none;
+}
+
+.accordianheader-aboutsec3 {
+  background: transparent;
+}
+
+.accordianbutton-aboutsec3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 39px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #3c53cf;
+  background: transparent;
+}
+.accordianbutton-aboutsec3:focus {
+  outline: 0 !important;
+  background: transparent;
+
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.accordianitem-aboutsec3 {
+  background: transparent;
+}
+
+.icon-img-acc-abtus {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.card1accabtus {
+  background: #5b50ce;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.card2accabtus {
+  background: #4896f0;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card3accabtus {
+  width: 100%;
+  border: none;
+  background: #25358c;
+  padding: 10px;
+  border-radius: 10px;
+}
+/*  ----------------------------------------------------------------------------------End of Section 3 of About Us ---------------------------------------------------------------------------------- */
+/*  ----------------------------------------------------------------------------------Start of Section 4 of About Us ---------------------------------------------------------------------------------- */
+.imagebackground-abt-us-card {
+  position: relative;
+}
+
+.imagebackground-abt-us-card-bgground {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.hr-line-abtsec4 {
+  color: var(--green-primary);
+  width: 50px;
+  border: 2px solid #01fab3;
+}
+
+.imagebackground-abt-us-card-image {
+  width: 180px;
+  position: absolute;
+  top: 47%;
+}
+
+.imagebackground-abt-us-card-icon {
+  width: 30px;
+}
+
+.card-abtus-sec4 {
+  border: none;
+  border-radius: 15px;
+}
+
+.text-para-abtus-sec4 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.345em;
+  text-align: center;
+  color: var(--grey-primary);
+}
+
+.text-head-abtus-sec4 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+/*  ----------------------------------------------------------------------------------End of Section 4 of About Us ---------------------------------------------------------------------------------- */
+/*  ----------------------------------------------------------------------------------Start of Section 5 of About Us ---------------------------------------------------------------------------------- */
+
+/*  ----------------------------------------------------------------------------------End of Section 5 of About Us ---------------------------------------------------------------------------------- */
+.image-back-about-section5 {
+  background: url("./images/aboutus/section5aboutus.png");
+  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 7px;
+  background-position: center;
+}
+/*  ----------------------------------------------------------------------------------End of About Us ---------------------------------------------------------------------------------- */
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
+  /* About us section 5 */
+
+  /* About us section 2 */
+  .img-backg-img1-blue {
+    background-image: url(./images/aboutus/blueimage.png);
+    border-radius: 7px;
+    background-repeat: no-repeat;
+    width: 95vw;
+    background-size: contain;
+    height: 380px;
+  }
+
+  .imagebackground-abt-us-card-image {
+    width: 140px;
+  }
+
+  .text-para-abtus-sec4 {
+    font-size: 12px;
+  }
+
+  .text-head-abtus-sec4 {
+    font-size: 20px;
+  }
+
+  .img-backg-img2 {
+    width: 95vw;
+    height: 50vh;
+    transform: translate(0px, -0px);
+  }
+  /* About us section 2 */
+
   /* Start of Reusable Styles */
   .generic-title-heading {
     font-size: 30px;
     font-weight: 700;
+    line-height: 45px;
   }
 
   /* Section 3 */

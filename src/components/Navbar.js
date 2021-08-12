@@ -2,12 +2,13 @@ import React from "react";
 import Logo from "../images/Logo.png";
 import ArrowUpSlant from "../images/ArrowUpSlant.png";
 import ArrowDown from "../images/ArrowDown.png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light nav-custom-classes py-3">
-      <a className="navbar-brand px-2" href="#">
+      <Link className="navbar-brand px-2" to="/">
         <img src={Logo} alt="" className="logo-nav-main" />
-      </a>
+      </Link>
       <button
         className="navbar-toggler nav-main-toggle-button"
         type="button"
@@ -45,15 +46,14 @@ const Navbar = () => {
                 <img src={ArrowDown} alt="" className="" />
               </span>
             </button>
-
             <ul
               class="dropdown-menu animate slideIn shadow-lg                "
               aria-labelledby="dropdownMenuLink"
             >
               <li>
-                <a class="dropdown-item" href="#">
-                  Action
-                </a>
+                <Link to="/aboutus" class="dropdown-item">
+                  About Us
+                </Link>
               </li>
               <div class="dropdown-divider"></div>
 

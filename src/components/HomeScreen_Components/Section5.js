@@ -1,5 +1,5 @@
 import React from "react";
-import VideoPlaceHolder from "../../images/VideoPlaceholder.jpg";
+import VideoPlaceHolder from "../../images/homepage/videothumb.png";
 
 const Section5 = () => {
   return (

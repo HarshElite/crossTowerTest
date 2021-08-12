@@ -17,7 +17,9 @@ const Section6 = () => {
             </p>
           </div>
           <div className="col-sm-12 col-md-7 d-flex justify-content-end">
-            <span className="generic-title-para-white">View More &rarr;</span>
+            <span className="generic-title-para-white text-white">
+              View More &rarr;
+            </span>
           </div>
         </div>
 

@@ -26,11 +26,6 @@ const Section1 = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
-            <div className="image-bitcoin-top-container">
-              <img src={Bitcoin} alt="" className="image-bitcoin-top" />
-            </div>
-          </div>
         </div>
       </div>
       <div className="row px-md-5 px-4 row-card-top-section-1">
