@@ -48,9 +48,9 @@ code {
 }
 
 .generic-title-heading {
-  font-size: 64px;
+  font-size: 45px;
   font-weight: 700;
-  line-height: 70px;
+  line-height: 55px;
 }
 
 .generic-text-bold {
@@ -65,13 +65,13 @@ code {
 }
 
 .generic-title-para-blue {
-  color: #3c53cf;
+  color: #354bcc;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 .generic-title-para-red {
-  color: #f03838;
+  color: var(--blue-primary);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -96,7 +96,7 @@ code {
 
 .generic-medium-text {
   font-family: Inter;
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: 39px;
@@ -244,6 +244,85 @@ code {
   height: 5px;
 }
 
+.button-bootstrap-prev {
+  opacity: 1 !important;
+  width: auto;
+}
+.button-bootstrap-next {
+  opacity: 1 !important;
+  width: auto;
+}
+
+.icon-bootstrap-next {
+  background-image: url(./images/homepage/buttonleft.png);
+}
+
+.icon-bootstrap-prev {
+  background-image: url(./images/homepage/buttonright.png);
+  margin: 0 !important;
+  pointer-events: none;
+
+  opacity: 1 !important;
+}
+
+.icon-bootstrap-prev:focus {
+  pointer-events: none;
+
+  opacity: 1 !important;
+}
+.icon-bootstrap-prev:hover {
+  pointer-events: none;
+
+  opacity: 1 !important;
+}
+
+.main-btc-top-card {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.div-height-control {
+  height: 50px !important;
+}
+
+.hrs-section1-card {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6b7892;
+}
+.loss-section1-card {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff1741;
+}
+
+.card-carouse-sect1 {
+  border: none;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.gentextsect-1 {
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+.card-section1-main {
+  width: 400px;
+}
+
 /*------------------------------------------------------------------------------End Section 1 ------------------------------------------------------------------------ */
 
 /*Start Section 2 */
@@ -268,6 +347,25 @@ code {
 /*--------------------------------------------------------------------------End Section 2  ----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------Start Section 3  ----------------------------------------------------------------------  */
 
+.section-3-headingrev {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  font-size: 38px;
+  font-weight: 600;
+  color: #172253;
+}
+.section-3-headingrev span {
+  background: linear-gradient(
+    49.96deg,
+    #9caed7 -2.34%,
+    #eaf4ff 50.19%,
+    #a0b2d9 98.93%
+  );
+  padding: 0 30px;
+}
 .section-3-heading1 {
   width: 100%;
   text-align: center;
@@ -295,7 +393,45 @@ code {
 }
 
 .image-section-3 {
-  height: 72px;
+}
+
+.para-text-sec3re {
+  padding-top: 100px;
+}
+.card-section-3re {
+  border: none;
+  background: white;
+  color: #000;
+  transition: 0.3s;
+  min-height: 350px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.card-section-3re:hover {
+  border: none;
+  color: #fff !important;
+  background: #4c92e7;
+  transform: scale(1.2);
+  z-index: 99;
+}
+
+.section3-back {
+  background: linear-gradient(
+    49.96deg,
+    #9caed7 -2.34%,
+    #eaf4ff 50.19%,
+    #a0b2d9 98.93%
+  );
+}
+
+.main-table-card {
+  border-radius: 10px;
 }
 /*----------------------------------------------------------------------End Section 3 ----------------------------------------------------------------------*/
 
@@ -416,6 +552,18 @@ code {
 
 /* ------------------------------------------------------------------------------Main Nav --------------------------------------------------------------------*/
 
+.top-nav-link-nav {
+  text-decoration: none;
+  color: #000;
+}
+
+.logo-playstore-nav-top {
+  height: 50px;
+}
+.logo-appstore-nav-top {
+  height: 50px;
+}
+
 .nav-link-button {
   border: none;
   outline: none;
@@ -459,6 +607,20 @@ code {
   font-weight: 300;
 }
 
+.start-trading-button {
+  background: linear-gradient(90deg, #18225a 0.09%, #374bc9 100.04%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 150px;
+  padding-left: 25px;
+  font-size: 12px;
+  color: #fff;
+  border: 0;
+  border-radius: 25px;
+  font-weight: 300;
+  padding-right: 25px;
+}
+
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
@@ -468,6 +630,7 @@ code {
 .dropdown-menu {
   border: none;
   min-width: 100%;
+  z-index: 9999999999999999999999999999 !important;
 }
 
 .animate {
@@ -637,7 +800,7 @@ code {
 }
 
 .accordain-tag-1-c {
-  border: 2px solid #2271ed;
+  border: 2px solid #8daada;
 }
 
 .color-card-acc {
@@ -669,8 +832,6 @@ code {
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .image-container-iphone-section10 {
@@ -731,7 +892,7 @@ code {
 
 .text-blue-section7 {
   font-family: Inter;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 41px;
@@ -1096,6 +1257,54 @@ code {
 }
 /*  ----------------------------------------------------------------------------------End of About Us ---------------------------------------------------------------------------------- */
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Start of Support Page */
+
+/* Section 1 */
+.section1-support {
+  background: linear-gradient(
+    49.96deg,
+    #9caed7 -2.34%,
+    #eaf4ff 50.19%,
+    #a0b2d9 98.93%
+  );
+}
+
+.support-card {
+  border: none;
+  color: black;
+  background: white;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 200px;
+}
+
+.support-card:hover {
+  background: #0c5ff2;
+  border: none;
+  color: white;
+}
+
+.support-card {
+  border: none;
+}
+
+.img-support {
+  height: 100px;
+}
+/* End of Section 1 */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
   /* About us section 5 */
@@ -1169,6 +1378,16 @@ code {
 
 /* End of Footer */
 
+@media only screen and (max-width: 789px) {
+  .top-nav-none {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .top-nav-none {
+    display: none;
+  }
+}
 @media only screen and (max-width: 600px) {
   .search-wrapper button {
     position: relative;
@@ -1219,6 +1438,31 @@ code {
   .card-currency-buy-section1 {
     width: 100%;
   }
+
+  .card-section1-main {
+    width: 100%;
+  }
+
+  .tab-color-top .nav-item.show .nav-link,
+  .tab-color-top .nav-link.active {
+    color: orangered !important;
+    background-color: #fff !important;
+    border-color: none !important;
+    border-bottom: 2px solid blue !important;
+  }
+
+  #controlled-tab-example-tab-Sell {
+    border-bottom: 2px solid blue !important;
+  }
+
+  .tab-color-top {
+    border-bottom: none !important;
+  }
+
+  .tab-color-top .nav-link:hover {
+    color: gray !important;
+  }
+
   /*End Section 1 */
 
   /* Section 2 */

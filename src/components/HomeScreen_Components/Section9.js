@@ -39,14 +39,13 @@ const Section9 = () => {
               <div
                 class="card-header color-card-acc "
                 id="headingOne"
-                className={`banner ${
-                  toggle1 ? "color-card-acc-white" : "color-card-acc"
-                }`}
+                className={`banner ${toggle1 ? "color-card-acc-white" : "color-card-acc"
+                  }`}
               >
                 <div className="d-flex justify-content-between align-items-center p-3">
                   <p
                     onClick={triggerToggle1}
-                    className="mb-0"
+                    className="mb-0 generic-text-bold"
                     data-toggle="collapse"
                     data-target="#collapseOne"
                     aria-expanded="false"
@@ -92,14 +91,13 @@ const Section9 = () => {
               <div
                 class="card-header color-card-acc "
                 id="headingTwo"
-                className={`banner ${
-                  toggle2 ? "color-card-acc-white" : "color-card-acc"
-                }`}
+                className={`banner ${toggle2 ? "color-card-acc-white" : "color-card-acc"
+                  }`}
               >
                 <div className="d-flex justify-content-between align-items-center p-3">
                   <p
                     onClick={triggerToggle2}
-                    className="mb-0"
+                    className="mb-0 generic-text-bold"
                     data-toggle="collapse"
                     data-target="#collapseTwo"
                     aria-expanded="false"
@@ -147,14 +145,13 @@ const Section9 = () => {
               <div
                 class="card-header color-card-acc "
                 id="headingThree"
-                className={`banner ${
-                  toggle3 ? "color-card-acc-white" : "color-card-acc"
-                }`}
+                className={`banner ${toggle3 ? "color-card-acc-white" : "color-card-acc"
+                  }`}
               >
                 <div className="d-flex justify-content-between align-items-center p-3">
                   <p
                     onClick={triggerToggle3}
-                    className="mb-0"
+                    className="mb-0 generic-text-bold"
                     data-toggle="collapse"
                     data-target="#collapseThree"
                     aria-expanded="false"
@@ -200,14 +197,13 @@ const Section9 = () => {
               <div
                 class="card-header color-card-acc "
                 id="headingFour"
-                className={`banner ${
-                  toggle4 ? "color-card-acc-white" : "color-card-acc"
-                }`}
+                className={`banner ${toggle4 ? "color-card-acc-white" : "color-card-acc"
+                  }`}
               >
                 <div className="d-flex justify-content-between align-items-center p-3">
                   <p
                     onClick={triggerToggle4}
-                    className="mb-0"
+                    className="mb-0 generic-text-bold"
                     data-toggle="collapse"
                     data-target="#collapseFour"
                     aria-expanded="false"
@@ -253,14 +249,13 @@ const Section9 = () => {
               <div
                 class="card-header color-card-acc "
                 id="headingFive"
-                className={`banner ${
-                  toggle5 ? "color-card-acc-white" : "color-card-acc"
-                }`}
+                className={`banner ${toggle5 ? "color-card-acc-white" : "color-card-acc"
+                  }`}
               >
                 <div className="d-flex justify-content-between align-items-center p-3">
                   <p
                     onClick={triggerToggle5}
-                    className="mb-0"
+                    className="mb-0 generic-text-bold"
                     data-toggle="collapse"
                     data-target="#collapseFive"
                     aria-expanded="false"

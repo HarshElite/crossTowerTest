@@ -10,9 +10,8 @@ const NewsCard = () => {
           <span>Media</span>
         </p>
 
-        <p className="text-center generic-text-bold mt-5 mb-5">
-          Here are a few reasons why you should choose CrossTower
-        </p>
+        <p className="text-center generic-para-text mt-5 mb-5">
+          We understand the importance of liquidity and have partnered with global liquidity providers and market makers.        </p>
         <div className="row d-flex justify-space-between">
           <div className="col-md-4 col-sm-12 mt-3">
             <div class="card border-0 shadow-lg rounded-3">
@@ -69,8 +68,25 @@ const NewsCard = () => {
           </button>
         </div>
         <p className="text-center section-3-para-bottom">
-          <span>Backed By</span>
+          <span className="primary-color-blue">Featured In</span>
         </p>
+      </div>
+      <div className="row d-flex justify-content-center">
+        <div className="col-md-4 col-sm-12 d-flex justify-content-center p-3">
+          <div>
+            <img src={NewsLogo1} alt="" />
+          </div>
+        </div>
+        <div className="col-md-4 col-sm-12 d-flex justify-content-center p-3">
+          <div>
+            <img src={NewsLogo2} alt="" />
+          </div>
+        </div>
+        <div className="col-md-4 col-sm-12 d-flex justify-content-center p-3">
+          <div>
+            <img src={NewsLogo3} alt="" />
+          </div>
+        </div>
       </div>
       <div className="row d-flex justify-content-center">
         <div className="col-md-4 col-sm-12 d-flex justify-content-center p-3">

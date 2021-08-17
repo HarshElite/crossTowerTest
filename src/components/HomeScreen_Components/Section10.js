@@ -2,7 +2,7 @@ import React from "react";
 import Iphone from "../../images/section10image.png";
 const Section10 = () => {
   return (
-    <section className="mt-5">
+    <section className="">
       <div className="image-section-10 pt-md-5 pt-3 px-md-5 px-3">
         <div className="row d-flex justify-content-center ">
           <div className="col-md-6 col-sm-12 p-md-5  d-flex justify-content-center align-items-center">
@@ -18,7 +18,7 @@ const Section10 = () => {
                 <form className="search-wrapper cf d-flex align-items-center d-flex justify-content-evenly">
                   <input type="text" placeholder="Mobile No" required />
                   <button className="getting-started-landing" type="submit">
-                    Get call Back
+                    Submit
                   </button>
                 </form>
               </div>

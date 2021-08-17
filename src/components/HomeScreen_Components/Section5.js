@@ -14,13 +14,10 @@ const Section5 = () => {
             <span className="generic-title-para-red"> Platform</span>
           </p>
           <p className="generic-title-heading primary-color-blue-dark">
-            Launching The most powerful crypto Platform
+            India’s most trusted & Secure Cryptocurrency
           </p>
           <p className="generic-para-text">
-            We offer tight bid-ask spreads, deep order books, best-in-class risk
-            management, and high-quality trade execution. For this reason we
-            have partnered with active global liquidity providers and the
-            world’s biggest market makers.
+            We offer tight bid-ask spreads, deep order books, best-in-class risk management, and high-quality trade execution. For this reason we have partnered with active global liquidity providers and the world’s biggest market makers.
           </p>
         </div>
       </div>

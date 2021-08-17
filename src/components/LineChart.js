@@ -59,15 +59,29 @@ const data = {
         9.26087, 0.69724, 4.75747, 4.67924, 1.84737, 0.07018, 3.57113, 1.73302,
         0.18433, 1.57044, 6.90859, 1.43051,
       ],
-      fill: false,
-      backgroundColor: "#18B1EE",
-      borderColor: "#18B1EE",
-      lineTension: 0,
+      fill: "start",
+      borderColor: "#3E54CF",
+      lineTension: 0.4,
+      borderWidth: 3,
+      pointColor: "#fff",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "#fff",
+      pointRadius: 0,
+      backgroundColor: [
+        'rgba(0, 0, 255, .1)',
+        'rgba(0, 0, 255, .1)',
+        'rgba(0, 0, 255, .2)',
+        'rgba(0, 0, 255, .1)',
+        'rgba(0, 0, 255, .1)',
+        'rgba(0, 0, 255, .1)',
+      ],
     },
   ],
 };
 
 const options = {
+  maintainAspectRatio: false,
   scales: {
     x: {
       display: false,
