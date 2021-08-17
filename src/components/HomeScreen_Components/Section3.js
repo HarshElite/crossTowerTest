@@ -18,41 +18,31 @@ const Section3 = () => {
 
       <div className="row p-md-5 p-3">
         <div className="col-sm-12 col-md-3 ">
-          <div className="card card-section-3re shadow-lg">
+          <div className="card card-section-3re shadow-lg mt-md-3 mt-3">
             <div className="card-body">
               <div className=" mb-3 d-flex justify-content-center">
                 <img src={Bitcoin4} alt="" className="image-section-3" />
               </div>
 
-              <p
-                className="para-text-sec3re"
-              >
+              <p className="para-text-sec3re">
                 Lowest Buy rates for Crypto In India
               </p>
             </div>
           </div>
-
-
         </div>
         <div className="col-sm-12 col-md-3 ">
-          <div className="card card-section-3re shadow-lg">
+          <div className="card card-section-3re shadow-lg mt-md-3 mt-3">
             <div className="card-body">
               <div className=" mb-3 d-flex justify-content-center">
                 <img src={Bitcoin5} alt="" className="image-section-3" />
               </div>
 
-              <p
-                className="para-text-sec3re"
-              >
-                Zero Brokerage
-              </p>
-
+              <p className="para-text-sec3re">Zero Brokerage</p>
             </div>
           </div>
-
         </div>
         <div className="col-sm-12 col-md-3 ">
-          <div className="card card-section-3re shadow-lg">
+          <div className="card card-section-3re shadow-lg mt-md-3 mt-3">
             <div className="card-body">
               <div className=" mb-3 d-flex justify-content-center align-items-center">
                 <img src={Bitcoin6} alt="" className="image-section-3" />
@@ -66,25 +56,17 @@ const Section3 = () => {
               </p>
             </div>
           </div>
-
-
         </div>
         <div className="col-sm-12 col-md-3 ">
-          <div className="card card-section-3re shadow-lg">
+          <div className="card card-section-3re shadow-lg mt-md-3 mt-3">
             <div className="card-body">
               <div className=" mb-3 d-flex justify-content-center align-items-center">
                 <img src={Bitcoin6} alt="" className="image-section-3" />
               </div>
 
-              <p
-                className="para-text-sec3re"
-              >
-                AI Driven Platform
-              </p>
+              <p className="para-text-sec3re">AI Driven Platform</p>
             </div>
           </div>
-
-
         </div>
       </div>
       <div className="row d-flex justify-content-center align-items-center">

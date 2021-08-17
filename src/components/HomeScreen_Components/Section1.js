@@ -3,6 +3,7 @@ import B1 from "../../images/aboutus/1acc.png";
 import LineChart from "../LineChart";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
+import Header from "../../images/homepage/h1top.png";
 const Section1 = () => {
   function ControlledTabs() {
     const [key, setKey] = useState("Buy");
@@ -96,7 +97,7 @@ const Section1 = () => {
     <section className="mb-5 rounded">
       <div className="home-image-top d-flex justify-content-center align-items-center px-md-3 px-0">
         <div className="row p-md-5 w-100">
-          <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center p-3">
+          <div className="col-md-4 col-sm-12 d-flex justify-content-center align-items-center p-3">
             <div>
               {/* <p className="homescreen-section-1-para">
                 <span className="generic-title-para-blue">Invest in</span>
@@ -118,7 +119,11 @@ const Section1 = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center p-3">
+          <div className="col-md-4 col-sm-12 d-flex justify-content-center align-items-center p-5">
+            <img src={Header} alt="" className="img-header-banner" />
+          </div>
+
+          <div className="col-md-4 col-sm-12 d-flex justify-content-center align-items-center p-3">
             <div class="card shadow-lg border-0 rounded card-section1-main">
               <div className="top-card-crisec1-gra p-3">
                 <div class="dropdown">

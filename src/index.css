@@ -11,7 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #e5e5e5;
+  background: white;
 }
 
 code {
@@ -380,6 +380,9 @@ code {
   border-radius: 20px !important;
 }
 
+.img-header-banner {
+  width: 100%;
+}
 /*------------------------------------------------------------------------------End Section 1 ------------------------------------------------------------------------ */
 
 /*Start Section 2 */
@@ -415,12 +418,6 @@ code {
   color: #172253;
 }
 .section-3-headingrev span {
-  background: linear-gradient(
-    49.96deg,
-    #9caed7 -2.34%,
-    #eaf4ff 50.19%,
-    #a0b2d9 98.93%
-  );
   padding: 0 30px;
 }
 .section-3-heading1 {
@@ -434,7 +431,7 @@ code {
   color: #172253;
 }
 .section-3-heading1 span {
-  background: #e5e5e5;
+  background: white;
   padding: 0 100px;
 }
 
@@ -453,14 +450,14 @@ code {
 }
 
 .para-text-sec3re {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .card-section-3re {
   border: none;
   background: white;
   color: #000;
   transition: 0.3s;
-  min-height: 350px;
+  min-height: 330px;
   text-align: center;
   font-family: Inter;
   font-size: 24px;
@@ -490,6 +487,7 @@ code {
 .main-table-card {
   border-radius: 10px;
 }
+
 /*----------------------------------------------------------------------End Section 3 ----------------------------------------------------------------------*/
 
 .email-search-top {
@@ -640,7 +638,7 @@ code {
 }
 
 .nav-custom-classes {
-  background: #e5e5e5;
+  background: white;
 }
 
 .nav-main-toggle-button {

@@ -25,14 +25,14 @@ const Section7 = () => {
             <div className="card shadow border-none my-md-5 my-3">
               <div className="card-body">
                 <p className="generic-medium-text primary-color-blue  mt-4">
-                  Register In crosstower                </p>
+                  Register In crosstower{" "}
+                </p>
                 <p className="text-blue-section7">
-                  Download our mobile app on the Play store for Android users and on App Store for iOS users
+                  Download our mobile app on the Play store for Android users
+                  and on App Store for iOS users
                 </p>
               </div>
             </div>
-
-
           </div>
           <div className="col-md-4 col-sm-12">
             <div className="image-container-section7 d-flex justify-content-center align-items-center">
@@ -48,11 +48,11 @@ const Section7 = () => {
                   Complete KYC
                 </p>
                 <p className="text-blue-section7 ">
-                  Complete your KYC in under 5 minutes with just your PAN, Aadhar & a Selfie
+                  Complete your KYC in under 5 minutes with just your PAN,
+                  Aadhar & a Selfie
                 </p>
               </div>
             </div>
-
           </div>
           <div className="col-md-4 col-sm-12">
             <div className="image-container-section7 d-flex justify-content-center align-items-center">
@@ -68,7 +68,8 @@ const Section7 = () => {
                   Start Buy/Sell
                 </p>
                 <p className="text-blue-section7 ">
-                  One-click is what it takes to start trading in 100+ cryptocurrencies.
+                  One-click is what it takes to start trading in 100+
+                  cryptocurrencies.
                 </p>
               </div>
             </div>
