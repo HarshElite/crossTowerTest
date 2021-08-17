@@ -150,13 +150,69 @@ code {
 /* --------------------------------------------------------------------------  End of utilities --------------------------------------------------------------------------*/
 
 /* --------------------------------------------------------------------------Section 1 -------------------------------------------------------------------------------- */
+.tab-color-top .nav-item.show .nav-link,
+.tab-color-top .nav-link.active {
+  border-color: none !important;
+  border-bottom: 3px solid blue !important;
+}
+.tab-color-top .nav-tabs .nav-link {
+  border: none !important;
+}
+
+.tab-color-top {
+  border-bottom: solid 1px #000 !important;
+}
+
+.tab-color-top .nav-link:hover {
+  color: gray !important;
+}
+
+.main-drop-vard-secrev {
+  width: 100%;
+  border: solid 1px #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.form-control {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #6b7892;
+  outline: 0;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-bottom: 1px solid #6b7892;
+}
+
+.form-control::placeholder {
+  text-align: right;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+}
+
+.top-card-crisec1-gra {
+  background: linear-gradient(270deg, #273dc2 0%, #3b6ee1 100%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 .home-image-top {
   position: relative;
   height: 100%;
-  background-image: url(./images/homepage/section1.png);
+  background: linear-gradient(
+    70.86deg,
+    #9caed7 12.9%,
+    #f1f6fd 49.1%,
+    #a0b2d9 87.13%
+  );
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 7px;
   background-position: center;
 }
 
@@ -321,6 +377,7 @@ code {
 
 .card-section1-main {
   width: 400px;
+  border-radius: 20px !important;
 }
 
 /*------------------------------------------------------------------------------End Section 1 ------------------------------------------------------------------------ */
@@ -378,7 +435,7 @@ code {
 }
 .section-3-heading1 span {
   background: #e5e5e5;
-  padding: 0 30px;
+  padding: 0 100px;
 }
 
 .section-3-para1 {
@@ -583,7 +640,7 @@ code {
 }
 
 .nav-custom-classes {
-  background: #e5e5e5 !important;
+  background: #e5e5e5;
 }
 
 .nav-main-toggle-button {
@@ -1305,6 +1362,105 @@ code {
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
+/* ------------------------------------------------------------------------START PRIVACY POLICY------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.text-general-policy-title {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: justified;
+  color: #354bcc;
+}
+
+.text-general-policy-para {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: justified;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------------------------------------------END PRIVACY POLICY---------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* -------------------------------------------------------------------------Start FAQ---------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.text-faq-page-sidebar {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #b9b9b9;
+}
+.card-faq-acc {
+  border-radius: 12px;
+}
+.card-header-faq-acc {
+  background: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 12px !important;
+}
+.btn-acc-faq {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 39px;
+  text-transform: capitalize;
+  color: #000000;
+  width: 100%;
+  text-align: left;
+}
+
+.btn-acc-faq:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.card-body-faq-acc {
+  background: #fafafa;
+  padding: 50px;
+  font-family: Inter;
+  border-radius: 12px !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: justified;
+  width: 100%;
+}
+
+.btn-acc-faq:after {
+  font-family: "FontAwesome";
+  content: "\f068";
+  float: right;
+  color: #0c5ff2;
+}
+.btn-acc-faq.collapsed:after {
+  /* symbol for "collapsed" panels */
+  font-family: "FontAwesome";
+  content: "\f067";
+  color: #0c5ff2;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------------------------------------------END FAQ---------------------------------------------------------------------- */
+
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
   /* About us section 5 */
@@ -1352,7 +1508,7 @@ code {
     border-bottom: 1px solid rgb(199, 199, 199);
     line-height: 0.1em;
     margin: 10px 0 20px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     color: #172253;
     background: #e5e5e5;
@@ -1441,26 +1597,6 @@ code {
 
   .card-section1-main {
     width: 100%;
-  }
-
-  .tab-color-top .nav-item.show .nav-link,
-  .tab-color-top .nav-link.active {
-    color: orangered !important;
-    background-color: #fff !important;
-    border-color: none !important;
-    border-bottom: 2px solid blue !important;
-  }
-
-  #controlled-tab-example-tab-Sell {
-    border-bottom: 2px solid blue !important;
-  }
-
-  .tab-color-top {
-    border-bottom: none !important;
-  }
-
-  .tab-color-top .nav-link:hover {
-    color: gray !important;
   }
 
   /*End Section 1 */

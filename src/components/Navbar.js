@@ -33,17 +33,13 @@ const Navbar = () => {
             </a>
           </li> */}
 
-
             <div class="dropdown dropdown-nav-main">
               <a
                 class="dropdown dropdown-nav-main marginright10 top-nav-link-nav"
                 href=""
               >
                 Exchange
-
               </a>
-
-
             </div>
 
             <div class="dropdown dropdown-nav-main">

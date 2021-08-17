@@ -1,8 +1,8 @@
 import React from "react";
-import T1logo from "../../images/homepage/table1.png"
-import T2logo from "../../images/homepage/table2.png"
-import T3logo from "../../images/homepage/table3.png"
-import T4logo from "../../images/homepage/table4.png"
+import T1logo from "../../images/homepage/table1.png";
+import T2logo from "../../images/homepage/table2.png";
+import T3logo from "../../images/homepage/table3.png";
+import T4logo from "../../images/homepage/table4.png";
 
 const Section2 = () => {
   return (
@@ -12,14 +12,17 @@ const Section2 = () => {
       </p>
 
       <p className="text-center generic-para-text mt-5 mb-5">
-        We understand the importance of liquidity and have partnered with global liquidity providers and market makers.
+        We understand the importance of liquidity and have partnered with global
+        liquidity providers and market makers.
       </p>
       <div className="card shadow-lg table-responsive-sm main-table-card">
         <div className="card-body">
           <table class="table table-borderless table-responsive table-hover">
-            <thead >
+            <thead>
               <tr>
-                <th scope="col-1" className="pb-4">#</th>
+                <th scope="col-1" className="pb-4">
+                  #
+                </th>
                 <th scope="col-3" className="pb-4">
                   Name
                 </th>
@@ -39,7 +42,9 @@ const Section2 = () => {
             </thead>
             <tbody>
               <tr className=" table-light">
-                <th scope="row" className="py-4">1</th>
+                <th scope="row" className="py-4">
+                  1
+                </th>
                 <td className="py-4">Bitcoin -BTC</td>
                 <td className="py-4">INR 100,433,120,19</td>
                 <td className="py-4">INR 100,433,120,19</td>
@@ -47,17 +52,17 @@ const Section2 = () => {
                 <td className="py-4">INR 100,433,120,19</td>
               </tr>
               <tr className=" ">
-                <th scope="row" className="py-4">2</th>
+                <th scope="row" className="py-4">
+                  2
+                </th>
                 <td className="py-4">Bitcoin -BTC</td>
                 <td className="py-4">INR 100,433,120,19</td>
                 <td className="py-4">INR 100,433,120,19</td>
                 <td className="py-4">INR 100,433,120,19</td>
                 <td className="py-4">INR 100,433,120,19</td>
               </tr>
-
             </tbody>
           </table>
-
         </div>
       </div>
       <div className="row d-flex justify-content-center align-items-center mt-5">

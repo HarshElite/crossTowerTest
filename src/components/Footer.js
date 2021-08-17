@@ -7,7 +7,7 @@ import Twitter from "../images/homepage/Footer/tw.png";
 import Instagram from "../images/homepage/Footer/insta.png";
 import Youtube from "../images/homepage/Footer/yt.png";
 import LinkedIn from "../images/homepage/Footer/lk.png";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
@@ -67,16 +67,28 @@ const Footer = () => {
             </div>
             <div class="col-footer span_1_of_5-footer">
               <div class="d-flex flex-column">
-                <div class="p-2 header-text-col5-footer">Support</div>
+                <div class="p-2 header-text-col5-footer"> Support</div>
                 <div class="p-2 secondary-text-col5-footer">Help & Support</div>
                 <div class="p-2 secondary-text-col5-footer">
-                  How to use CrossTower?
+                  <Link
+                    className="text-white"
+                    to="/faq"
+                    style={{ textDecoration: "none" }}
+                  >
+                    How to use CrossTower?
+                  </Link>
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
                   Partnership and Enquires
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
-                  Trading & Withdrawal FEes
+                  <Link
+                    className="text-white"
+                    to="/refundpolicy"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Trading & Withdrawal Fees
+                  </Link>
                 </div>
                 <div class="p-2 secondary-text-col5-footer">Contact Us</div>
               </div>
@@ -148,8 +160,16 @@ const Footer = () => {
             </p>
             <p className="col-md-6 col-xs-12 d-flex justify-content-end">
               <div className="d-flex flex-wrap">
-                <span className="marginright20">Terms of Use</span>
-                <span className="marginright20">Privacy Policy</span>
+                <span className="marginright20"> Terms of Use</span>
+                <span className="marginright20">
+                  <Link
+                    className="text-white"
+                    to="/privacypolicy"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Privacy Policy{" "}
+                  </Link>
+                </span>
                 <span className="marginright20">Security</span>
                 <span className="marginright20">Disclaimer</span>
                 <span className="marginright20">Cookie Policy</span>
