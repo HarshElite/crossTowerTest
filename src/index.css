@@ -611,12 +611,12 @@ code {
 }
 
 .section3-back {
-  background: linear-gradient(
-    49.96deg,
-    #9caed7 -2.34%,
-    #eaf4ff 50.19%,
-    #a0b2d9 98.93%
-  );
+  position: relative;
+  height: 100%;
+  background: url("./images/homepage/whicross.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .main-table-card {
