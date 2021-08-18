@@ -188,7 +188,7 @@ const Section1 = () => {
                     class="dropdown-menu"
                     aria-labelledby="dropdownMenuButton1"
                   >
-                    <li>
+                    {/* <li>
                       <a class="dropdown-item" href="#">
                         Action
                       </a>
@@ -202,7 +202,7 @@ const Section1 = () => {
                       <a class="dropdown-item" href="#">
                         Something else here
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
                 <p className="d-flex justify-content-between align-items-center text-white">

@@ -1,13 +1,7 @@
 import React from "react";
-import Member1 from "../../images/aboutus/MaskGroup-1.png";
-import Member2 from "../../images/aboutus/MaskGroup-2.png";
-import Member3 from "../../images/aboutus/MaskGroup-3.png";
-import Member4 from "../../images/aboutus/MaskGroup-4.png";
-import Member5 from "../../images/aboutus/MaskGroup-5.png";
-import Member6 from "../../images/aboutus/MaskGroup-6.png";
-import Member7 from "../../images/aboutus/MaskGroup-7.png";
-import Member8 from "../../images/aboutus/MaskGroup-8.png";
-import Member9 from "../../images/aboutus/MaskGroup-9.png";
+import Member1 from "../../images/aboutus/p1.png";
+import Member2 from "../../images/aboutus/MaskGroup-1.png";
+import Member3 from "../../images/aboutus/MaskGroup-7.png";
 import Twitter from "../../images/homepage/Footer/tw.png";
 import Linkedin from "../../images/homepage/Footer/lk.png";
 import IB from "../../images/aboutus/bg-about-card.png";
@@ -34,7 +28,7 @@ const Section4 = () => {
                     className="imagebackground-abt-us-card-bgground"
                   />
                   <img
-                    src={Member7}
+                    src={Member2}
                     alt=""
                     className="imagebackground-abt-us-card-image"
                   />
@@ -79,7 +73,7 @@ const Section4 = () => {
                     className="imagebackground-abt-us-card-bgground"
                   />
                   <img
-                    src={Member8}
+                    src={Member1}
                     alt=""
                     className="imagebackground-abt-us-card-image"
                   />
@@ -124,7 +118,7 @@ const Section4 = () => {
                     className="imagebackground-abt-us-card-bgground"
                   />
                   <img
-                    src={Member9}
+                    src={Member3}
                     alt=""
                     className="imagebackground-abt-us-card-image"
                   />
