@@ -6,6 +6,8 @@ import SupportScreen from "./screens/SupportScreen";
 import FAQ from "./screens/FAQ";
 import PrivacyPolicy from "./screens/PrivacyPolicy";
 import RefundPolicy from "./screens/RefundPolicy";
+import Disclaimer from "./screens/Disclaimer";
+import ContactUs from "./screens/ContactUs";
 import AboutUs from "./screens/AboutUs";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -21,6 +23,8 @@ function App() {
       <Route path="/faq" component={FAQ}></Route>
       <Route path="/privacypolicy" component={PrivacyPolicy}></Route>
       <Route path="/refundpolicy" component={RefundPolicy}></Route>
+      <Route path="/disclaimer" component={Disclaimer}></Route>
+      <Route path="/contactus" component={ContactUs}></Route>
       <Footer />
     </Router>
   );

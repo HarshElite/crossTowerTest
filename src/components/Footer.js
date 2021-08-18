@@ -186,10 +186,7 @@ const Footer = () => {
           </p>
           <p>
             <span className="footer-bottom-header-text"> Exchange :</span>
-            <span className="footer-bottom-span-green">
-              Bitcoin | Cash | Litecoin | Ethereum | Ripple | Stellar | NEO |
-              Cardano
-            </span>
+            <span className="footer-bottom-span-green">Bitcoin | Ripple</span>
           </p>
           <p className="footer-bottom-header-text pt-5">About</p>
           <p className="footer-bottom-header-para">

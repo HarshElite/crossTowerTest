@@ -1,5 +1,6 @@
 import React from "react";
 import { Tab, Row, Col, Nav, Card, Accordion } from "react-bootstrap";
+import inrdeposit from "../../data/faq";
 
 const Section2 = () => {
   return (
@@ -15,7 +16,7 @@ const Section2 = () => {
                       className="py-3 text-capitalize text-faq-page-sidebar"
                       eventKey="first"
                     >
-                      section 1
+                      INR Deposit and Withdrawal
                     </Nav.Link>
                     <hr className="m-0" />
                   </Nav.Item>
@@ -97,38 +98,45 @@ const Section2 = () => {
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <div id="accordion">
-                    <div class="card card-faq-acc mb-5 shadow-lg">
-                      <div
-                        class="card-header card-header-faq-acc"
-                        id="headingOne"
-                      >
-                        <h5 class="mb-0">
-                          <button
-                            class="btn btn-acc-faq"
-                            data-toggle="collapse"
-                            data-target="#collapseOne"
-                            aria-expanded="true"
-                            aria-controls="collapseOne"
+                    {inrdeposit.map((item) => (
+                      <div>
+                        <div
+                          class="card card-faq-acc mb-5 shadow-lg"
+                          key={item._id}
+                        >
+                          <div
+                            class="card-header  card-header-faq-acc"
+                            id={"heading" + item._id}
                           >
-                            Where is Crosstower headquarters?
-                          </button>
-                        </h5>
-                      </div>
+                            <h5 class="mb-0">
+                              <button
+                                class="btn btn-acc-faq collapsed"
+                                data-toggle="collapse"
+                                data-target={"#" + item._id + "collapse"}
+                                aria-expanded="true"
+                                aria-controls={item._id + "collapse"}
+                              >
+                                {item.questions}
+                              </button>
+                            </h5>
+                          </div>
 
-                      <div
-                        id="collapseOne"
-                        class="collapse show"
-                        aria-labelledby="headingOne"
-                        data-parent="#accordion"
-                      >
-                        <div class="card-body card-body-faq-acc">
-                          In May 2020, we became a remote-first company.
-                          Accordingly, we no longer maintain a corporate
-                          headquarters.
+                          <div
+                            id={item._id + "collapse"}
+                            class="collapse"
+                            aria-labelledby={"heading" + item._id}
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body card-body-faq-acc">
+                              {item.answers}
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="card card-faq-acc my-5">
+                    ))}
+                  </div>
+
+                  {/* <div class="card card-faq-acc my-5">
                       <div
                         class="card-header card-header-faq-acc"
                         id="headingTwo"
@@ -166,8 +174,8 @@ const Section2 = () => {
                           sustainable VHS.
                         </div>
                       </div>
-                    </div>
-                    <div class="card card-faq-acc my-5">
+                    </div> */}
+                  {/* <div class="card card-faq-acc my-5">
                       <div
                         class="card-header card-header-faq-acc"
                         id="headingThree"
@@ -206,8 +214,7 @@ const Section2 = () => {
                           sustainable VHS.
                         </div>
                       </div>
-                    </div>
-                  </div>
+                    </div> */}
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">2 </Tab.Pane>
                 <Tab.Pane eventKey="third">3</Tab.Pane>
