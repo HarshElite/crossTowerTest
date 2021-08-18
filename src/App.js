@@ -6,6 +6,7 @@ import SupportScreen from "./screens/SupportScreen";
 import FAQ from "./screens/FAQ";
 import PrivacyPolicy from "./screens/PrivacyPolicy";
 import RefundPolicy from "./screens/RefundPolicy";
+import ComingSoon from "./screens/ComingSoon";
 import Disclaimer from "./screens/Disclaimer";
 import ContactUs from "./screens/ContactUs";
 import AboutUs from "./screens/AboutUs";
@@ -26,6 +27,7 @@ function App() {
       <Route path="/refundpolicy" component={RefundPolicy}></Route>
       <Route path="/disclaimer" component={Disclaimer}></Route>
       <Route path="/contactus" component={ContactUs}></Route>
+      <Route path="/login" component={ComingSoon}></Route>
       <Footer />
     </Router>
   );

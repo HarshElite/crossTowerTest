@@ -54,7 +54,7 @@ const Navbar = () => {
               </svg>
             </Link>
             <Link
-              to="/aboutus"
+              to="/login"
               href="#"
               className="marginright30 top-nav-link-nav"
             >

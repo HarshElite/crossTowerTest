@@ -1,7 +1,13 @@
 import React from "react";
 import { Tab, Row, Col, Nav, Card, Accordion } from "react-bootstrap";
 import inrdeposit from "../../data/faq";
-import { cryptdepositwith } from "../../data/faq";
+import {
+  cryptdepositwith,
+  feesandbrokerage,
+  kycbankacc,
+  signupandaccmgmt,
+  security,
+} from "../../data/faq";
 
 const Section2 = () => {
   return (
@@ -26,7 +32,7 @@ const Section2 = () => {
                       className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="second"
                     >
-                      section 2
+                      Crypto Deposit and Withdrawal
                     </Nav.Link>
                     <hr className="m-0" />
                   </Nav.Item>
@@ -35,7 +41,7 @@ const Section2 = () => {
                       className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="third"
                     >
-                      section 3
+                      Fees & Brokerage
                     </Nav.Link>
                     <hr className="m-0" />
                   </Nav.Item>
@@ -44,7 +50,7 @@ const Section2 = () => {
                       className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="fourth"
                     >
-                      section 4
+                      KYC & Bank account
                     </Nav.Link>
                     <hr className="m-0" />
                   </Nav.Item>
@@ -53,7 +59,7 @@ const Section2 = () => {
                       className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="fifth"
                     >
-                      section 5
+                      Signing Up & Account Management
                     </Nav.Link>
                     <hr className="m-0" />
                   </Nav.Item>
@@ -62,11 +68,11 @@ const Section2 = () => {
                       className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="sixth"
                     >
-                      section 6
+                      Security
                     </Nav.Link>
                     <hr className="m-0" />
                   </Nav.Item>
-                  <Nav.Item>
+                  {/* <Nav.Item>
                     <Nav.Link
                       className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="seventh"
@@ -91,7 +97,7 @@ const Section2 = () => {
                     >
                       section 9
                     </Nav.Link>
-                  </Nav.Item>
+                  </Nav.Item> */}
                 </Nav>
               </Card>
             </Col>
@@ -257,13 +263,171 @@ const Section2 = () => {
                     ))}
                   </div>
                 </Tab.Pane>
-                <Tab.Pane eventKey="third">3</Tab.Pane>
-                <Tab.Pane eventKey="fourth">4 </Tab.Pane>
-                <Tab.Pane eventKey="fifth">5</Tab.Pane>
-                <Tab.Pane eventKey="sixth">6 </Tab.Pane>
-                <Tab.Pane eventKey="seventh">7 </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                  <div id="accordionThree">
+                    {feesandbrokerage.map((item) => (
+                      <div>
+                        <div
+                          class="card card-faq-acc mb-5 shadow-lg"
+                          key={item._id}
+                        >
+                          <div
+                            class="card-header  card-header-faq-acc"
+                            id={"headingThree" + item._id}
+                          >
+                            <h5 class="mb-0">
+                              <button
+                                class="btn btn-acc-faq collapsed"
+                                data-toggle="collapse"
+                                data-target={"#" + item._id + "collapseThree"}
+                                aria-expanded="true"
+                                aria-controls={item._id + "collapseThree"}
+                              >
+                                {item.questions}
+                              </button>
+                            </h5>
+                          </div>
+
+                          <div
+                            id={item._id + "collapseThree"}
+                            class="collapse"
+                            aria-labelledby={"headingThree" + item._id}
+                            data-parent="#accordionThree"
+                          >
+                            <div class="card-body card-body-faq-acc">
+                              {item.answers}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </Tab.Pane>
+                <Tab.Pane eventKey="fourth">
+                  <div id="accordionFour">
+                    {kycbankacc.map((item) => (
+                      <div>
+                        <div
+                          class="card card-faq-acc mb-5 shadow-lg"
+                          key={item._id}
+                        >
+                          <div
+                            class="card-header  card-header-faq-acc"
+                            id={"headingFour" + item._id}
+                          >
+                            <h5 class="mb-0">
+                              <button
+                                class="btn btn-acc-faq collapsed"
+                                data-toggle="collapse"
+                                data-target={"#" + item._id + "collapseFour"}
+                                aria-expanded="true"
+                                aria-controls={item._id + "collapseFour"}
+                              >
+                                {item.questions}
+                              </button>
+                            </h5>
+                          </div>
+
+                          <div
+                            id={item._id + "collapseFour"}
+                            class="collapse"
+                            aria-labelledby={"headingFour" + item._id}
+                            data-parent="#accordionFour"
+                          >
+                            <div class="card-body card-body-faq-acc">
+                              {item.answers}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </Tab.Pane>
+                <Tab.Pane eventKey="fifth">
+                  {" "}
+                  <div id="accordionFive">
+                    {signupandaccmgmt.map((item) => (
+                      <div>
+                        <div
+                          class="card card-faq-acc mb-5 shadow-lg"
+                          key={item._id}
+                        >
+                          <div
+                            class="card-header  card-header-faq-acc"
+                            id={"headingFive" + item._id}
+                          >
+                            <h5 class="mb-0">
+                              <button
+                                class="btn btn-acc-faq collapsed"
+                                data-toggle="collapse"
+                                data-target={"#" + item._id + "collapseFive"}
+                                aria-expanded="true"
+                                aria-controls={item._id + "collapseFive"}
+                              >
+                                {item.questions}
+                              </button>
+                            </h5>
+                          </div>
+
+                          <div
+                            id={item._id + "collapseFive"}
+                            class="collapse"
+                            aria-labelledby={"headingFive" + item._id}
+                            data-parent="#accordionFive"
+                          >
+                            <div class="card-body card-body-faq-acc">
+                              {item.answers}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </Tab.Pane>
+                <Tab.Pane eventKey="sixth">
+                  {" "}
+                  <div id="accordionSix">
+                    {security.map((item) => (
+                      <div>
+                        <div
+                          class="card card-faq-acc mb-5 shadow-lg"
+                          key={item._id}
+                        >
+                          <div
+                            class="card-header  card-header-faq-acc"
+                            id={"headingSix" + item._id}
+                          >
+                            <h5 class="mb-0">
+                              <button
+                                class="btn btn-acc-faq collapsed"
+                                data-toggle="collapse"
+                                data-target={"#" + item._id + "collapseSix"}
+                                aria-expanded="true"
+                                aria-controls={item._id + "collapseSix"}
+                              >
+                                {item.questions}
+                              </button>
+                            </h5>
+                          </div>
+
+                          <div
+                            id={item._id + "collapseSix"}
+                            class="collapse"
+                            aria-labelledby={"headingSix" + item._id}
+                            data-parent="#accordionFour"
+                          >
+                            <div class="card-body card-body-faq-acc">
+                              {item.answers}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>{" "}
+                </Tab.Pane>
+                {/* <Tab.Pane eventKey="seventh">7 </Tab.Pane>
                 <Tab.Pane eventKey="eigth">8 </Tab.Pane>
-                <Tab.Pane eventKey="ninth">9 </Tab.Pane>
+                <Tab.Pane eventKey="ninth">9 </Tab.Pane> */}
               </Tab.Content>
             </Col>
           </Row>
