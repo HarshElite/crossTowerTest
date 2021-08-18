@@ -188,7 +188,15 @@ const Footer = () => {
                   </Link>
                 </span>
                 <span className="marginright20">Security</span>
-                <span className="marginright20">Disclaimer</span>
+                <span className="marginright20">
+                  <Link
+                    className="text-white"
+                    to="/disclaimer"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Disclaimer
+                  </Link>
+                </span>
                 <span className="marginright20">Cookie Policy</span>
               </div>
             </p>
