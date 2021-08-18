@@ -99,7 +99,15 @@ const Footer = () => {
                     Refund Policy
                   </Link>
                 </div>
-                <div class="p-2 secondary-text-col5-footer">Contact Us</div>
+                <div class="p-2 secondary-text-col5-footer">
+                  <Link
+                    className="text-white"
+                    to="/contactus"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Contact Us
+                  </Link>
+                </div>
               </div>
             </div>
             <div class="col-footer span_1_of_5-footer">

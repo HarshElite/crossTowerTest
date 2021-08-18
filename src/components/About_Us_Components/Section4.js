@@ -22,280 +22,7 @@ const Section4 = () => {
           We understand the importance of liquidity and have partnered with
           global liquidity providers and market makers.
         </p>
-        <div className="row mt-5">
-          <div className="col-md-4 col-12 mt-5">
-            <div className="card shadow-lg p-0 card-abtus-sec4">
-              <div className="card-body p-0">
-                <div className="imagebackground-abt-us-card d-flex justify-content-center">
-                  <img
-                    src={IB}
-                    alt=""
-                    className="imagebackground-abt-us-card-bgground"
-                  />
-                  <img
-                    src={Member1}
-                    alt=""
-                    className="imagebackground-abt-us-card-image"
-                  />
-                </div>
-                <div className="mt-5 pb-5 pt-5">
-                  <p className="text-center text-capitalize text-head-abtus-sec4">
-                    Greg Bunn
-                  </p>
-                  <p className="text-center text-para-abtus-sec4">
-                    Chief Strategy Officer
-                  </p>
-                  <div className="d-flex justify-content-center ">
-                    <hr className="hr-line-abtsec4" />
-                  </div>
-                  <p className="text-center">
-                    <span>
-                      <img
-                        src={Twitter}
-                        alt=""
-                        className="imagebackground-abt-us-card-icon marginright10"
-                      />
-                    </span>
-                    <span>
-                      <img
-                        src={Linkedin}
-                        alt=""
-                        className="imagebackground-abt-us-card-icon marginleft10"
-                      />
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-12 mt-5">
-            <div className="card shadow-lg p-0 card-abtus-sec4">
-              <div className="card-body p-0">
-                <div className="imagebackground-abt-us-card d-flex justify-content-center">
-                  <img
-                    src={IB}
-                    alt=""
-                    className="imagebackground-abt-us-card-bgground"
-                  />
-                  <img
-                    src={Member2}
-                    alt=""
-                    className="imagebackground-abt-us-card-image"
-                  />
-                </div>
-                <div className="mt-5 pb-5 pt-5">
-                  <p className="text-center text-capitalize text-head-abtus-sec4">
-                    Greg Bunn
-                  </p>
-                  <p className="text-center text-para-abtus-sec4">
-                    Chief Strategy Officer
-                  </p>
-                  <div className="d-flex justify-content-center ">
-                    <hr className="hr-line-abtsec4" />
-                  </div>
-                  <p className="text-center">
-                    <span>
-                      <img
-                        src={Twitter}
-                        alt=""
-                        className="imagebackground-abt-us-card-icon marginright10"
-                      />
-                    </span>
-                    <span>
-                      <img
-                        src={Linkedin}
-                        alt=""
-                        className="imagebackground-abt-us-card-icon marginleft10"
-                      />
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-12 mt-5">
-            <div className="card shadow-lg p-0 card-abtus-sec4">
-              <div className="card-body p-0">
-                <div className="imagebackground-abt-us-card d-flex justify-content-center">
-                  <img
-                    src={IB}
-                    alt=""
-                    className="imagebackground-abt-us-card-bgground"
-                  />
-                  <img
-                    src={Member3}
-                    alt=""
-                    className="imagebackground-abt-us-card-image"
-                  />
-                </div>
-                <div className="mt-5 pb-5 pt-5">
-                  <p className="text-center text-capitalize text-head-abtus-sec4">
-                    Greg Bunn
-                  </p>
-                  <p className="text-center text-para-abtus-sec4">
-                    Chief Strategy Officer
-                  </p>
-                  <div className="d-flex justify-content-center ">
-                    <hr className="hr-line-abtsec4" />
-                  </div>
-                  <p className="text-center">
-                    <span>
-                      <img
-                        src={Twitter}
-                        alt=""
-                        className="imagebackground-abt-us-card-icon marginright10"
-                      />
-                    </span>
-                    <span>
-                      <img
-                        src={Linkedin}
-                        alt=""
-                        className="imagebackground-abt-us-card-icon marginleft10"
-                      />
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-4 col-12 mt-5">
-            <div className="card shadow-lg p-0 card-abtus-sec4">
-              <div className="card-body p-0">
-                <div className="imagebackground-abt-us-card d-flex justify-content-center">
-                  <img
-                    src={IB}
-                    alt=""
-                    className="imagebackground-abt-us-card-bgground"
-                  />
-                  <img
-                    src={Member4}
-                    alt=""
-                    className="imagebackground-abt-us-card-image"
-                  />
-                </div>
-                <div className="mt-5 pb-5 pt-5">
-                  <p className="text-center text-capitalize text-head-abtus-sec4">
-                    Greg Bunn
-                  </p>
-                  <p className="text-center text-para-abtus-sec4">
-                    Chief Strategy Officer
-                  </p>
-                  <div className="d-flex justify-content-center ">
-                    <hr className="hr-line-abtsec4" />
-                  </div>
-                  <p className="text-center">
-                    <span>
-                      <img
-                        src={Twitter}
-                        alt=""
-                        className="imagebackground-abt-us-card-icon marginright10"
-                      />
-                    </span>
-                    <span>
-                      <img
-                        src={Linkedin}
-                        alt=""
-                        className="imagebackground-abt-us-card-icon marginleft10"
-                      />
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-12 mt-5">
-            <div className="card shadow-lg p-0 card-abtus-sec4">
-              <div className="card-body p-0">
-                <div className="imagebackground-abt-us-card d-flex justify-content-center">
-                  <img
-                    src={IB}
-                    alt=""
-                    className="imagebackground-abt-us-card-bgground"
-                  />
-                  <img
-                    src={Member5}
-                    alt=""
-                    className="imagebackground-abt-us-card-image"
-                  />
-                </div>
-                <div className="mt-5 pb-5 pt-5">
-                  <p className="text-center text-capitalize text-head-abtus-sec4">
-                    Greg Bunn
-                  </p>
-                  <p className="text-center text-para-abtus-sec4">
-                    Chief Strategy Officer
-                  </p>
-                  <div className="d-flex justify-content-center ">
-                    <hr className="hr-line-abtsec4" />
-                  </div>
-                  <p className="text-center">
-                    <span>
-                      <img
-                        src={Twitter}
-                        alt=""
-                        className="imagebackground-abt-us-card-icon marginright10"
-                      />
-                    </span>
-                    <span>
-                      <img
-                        src={Linkedin}
-                        alt=""
-                        className="imagebackground-abt-us-card-icon marginleft10"
-                      />
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-12 mt-5">
-            <div className="card shadow-lg p-0 card-abtus-sec4">
-              <div className="card-body p-0">
-                <div className="imagebackground-abt-us-card d-flex justify-content-center">
-                  <img
-                    src={IB}
-                    alt=""
-                    className="imagebackground-abt-us-card-bgground"
-                  />
-                  <img
-                    src={Member6}
-                    alt=""
-                    className="imagebackground-abt-us-card-image"
-                  />
-                </div>
-                <div className="mt-5 pb-5 pt-5">
-                  <p className="text-center text-capitalize text-head-abtus-sec4">
-                    Greg Bunn
-                  </p>
-                  <p className="text-center text-para-abtus-sec4">
-                    Chief Strategy Officer
-                  </p>
-                  <div className="d-flex justify-content-center ">
-                    <hr className="hr-line-abtsec4" />
-                  </div>
-                  <p className="text-center">
-                    <span>
-                      <img
-                        src={Twitter}
-                        alt=""
-                        className="imagebackground-abt-us-card-icon marginright10"
-                      />
-                    </span>
-                    <span>
-                      <img
-                        src={Linkedin}
-                        alt=""
-                        className="imagebackground-abt-us-card-icon marginleft10"
-                      />
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div className="row">
           <div className="col-md-4 col-12 mt-5">
             <div className="card shadow-lg p-0 card-abtus-sec4">
@@ -314,10 +41,10 @@ const Section4 = () => {
                 </div>
                 <div className="mt-5 pb-5 pt-5">
                   <p className="text-center text-capitalize text-head-abtus-sec4">
-                    Greg Bunn
+                    Kapil Rathi
                   </p>
                   <p className="text-center text-para-abtus-sec4">
-                    Head of Sales
+                    Chief Executive Officer & Co-Founder
                   </p>
                   <div className="d-flex justify-content-center ">
                     <hr className="hr-line-abtsec4" />
@@ -359,10 +86,10 @@ const Section4 = () => {
                 </div>
                 <div className="mt-5 pb-5 pt-5">
                   <p className="text-center text-capitalize text-head-abtus-sec4">
-                    Martin Gaspar
+                    Vikas Ahuja
                   </p>
                   <p className="text-center text-para-abtus-sec4">
-                    Research Analyst
+                    Chief Executive Officer
                   </p>
                   <div className="d-flex justify-content-center ">
                     <hr className="hr-line-abtsec4" />
@@ -404,10 +131,10 @@ const Section4 = () => {
                 </div>
                 <div className="mt-5 pb-5 pt-5">
                   <p className="text-center text-capitalize text-head-abtus-sec4">
-                    Tony Yi
+                    Kristin Boggiano
                   </p>
                   <p className="text-center text-para-abtus-sec4">
-                    Market Operations Analyst
+                    President & Co-Founder
                   </p>
                   <div className="d-flex justify-content-center ">
                     <hr className="hr-line-abtsec4" />

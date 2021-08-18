@@ -8,7 +8,95 @@ const Section2 = () => {
       <div class="row">
         <div class="col-md-6 col-12">
           <div class="card border-0 shadow-lg">
-            <div class="card-body"></div>
+            <div class="card-body">
+              <form className="px-5">
+                <div className="d-flex justify-content-between">
+                  <div class="form-group py-3">
+                    <label className="label-styles-contact" for="firstName">
+                      First Name
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control form-control-contact px-0"
+                      id="firstName"
+                      aria-describedby="emailHelp"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group py-3">
+                    <label className="label-styles-contact" for="lastName">
+                      Last Name
+                    </label>
+                    <input
+                      type="email"
+                      class="form-control form-control-contact px-0"
+                      id="lastName"
+                      aria-describedby="emailHelp"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+                <div className="d-flex justify-content-between">
+                  <div class="form-group py-3">
+                    <label className="label-styles-contact" for="phone">
+                      Phone Number
+                    </label>
+                    <input
+                      type="tel"
+                      class="form-control form-control-contact px-0"
+                      id="phone"
+                      aria-describedby="emailHelp"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group py-3">
+                    <label className="label-styles-contact" for="email">
+                      Email address
+                    </label>
+                    <input
+                      type="email"
+                      class="form-control form-control-contact px-0"
+                      id="email"
+                      aria-describedby="emailHelp"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+                <div class="form-group py-3">
+                  <label
+                    className="label-styles-contact-message"
+                    for="messagetopic"
+                  >
+                    Message Topic
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control form-control-contact px-0"
+                    id="messagetopic"
+                    aria-describedby="emailHelp"
+                    placeholder=""
+                  />
+                </div>
+                <div class="form-group py-3">
+                  <label className="label-styles-contact-message" for="message">
+                    Message
+                  </label>
+                  <textarea
+                    type="textarea"
+                    rows="5"
+                    class="form-control form-control-contact px-0"
+                    id="message"
+                    aria-describedby="emailHelp"
+                    placeholder="Write your message"
+                  />
+                </div>
+                <div className="row d-flex justify-content-start align-items-center mt-5">
+                  <button className="start-trading-button" type="submit">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-12">
@@ -19,20 +107,16 @@ const Section2 = () => {
               </div>
               <div>
                 <p className="contact-us-blue-heading mb-0">General</p>
-                <p className="contact-us-blue-para">
-                  hello@crosstower.com
-                </p>{" "}
+                <p className="contact-us-blue-para">info@crosstower.in</p>
               </div>
             </div>
 
             <p className="marginleft71 contact-us-blue-heading mb-0">Media</p>
             <p className="marginleft71 contact-us-blue-para">
-              media@crosstower.com
+              info@crosstower.in
             </p>
-            <p className="marginleft71 contact-us-blue-heading mb-0">Support</p>
-            <p className="marginleft71 contact-us-blue-para">
-              Support@crosstower.com
-            </p>
+            <p className="marginleft71 contact-us-blue-heading mb-0">Phone</p>
+            <p className="marginleft71 contact-us-blue-para">0124-4382555</p>
 
             <div className="d-flex">
               <div className="locationiconcontact">
@@ -42,7 +126,8 @@ const Section2 = () => {
                 <p className="contact-us-blue-heading">Support</p>
                 <p className="contact-us-blue-para mb-0">CrossTower Inc. </p>
                 <p className="contact-us-blue-para">
-                  15 Exchange Place Jersey City, NJ 07302{" "}
+                  CrossTower India Trading Pvt Ltd, First Floor, Plot No. 13,
+                  Sector-33, Gurugram (Delhi NCR), Haryana 122001 India.
                 </p>
               </div>
             </div>

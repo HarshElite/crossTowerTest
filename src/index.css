@@ -1,4 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=OpenSansRegular:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: GuardianBold;
+  src: url("./images/fonts/GuardianSansBold.otf");
+}
+@font-face {
+  font-family: OpenSansRegular;
+  src: url("./images/fonts/GuardianSansRegular.otf");
+}
+@font-face {
+  font-family: OpenSansRegular;
+  src: url("./images/fonts/OpenSans-Regular.ttf");
+}
 
 * html {
   margin: 0;
@@ -8,7 +20,7 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: OpenSansRegular, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: white;
@@ -51,21 +63,25 @@ code {
   font-size: 45px;
   font-weight: 700;
   line-height: 55px;
+  font-family: GuardianBold;
 }
 
 .generic-text-bold {
   font-size: 16px;
   font-weight: 600;
+  font-family: GuardianBold;
 }
 
 .generic-para-text {
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-size: 16px;
+  font-family: OpenSansRegular;
   font-style: normal;
 }
 
 .generic-title-para-blue {
   color: #354bcc;
+  font-family: OpenSansRegular;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -75,27 +91,32 @@ code {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: OpenSansRegular;
 }
 
 .span-green-text {
   color: var(--green-primary);
   font-size: 16px;
+  font-family: OpenSansRegular;
+
   font-style: normal;
 }
 .span-grey-text {
   color: var(--grey-primary);
   font-size: 16px;
+  font-family: OpenSansRegular;
+
   font-style: normal;
 }
 
 .generic-title-para {
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-weight: 600;
   letter-spacing: 2px;
 }
 
 .generic-medium-text {
-  font-family: Inter;
+  font-family: GuardianBold;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -167,21 +188,110 @@ code {
 /* --------------------------------------------------------------------------  End of utilities --------------------------------------------------------------------------*/
 
 /* --------------------------------------------------------------------------Section 1 -------------------------------------------------------------------------------- */
-.tab-color-top .nav-item.show .nav-link,
-.tab-color-top .nav-link.active {
+
+.label-style-hometopcard {
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6b7892;
+}
+
+#controlled-tab-example-tab-Sell .tab-color-top .nav-item.show .nav-link,
+.tab-color-top .nav-link.active,
+.tab-color-top .nav-link:hover,
+.tab-color-top .nav-link:hover::before,
+.tab-color-top .nav-link:hover::after {
   border-color: none !important;
+  border: none !important;
+  transition: none !important;
   border-bottom: 3px solid blue !important;
+  outline: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+}
+
+#controlled-tab-example-tab-Sell .tab-color-top .nav-item.show .nav-link {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.tab-color-top .nav-tabs .nav-link {
+  border: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+.tab-color-top .nav-tabs .nav-link:hover::after {
+  border: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }
 .tab-color-top .nav-tabs .nav-link {
   border: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.tab-color-top .nav-link:hover::after {
+  color: transparent;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }
 
 .tab-color-top {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
   border-bottom: solid 1px #000 !important;
 }
 
 .tab-color-top .nav-link:hover {
-  color: gray !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: color 0.01s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.01s ease-in-out !important;
+}
+
+.card-top-text-buyysell1 {
+  font-family: OpenSansRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #fff;
+}
+
+.nav-link {
+  transition: none !important;
+  transition-property: none !important;
+  transition-duration: none !important;
+  transition-timing-function: none !important;
+  transition-delay: none !important;
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: right;
 }
 
 .main-drop-vard-secrev {
@@ -190,27 +300,34 @@ code {
   padding: 15px;
   margin-bottom: 20px;
   color: #fff;
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: right;
 }
 
-.form-control {
+.form-control-sec1card {
   border: none;
   border-radius: 0px;
   border-bottom: 1px solid #6b7892;
   outline: 0;
 }
-.form-control:focus {
+.form-control-sec1card:focus {
   box-shadow: none;
   border-bottom: 1px solid #6b7892;
 }
 
-.form-control::placeholder {
-  text-align: right;
-  font-family: Roboto;
+.form-control-sec1card::placeholder {
+  font-family: OpenSansRegular;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 19px;
   letter-spacing: 0em;
+  text-align: right;
 }
 
 .top-card-crisec1-gra {
@@ -222,12 +339,7 @@ code {
 .home-image-top {
   position: relative;
   height: 100%;
-  background: linear-gradient(
-    70.86deg,
-    #9caed7 12.9%,
-    #f1f6fd 49.1%,
-    #a0b2d9 87.13%
-  );
+  background: url("./images/homepage/homepage-hero1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -251,7 +363,7 @@ code {
   font-size: 14px;
   padding: 10px 30px;
   border-radius: 20px;
-  font-family: Inter;
+  font-family: OpenSansRegular;
 }
 
 .card-top-section1-homepage {
@@ -333,18 +445,18 @@ code {
 .icon-bootstrap-prev {
   background-image: url(./images/homepage/buttonright.png);
   margin: 0 !important;
-  pointer-events: none;
+  poopensansregular-events: none;
 
   opacity: 1 !important;
 }
 
 .icon-bootstrap-prev:focus {
-  pointer-events: none;
+  poopensansregular-events: none;
 
   opacity: 1 !important;
 }
 .icon-bootstrap-prev:hover {
-  pointer-events: none;
+  poopensansregular-events: none;
 
   opacity: 1 !important;
 }
@@ -359,7 +471,7 @@ code {
 }
 
 .hrs-section1-card {
-  font-family: Roboto;
+  font-family: OpenSansRegular;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -369,7 +481,7 @@ code {
   color: #6b7892;
 }
 .loss-section1-card {
-  font-family: Roboto;
+  font-family: OpenSansRegular;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -388,7 +500,7 @@ code {
 }
 
 .gentextsect-1 {
-  font-family: Roboto;
+  font-family: OpenSansRegular;
   font-size: 14px;
 }
 
@@ -432,6 +544,8 @@ code {
   margin: 10px 0 20px;
   font-size: 38px;
   font-weight: 600;
+  font-family: GuardianBold;
+
   color: #172253;
 }
 .section-3-headingrev span {
@@ -443,6 +557,8 @@ code {
   border-bottom: 1px solid rgb(199, 199, 199);
   line-height: 0.1em;
   margin: 10px 0 20px;
+  font-family: GuardianBold;
+
   font-size: 38px;
   font-weight: 600;
   color: #172253;
@@ -478,7 +594,7 @@ code {
   transition: 0.3s;
   min-height: 355px;
   text-align: center;
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -579,7 +695,7 @@ code {
 /* Form submit button */
 .search-wrapper button {
   border: 0;
-  cursor: pointer;
+  cursor: poOpenSansRegular;
   color: #fff;
   background: linear-gradient(90deg, #18225a 0.09%, #374bc9 100.04%);
   border-radius: 20px;
@@ -613,7 +729,7 @@ code {
   color: #fff;
   text-decoration: none;
   border: none;
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-weight: 300;
 }
 .top-nav-links-dropdown:hover {
@@ -652,8 +768,8 @@ code {
 }
 
 .logo-nav-main {
-  width: 180px;
-  height: 25px;
+  width: 250px;
+  height: 40px;
 }
 
 .nav-custom-classes {
@@ -671,7 +787,7 @@ code {
   padding-bottom: 10px;
   padding-left: 25px;
   padding-right: 25px;
-  cursor: pointer;
+  cursor: poOpenSansRegular;
   /* height: 40px;
   width: 110px; */
   font-size: 12px;
@@ -682,16 +798,18 @@ code {
 }
 
 .start-trading-button {
-  background: linear-gradient(90deg, #18225a 0.09%, #374bc9 100.04%);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 150px;
+  background: linear-gradient(90deg, #182357 0%, #394ed1 102.27%);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 180px;
   padding-left: 25px;
   font-size: 12px;
   color: #fff;
   border: 0;
   border-radius: 25px;
-  font-weight: 300;
+  font-family: OpenSansRegular;
+  font-style: normal;
+  font-weight: normal;
   padding-right: 25px;
 }
 
@@ -767,7 +885,7 @@ code {
 .card-section2-paraText2 {
   font-size: 16px;
   font-weight: 300;
-  font-family: Inter;
+  font-family: OpenSansRegular;
 }
 
 .card-section2-button {
@@ -858,12 +976,6 @@ code {
 
 /* ---------------------------------------------------------------- Start Section 9 ---------------------------------------------------------------- */
 .section9-homescreen {
-  background: linear-gradient(
-    55.04deg,
-    #a5b9e5 0%,
-    #edf1f8 52.55%,
-    #ccd9f1 98.91%
-  );
   border-radius: 10px;
 }
 
@@ -874,16 +986,10 @@ code {
 }
 
 .accordain-tag-1-c {
-  border: 2px solid #8daada;
+  border: 3px solid #2271ed;
 }
 
 .color-card-acc {
-  background: linear-gradient(
-    55.04deg,
-    #a5b9e5 0%,
-    #edf1f8 52.55%,
-    #ccd9f1 98.91%
-  );
 }
 .color-card-acc-white {
   background: white;
@@ -934,7 +1040,7 @@ code {
   font-size: 14px;
   font-weight: 300;
   color: #fff;
-  font-family: Inter;
+  font-family: OpenSansRegular;
 }
 /* ---------------------------------------------------------------- End Section 10 ---------------------------------------------------------------- */
 
@@ -947,7 +1053,7 @@ code {
 }
 
 .card-text-section4-header {
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -970,7 +1076,7 @@ code {
 }
 
 .text-blue-section7 {
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1017,14 +1123,14 @@ code {
 }
 
 .card-text-1-feedback {
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-size: 24px;
   font-style: italic;
   font-weight: 700;
   color: #2271ed;
 }
 .card-text-2-feedback {
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1033,7 +1139,7 @@ code {
   text-align: justified;
 }
 .card-text-3-feedback {
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -1042,7 +1148,7 @@ code {
   text-align: left;
 }
 .card-text-4-feedback {
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1091,7 +1197,7 @@ code {
 .footer-bottom-header-para {
   color: #aabade;
   font-weight: 300;
-  font-family: Inter;
+  font-family: OpenSansRegular;
   margin-top: 20px;
 }
 
@@ -1164,7 +1270,7 @@ code {
 .secondary-text-col5-footer {
   font-size: 16px;
   font-weight: 300;
-  font-family: Inter;
+  font-family: OpenSansRegular;
 }
 /*  ----------------------------------------------------------------------------------End of Footer ---------------------------------------------------------------------------------- */
 
@@ -1222,7 +1328,7 @@ code {
 }
 
 .accordianbutton-aboutsec3 {
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1297,15 +1403,17 @@ code {
 }
 
 .card-abtus-sec4 {
+  min-height: 530px;
   border: none;
   border-radius: 15px;
 }
 
 .text-para-abtus-sec4 {
-  font-family: Roboto;
+  font-family: OpenSansRegular;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  padding: 0px 30px;
   line-height: 19px;
   letter-spacing: 0.345em;
   text-align: center;
@@ -1313,12 +1421,13 @@ code {
 }
 
 .text-head-abtus-sec4 {
-  font-family: Roboto;
+  font-family: OpenSansRegular;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: 35px;
   letter-spacing: 0em;
+  word-wrap: break-word;
   text-align: center;
 }
 /*  ----------------------------------------------------------------------------------End of Section 4 of About Us ---------------------------------------------------------------------------------- */
@@ -1333,6 +1442,48 @@ code {
   background-size: cover;
   border-radius: 7px;
   background-position: center;
+}
+
+.form-control-contact {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #6b7892;
+  outline: 0;
+}
+.form-control-contact:focus {
+  box-shadow: none;
+  border-bottom: 1px solid #6b7892;
+}
+
+.form-control-contact::placeholder {
+  text-align: left;
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+}
+
+.label-styles-contact {
+  font-family: OpenSansRegular;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #b6b6b6;
+}
+.label-styles-contact-message {
+  font-family: OpenSansRegular;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #172253;
 }
 /*  ----------------------------------------------------------------------------------End of About Us ---------------------------------------------------------------------------------- */
 
@@ -1356,7 +1507,7 @@ code {
   border: none;
   color: black;
   background: white;
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -1389,7 +1540,7 @@ code {
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 .text-general-policy-title {
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1400,7 +1551,7 @@ code {
 }
 
 .text-general-policy-para {
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1420,7 +1571,7 @@ code {
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 .text-faq-page-sidebar {
-  font-family: Inter;
+  font-family: GuardianBold;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1435,17 +1586,19 @@ code {
 .card-header-faq-acc {
   background: #fff;
   padding: 10px;
+
   border: none;
   border-radius: 12px !important;
 }
 .btn-acc-faq {
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 39px;
   text-transform: capitalize;
   color: #000000;
+  font-family: GuardianBold;
   width: 100%;
   text-align: left;
 }
@@ -1457,7 +1610,7 @@ code {
 .card-body-faq-acc {
   background: #fafafa;
   padding: 20px;
-  font-family: Inter;
+  font-family: OpenSansRegular;
   border-radius: 12px !important;
   font-size: 16px;
   font-style: normal;
@@ -1510,7 +1663,7 @@ code {
 }
 
 .contact-us-blue-heading {
-  font-family: Inter;
+  font-family: OpenSansRegular;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -1519,7 +1672,7 @@ code {
   text-align: left;
 }
 .contact-us-blue-para {
-  font-family: Roboto;
+  font-family: OpenSansRegular;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -1554,6 +1707,7 @@ code {
 
   .text-head-abtus-sec4 {
     font-size: 20px;
+    word-wrap: break-word;
   }
 
   .img-backg-img2 {
@@ -1622,7 +1776,7 @@ code {
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    cursor: pointer;
+    cursor: poOpenSansRegular;
     /* height: 40px;
     width: 110px; */
     font-size: 14px;

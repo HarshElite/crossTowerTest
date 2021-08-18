@@ -1,6 +1,7 @@
 import React from "react";
 import { Tab, Row, Col, Nav, Card, Accordion } from "react-bootstrap";
 import inrdeposit from "../../data/faq";
+import { cryptdepositwith } from "../../data/faq";
 
 const Section2 = () => {
   return (
@@ -216,7 +217,46 @@ const Section2 = () => {
                       </div>
                     </div> */}
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">2</Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  <div id="accordionTwo">
+                    {cryptdepositwith.map((item) => (
+                      <div>
+                        <div
+                          class="card card-faq-acc mb-5 shadow-lg"
+                          key={item._id}
+                        >
+                          <div
+                            class="card-header  card-header-faq-acc"
+                            id={"headingTwo" + item._id}
+                          >
+                            <h5 class="mb-0">
+                              <button
+                                class="btn btn-acc-faq collapsed"
+                                data-toggle="collapse"
+                                data-target={"#" + item._id + "collapseTwo"}
+                                aria-expanded="true"
+                                aria-controls={item._id + "collapseTwo"}
+                              >
+                                {item.questions}
+                              </button>
+                            </h5>
+                          </div>
+
+                          <div
+                            id={item._id + "collapseTwo"}
+                            class="collapse"
+                            aria-labelledby={"headingTwo" + item._id}
+                            data-parent="#accordionTwo"
+                          >
+                            <div class="card-body card-body-faq-acc">
+                              {item.answers}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </Tab.Pane>
                 <Tab.Pane eventKey="third">3</Tab.Pane>
                 <Tab.Pane eventKey="fourth">4 </Tab.Pane>
                 <Tab.Pane eventKey="fifth">5</Tab.Pane>

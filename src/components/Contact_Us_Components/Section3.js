@@ -22,7 +22,11 @@ const Section3 = () => {
             <div class="card-body d-flex justify-content-center align-items-center">
               <div>
                 <div className=" mb-3 d-flex justify-content-center p-md-5 p-0">
-                  <img src={Imagecard1} alt="" className="image-section-3" />
+                  <img
+                    src={Imagecard1}
+                    alt=""
+                    className="image-section-3-contact"
+                  />
                 </div>
                 <p className="generic-medium-text primary-color-blue text-center">
                   Support center
@@ -36,7 +40,11 @@ const Section3 = () => {
             <div class="card-body">
               <div>
                 <div className=" mb-3 d-flex justify-content-center p-md-5 p-0">
-                  <img src={Imagecard2} alt="" className="image-section-3" />
+                  <img
+                    src={Imagecard2}
+                    alt=""
+                    className="image-section-3-contact"
+                  />
                 </div>
                 <p className="generic-medium-text primary-color-blue text-center mb-4">
                   frequently asked questions

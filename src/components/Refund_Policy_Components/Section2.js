@@ -4,7 +4,7 @@ const Section2 = () => {
   return (
     <div className="mt-5 px-md-5 px-3">
       <p className="text-general-policy-title">
-        1.CANCELLATION / REFUND POLICY Zanmai Labs
+        1.CANCELLATION / REFUND POLICY Cross Tower
       </p>
       <p className="text-general-policy-para">
         Under no circumstance, entertains the refund or cancellation of a

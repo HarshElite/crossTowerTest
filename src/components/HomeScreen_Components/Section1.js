@@ -19,21 +19,31 @@ const Section1 = () => {
           <div className="d-flex flex-column">
             <form>
               <div class="form-group py-3">
-                {/* <label for="exampleInputEmail1">Email address</label> */}
+                <label
+                  className="label-style-hometopcard"
+                  for="exampleInputnumber1"
+                >
+                  You pay
+                </label>
                 <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
+                  type="number"
+                  class="form-control-sec1card form-control"
+                  id="exampleInputnumber1"
+                  aria-describedby="numberHelp"
                   placeholder="Rupees"
                 />
               </div>
               <div class="form-group py-3">
-                {/* <label for="exampleInputPassword1">Password</label> */}
+                <label
+                  className="label-style-hometopcard"
+                  for="exampleInputYou Receive1"
+                >
+                  You Receive
+                </label>
                 <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
+                  type="number"
+                  class="form-control-sec1card form-control"
+                  id="exampleInputYou Receive1"
                   placeholder="ABC"
                 />
               </div>
@@ -44,21 +54,31 @@ const Section1 = () => {
           <div className="d-flex flex-column">
             <form>
               <div class="form-group py-3">
-                {/* <label for="exampleInputEmail1">Email address</label> */}
+                <label
+                  className="label-style-hometopcard"
+                  for="exampleInputnumber1"
+                >
+                  You pay
+                </label>
                 <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
+                  type="number"
+                  class="form-control-sec1card form-control"
+                  id="exampleInputnumber1"
+                  aria-describedby="numberHelp"
                   placeholder="Rupees"
                 />
               </div>
               <div class="form-group py-3">
-                {/* <label for="exampleInputPassword1">Password</label> */}
+                <label
+                  className="label-style-hometopcard"
+                  for="exampleInputYou Receive1"
+                >
+                  You Receive
+                </label>
                 <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
+                  type="number"
+                  class="form-control-sec1card form-control"
+                  id="exampleInputYou Receive1"
                   placeholder="ABC"
                 />
               </div>
@@ -69,21 +89,31 @@ const Section1 = () => {
           <div className="d-flex flex-column">
             <form>
               <div class="form-group py-3">
-                {/* <label for="exampleInputEmail1">Email address</label> */}
+                <label
+                  className="label-style-hometopcard"
+                  for="exampleInputnumber1"
+                >
+                  You pay
+                </label>
                 <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
+                  type="number"
+                  class="form-control-sec1card form-control"
+                  id="exampleInputnumber1"
+                  aria-describedby="numberHelp"
                   placeholder="Rupees"
                 />
               </div>
               <div class="form-group py-3">
-                {/* <label for="exampleInputPassword1">Password</label> */}
+                <label
+                  className="label-style-hometopcard"
+                  for="exampleInputYou Receive1"
+                >
+                  You Receive
+                </label>
                 <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
+                  type="number"
+                  class="form-control-sec1card form-control"
+                  id="exampleInputYou Receive1"
                   placeholder="ABC"
                 />
               </div>
@@ -97,7 +127,7 @@ const Section1 = () => {
     <section className="mb-5 rounded">
       <div className="home-image-top d-flex justify-content-center align-items-center px-md-3 px-0">
         <div className="row p-md-5 w-100">
-          <div className="col-md-4 col-sm-12 d-flex justify-content-center align-items-center p-3">
+          <div className="col-md-4 col-sm-12 d-flex justify-content-center align-items-center p-3 ">
             <div>
               {/* <p className="homescreen-section-1-para">
                 <span className="generic-title-para-blue">Invest in</span>
@@ -119,22 +149,40 @@ const Section1 = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 col-sm-12 d-flex justify-content-center align-items-center p-5">
+          {/* <div className="col-md-4 col-sm-12 d-flex justify-content-center align-items-center p-5">
             <img src={Header} alt="" className="img-header-banner" />
-          </div>
+          </div> */}
 
-          <div className="col-md-4 col-sm-12 d-flex justify-content-center align-items-center p-3">
+          <div className="col-md-8 col-sm-12 d-flex justify-content-end align-items-center p-3">
             <div class="card shadow-lg border-0 rounded card-section1-main">
               <div className="top-card-crisec1-gra p-3">
                 <div class="dropdown">
                   <button
-                    class="btn dropdown-toggle main-drop-vard-secrev"
+                    class="btn main-drop-vard-secrev"
                     type="button"
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    ABC
+                    <p className="mb-0 d-flex justify-content-between">
+                      <span> ABC Lorem *</span>
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-6 w-6 drop-chevron"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </span>
+                    </p>
                   </button>
                   <ul
                     class="dropdown-menu"
@@ -158,19 +206,19 @@ const Section1 = () => {
                   </ul>
                 </div>
                 <p className="d-flex justify-content-between align-items-center text-white">
-                  <span>Price</span>
-                  <span>24HR change</span>
+                  <span className="card-top-text-buyysell1">Price</span>
+                  <span className="card-top-text-buyysell1">24HR change</span>
                 </p>
                 <p className="d-flex justify-content-between align-items-center text-white">
-                  <span>₹35,580</span>
-                  <span>+1.25</span>
+                  <span className="card-top-text-buyysell1">₹35,580</span>
+                  <span className="card-top-text-buyysell1">+1.25</span>
                 </p>
               </div>
               <div class="card-body">
                 <ControlledTabs />
                 <div className="row d-flex justify-content-center align-items-center mt-2">
                   <button className="start-trading-button" type="submit">
-                    Start ABC
+                    Buy ABC
                   </button>
                 </div>
               </div>

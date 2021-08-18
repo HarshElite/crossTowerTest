@@ -7,7 +7,7 @@ import Section5 from "../components/About_Us_Components/Section5";
 const AboutUs = () => {
   return (
     <div className="container">
-      <Section1 />
+      {/* <Section1 /> */}
       <Section2 />
       {/* <Section3 /> */}
       <Section4 />
