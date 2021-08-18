@@ -14,10 +14,14 @@ const Section5 = () => {
             <span className="generic-title-para-red"> Platform</span>
           </p>
           <p className="generic-title-heading primary-color-blue-dark">
-            India’s most trusted & Secure Cryptocurrency
+            Trusted & Secure Cryptocurrency Trading
           </p>
           <p className="generic-para-text">
-            We offer tight bid-ask spreads, deep order books, best-in-class risk management, and high-quality trade execution. For this reason we have partnered with active global liquidity providers and the world’s biggest market makers.
+            We are aiming to create an exchange that will become a community for
+            crypto investors. A smart crypto investment ecosystem will help you
+            trade better and efficiently. Cryptocurrencies have advanced and we
+            have maintained the pace. Are you ready to invest with Crosstower to
+            be a part of this revolution? 
           </p>
         </div>
       </div>

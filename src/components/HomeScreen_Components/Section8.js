@@ -11,7 +11,9 @@ const NewsCard = () => {
         </p>
 
         <p className="text-center generic-para-text mt-5 mb-5">
-          We understand the importance of liquidity and have partnered with global liquidity providers and market makers.        </p>
+          We aim to keep you updated with the latest industry news from the best
+          economic news agencies.{" "}
+        </p>
         <div className="row d-flex justify-space-between">
           <div className="col-md-4 col-sm-12 mt-3">
             <div class="card border-0 shadow-lg rounded-3">

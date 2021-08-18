@@ -2,18 +2,19 @@ import React from "react";
 
 import Bitcoin4 from "../../images/homepage/1sec3.png";
 import Bitcoin5 from "../../images/homepage/2sec3.png";
+import Bitcoin7 from "../../images/homepage/3sec3.png";
 import Bitcoin6 from "../../images/homepage/4sec3.png";
 
 const Section3 = () => {
   return (
     <section className="py-5 section3-back">
       <p className="text-center section-3-heading1">
-        <span>Why CrossTower?</span>
+        <span>Why Crosstower?</span>
       </p>
 
       <p className="text-center generic-para-text mt-5 mb-5">
-        We understand the importance of liquidity and have partnered with global
-        liquidity providers and market makers.
+        We will help you stay one step ahead of your counterparts, with your
+        deep-rooted insights, easy trading options, and competitive prices.
       </p>
 
       <div className="row p-md-5 p-3">
@@ -45,7 +46,7 @@ const Section3 = () => {
           <div className="card card-section-3re shadow-lg mt-md-3 mt-3">
             <div className="card-body">
               <div className=" mb-3 d-flex justify-content-center align-items-center">
-                <img src={Bitcoin6} alt="" className="image-section-3" />
+                <img src={Bitcoin7} alt="" className="image-section-3" />
               </div>
 
               <p

@@ -17,7 +17,7 @@ const NavbarTop = () => {
             About Us
           </Link>
 
-          <div class="dropdown dropdown-nav-main marginright30">
+          {/* <div class="dropdown dropdown-nav-main marginright30">
             <button
               class="nav-link-button"
               href="#"
@@ -52,8 +52,8 @@ const NavbarTop = () => {
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="dropdown dropdown-nav-main marginright30">
+          </div> */}
+          {/* <div class="dropdown dropdown-nav-main marginright30">
             <button
               class="nav-link-button "
               href="#"
@@ -88,7 +88,7 @@ const NavbarTop = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="row">
             <div className="col-md-6 mt-2">

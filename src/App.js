@@ -11,11 +11,12 @@ import ContactUs from "./screens/ContactUs";
 import AboutUs from "./screens/AboutUs";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <Router>
+      <Navbar />
       <ScrollToTop />
-
       <Route path="/" component={HomeScreen} exact></Route>
       <Route path="/test" component={BoilerScreen}></Route>
       <Route path="/aboutus" component={AboutUs}></Route>

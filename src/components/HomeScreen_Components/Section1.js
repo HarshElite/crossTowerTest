@@ -105,12 +105,12 @@ const Section1 = () => {
               </p> */}
 
               <p className="generic-title-heading primary-color-blue-dark">
-                A new Platform for the world’s new currency.
+                A new beginning for your crypto portfolio.
               </p>
               <p className="generic-para-text primary-color-blue-dark">
-                CrossTower is the only digital currency platform built for
-                professional traders, financial institutions, and beginners who
-                demand security, flexibility, and simplicity.
+                Crosstower is the only digital currency platform that can be
+                used by professional traders, financial institutions, and
+                beginners looking for security, flexibility, and simplicity. 
               </p>
               <div>
                 <button className="homescreen-section-1-button">

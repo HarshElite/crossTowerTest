@@ -16,7 +16,7 @@ const Section10 = () => {
               </p>
               <div className="email-search-top">
                 <form className="search-wrapper cf d-flex align-items-center d-flex justify-content-evenly">
-                  <input type="text" placeholder="Mobile No" required />
+                  <input type="text" placeholder="Email Address" required />
                   <button className="getting-started-landing" type="submit">
                     Submit
                   </button>

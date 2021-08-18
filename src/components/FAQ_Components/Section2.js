@@ -13,7 +13,7 @@ const Section2 = () => {
                 <Nav className="flex-column">
                   <Nav.Item>
                     <Nav.Link
-                      className="py-3 text-capitalize text-faq-page-sidebar"
+                      className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="first"
                     >
                       INR Deposit and Withdrawal
@@ -22,7 +22,7 @@ const Section2 = () => {
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link
-                      className="py-3 text-capitalize text-faq-page-sidebar"
+                      className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="second"
                     >
                       section 2
@@ -31,7 +31,7 @@ const Section2 = () => {
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link
-                      className="py-3 text-capitalize text-faq-page-sidebar"
+                      className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="third"
                     >
                       section 3
@@ -40,7 +40,7 @@ const Section2 = () => {
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link
-                      className="py-3 text-capitalize text-faq-page-sidebar"
+                      className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="fourth"
                     >
                       section 4
@@ -49,7 +49,7 @@ const Section2 = () => {
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link
-                      className="py-3 text-capitalize text-faq-page-sidebar"
+                      className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="fifth"
                     >
                       section 5
@@ -58,7 +58,7 @@ const Section2 = () => {
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link
-                      className="py-3 text-capitalize text-faq-page-sidebar"
+                      className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="sixth"
                     >
                       section 6
@@ -67,7 +67,7 @@ const Section2 = () => {
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link
-                      className="py-3 text-capitalize text-faq-page-sidebar"
+                      className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="seventh"
                     >
                       section 7
@@ -76,7 +76,7 @@ const Section2 = () => {
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link
-                      className="py-3 text-capitalize text-faq-page-sidebar"
+                      className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="eigth"
                     >
                       section 8
@@ -85,7 +85,7 @@ const Section2 = () => {
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link
-                      className="py-3 text-capitalize text-faq-page-sidebar"
+                      className="py-1 text-capitalize text-faq-page-sidebar"
                       eventKey="ninth"
                     >
                       section 9
@@ -216,7 +216,7 @@ const Section2 = () => {
                       </div>
                     </div> */}
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">2 </Tab.Pane>
+                <Tab.Pane eventKey="second">2</Tab.Pane>
                 <Tab.Pane eventKey="third">3</Tab.Pane>
                 <Tab.Pane eventKey="fourth">4 </Tab.Pane>
                 <Tab.Pane eventKey="fifth">5</Tab.Pane>

@@ -90,6 +90,15 @@ const Footer = () => {
                     Trading & Withdrawal Fees
                   </Link>
                 </div>
+                <div class="p-2 secondary-text-col5-footer">
+                  <Link
+                    className="text-white"
+                    to="/refundpolicy"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Refund Policy
+                  </Link>
+                </div>
                 <div class="p-2 secondary-text-col5-footer">Contact Us</div>
               </div>
             </div>
@@ -190,29 +199,22 @@ const Footer = () => {
           </p>
           <p className="footer-bottom-header-text pt-5">About</p>
           <p className="footer-bottom-header-para">
-            CrossTower Bermuda Ltd. (DBA “CrossTower Global”) is a digital asset
-            trading platform registered as a Digital Asset Business, holding a
-            Class F license granted by the Bermuda Monetary Authority. While
-            CrossTower Global supports customers from various countries, it does
-            not support U.S. customers (individuals or institutions). CrossTower
-            Inc. (NMLS License #1979754) is a digital asset trading platform
-            registered as a U.S. Money Service Business with FinCEN, supporting
-            U.S. customers in certain states and may also support certain
-            non-U.S. customers. If you have questions about whether CrossTower
-            Global or CrossTower Inc. is available in your jurisdiction please
-            contact: support@crosstower.com
+            CrossTower is a US based digital asset exchange company founded in
+            by financial industry veterans who are on a mission to bring digital
+            asset trading and investing to institutional and professional
+            traders. The founding team at CrossTower has an average of 25 years
+            of experience in building equity, options, and digital asset
+            exchanges along with strong regulatory and legal expertise in
+            developing structured products and blockchain technology. We are
+            setting up our operations in India to launch our digital exchange
+            and other fintech products for Indian & US customers.
           </p>
           <p className="footer-bottom-header-text">Disclaimer</p>
           <p className="footer-bottom-header-para">
-            CrossTower Technology Private Limited is a member of NSE & BSE with
-            SEBI Registration no: INZ000208032, Depository Participant of CDSL
-            Depository with SEBI Registration no: IN-DP-417-2019 and Mutual Fund
-            distributor with AMFI Registration No: ARN-111686. Registered office
-            and Correspondence office - No.11, 2nd floor, 80 FT Road, 4th Block,
-            S.T Bed, Koramangala, Bengaluru – 560034. For any grievances related
-            to Stock Broking/DP, please write to grievances@groww.in , please
-            ensure you carefully read the Risk Disclosure Document as prescribed
-            by SEBI.
+            Crypto-asset or cryptocurrency investments are subject to market
+            risks such as volatility and have no guaranteed returns. Please do
+            your own research before investing and seek independent
+            legal/financial advice if you are unsure about the investments.
           </p>
           <p className="mb-0 footer-bottom-copyright pt-5">
             Copyright © 2021 CrossTower. All rights reserved.

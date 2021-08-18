@@ -11,7 +11,8 @@ const Section7 = () => {
         </p>
 
         <p className="text-center generic-para-text mt-5 mb-5">
-          Here are a few reasons why you should choose CrossTower
+          Crosstower allows you to trade, buy, and sell over 100
+          cryptocurrencies in less than 10 minutes.
         </p>
         <div className="row p-md-5 p-3">
           <div className="col-md-4 col-sm-12">
@@ -22,14 +23,14 @@ const Section7 = () => {
                 className="image-container-section7-image"
               />
             </div>
-            <div className="card shadow border-none my-md-5 my-3">
+            <div className="card shadow border-none my-md-5 my-3 card-section-7">
               <div className="card-body">
                 <p className="generic-medium-text primary-color-blue  mt-4">
-                  Register In crosstower{" "}
+                  App Download 
                 </p>
-                <p className="text-blue-section7">
-                  Download our mobile app on the Play store for Android users
-                  and on App Store for iOS users
+                <p className="text-blue-section7 mb-0">
+                  Go to the Play Store or App Store to download the Crosstower
+                  app for your Android or Apple devices.
                 </p>
               </div>
             </div>
@@ -42,14 +43,14 @@ const Section7 = () => {
                 className="image-container-section7-image"
               />
             </div>
-            <div className="card shadow border-none my-md-5 my-3">
+            <div className="card shadow border-none my-md-5 my-3 card-section-7">
               <div className="card-body">
                 <p className="generic-medium-text primary-color-blue mt-4">
-                  Complete KYC
+                  Complete Your KYC
                 </p>
-                <p className="text-blue-section7 ">
-                  Complete your KYC in under 5 minutes with just your PAN,
-                  Aadhar & a Selfie
+                <p className="text-blue-section7 mb-0 ">
+                  Under 5 minutes finish your KYC with just your Selfie, Aadhar,
+                  and PAN after download. 
                 </p>
               </div>
             </div>
@@ -62,14 +63,14 @@ const Section7 = () => {
                 className="image-container-section7-image"
               />
             </div>
-            <div className="card shadow border-none my-md-5 my-3">
+            <div className="card shadow border-none my-md-5 my-3 card-section-7">
               <div className="card-body">
                 <p className="generic-medium-text primary-color-blue  mt-4">
-                  Start Buy/Sell
+                  Get Set Trade
                 </p>
-                <p className="text-blue-section7 ">
-                  One-click is what it takes to start trading in 100+
-                  cryptocurrencies.
+                <p className="text-blue-section7 mb-0 ">
+                  You are just one click away from 100s of cryptocurrencies, so
+                  start trading! 
                 </p>
               </div>
             </div>

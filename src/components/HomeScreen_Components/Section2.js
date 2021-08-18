@@ -8,12 +8,13 @@ const Section2 = () => {
   return (
     <section className="py-5">
       <p className="text-center section-3-heading1">
-        <span>Current Rate In the Market</span>
+        <span>Current Market Rate </span>
       </p>
 
       <p className="text-center generic-para-text mt-5 mb-5">
-        We understand the importance of liquidity and have partnered with global
-        liquidity providers and market makers.
+        Liquid cash is the future of currencies and finances and we understand
+        your modern requirements. We leverage our global liquidity partners and
+        market makers in making your trading easy and convenient.
       </p>
       <div className="card shadow-lg table-responsive-sm main-table-card">
         <div className="card-body">
@@ -21,7 +22,7 @@ const Section2 = () => {
             <thead>
               <tr>
                 <th scope="col-1" className="pb-4">
-                  #
+                  S.No
                 </th>
                 <th scope="col-3" className="pb-4">
                   Name

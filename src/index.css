@@ -104,6 +104,11 @@ code {
   text-align: left;
 }
 
+.drop-chevron {
+  width: 18px;
+  margin-left: 5px;
+}
+
 /* End of Reusable Styles */
 
 .container-fluid {
@@ -146,6 +151,18 @@ code {
 }
 .marginright50 {
   margin-right: 50px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 /* --------------------------------------------------------------------------  End of utilities --------------------------------------------------------------------------*/
 
@@ -447,6 +464,8 @@ code {
 }
 
 .image-section-3 {
+  width: 159px;
+  height: 168px;
 }
 
 .para-text-sec3re {
@@ -457,7 +476,7 @@ code {
   background: white;
   color: #000;
   transition: 0.3s;
-  min-height: 330px;
+  min-height: 355px;
   text-align: center;
   font-family: Inter;
   font-size: 24px;
@@ -613,10 +632,10 @@ code {
 }
 
 .logo-playstore-nav-top {
-  height: 50px;
+  width: 75px;
 }
 .logo-appstore-nav-top {
-  height: 50px;
+  width: 75px;
 }
 
 .nav-link-button {
@@ -944,6 +963,11 @@ code {
 }
 /* ---------------------------------------------------------------- End Section 5 ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- Start Section 7 ---------------------------------------------------------------- */
+
+.card-section-7 {
+  min-height: 240px;
+  border: none;
+}
 
 .text-blue-section7 {
   font-family: Inter;
@@ -1410,7 +1434,7 @@ code {
 }
 .card-header-faq-acc {
   background: #fff;
-  padding: 20px;
+  padding: 10px;
   border: none;
   border-radius: 12px !important;
 }
@@ -1432,7 +1456,7 @@ code {
 
 .card-body-faq-acc {
   background: #fafafa;
-  padding: 50px;
+  padding: 20px;
   font-family: Inter;
   border-radius: 12px !important;
   font-size: 16px;
@@ -1612,6 +1636,7 @@ code {
     text-align: center;
     padding: 20px;
     font-size: 20px;
+    width: 100% !important;
   }
 
   .button-top-nav {
