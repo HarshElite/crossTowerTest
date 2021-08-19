@@ -38,7 +38,7 @@ export const ZebpayAction = () => async (dispatch) => {
   try {
     dispatch({ type: ZEBPAY_BTC_REQUEST });
     const { data } = await axios.get(
-      "http://cors-anywhere.herokuapp.com/https://www.zebapi.com/pro/v1/market/"
+      "http://cors-anywhere.herokuapp.com/https://www.zebapi.com/pro/v1/market"
     );
     dispatch({ type: ZEBPAY_BTC_SUCCESS, payload: data });
   } catch (error) {
