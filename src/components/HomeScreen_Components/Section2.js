@@ -1,10 +1,72 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  WazirxBtcAction,
+  ZebpayAction,
+  CrossTowerBtcAction,
+  CoindcxBtcAction,
+  usdToInrAction,
+} from "../../action/homepageActions";
 import T1logo from "../../images/homepage/table1.png";
 import T2logo from "../../images/homepage/table2.png";
 import T3logo from "../../images/homepage/table3.png";
 import T4logo from "../../images/homepage/table4.png";
 
 const Section2 = () => {
+  const dispatch = useDispatch();
+
+  const wazirxBtcReducer = useSelector((state) => state.wazirxBtcReducer);
+  const {
+    loading: loadingWazirx,
+    error: errorWazirx,
+    wazirxBtc,
+  } = wazirxBtcReducer;
+
+  const zebPayBtcReducer = useSelector((state) => state.zebPayBtcReducer);
+  const {
+    loading: loadingZebpay,
+    error: errorZebpay,
+    zebPayBtc,
+  } = zebPayBtcReducer;
+
+  const coinDcxBtcReducer = useSelector((state) => state.coinDcxBtcReducer);
+  const {
+    loading: loadingcoinDcx,
+    error: errorcoinDcx,
+    coinDcxBtc,
+  } = coinDcxBtcReducer;
+
+  const usdToInrBtcReducers = useSelector((state) => state.usdToInrBtcReducers);
+  const {
+    loading: loadingusdToInrBtc,
+    error: errorusdToInrBtc,
+    usdToInr,
+  } = usdToInrBtcReducers;
+
+  const crossTowerBtcReducer = useSelector(
+    (state) => state.crossTowerBtcReducer
+  );
+  const {
+    loading: loadingcrossTowerBtc,
+    error: errorcrossTowerBtc,
+    crossTowerBtc,
+  } = crossTowerBtcReducer;
+
+  // console.log(wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last);
+  // console.log(zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]);
+  console.log(usdToInr, "1");
+  console.log(
+    crossTowerBtc && crossTowerBtc.BTCUSD && crossTowerBtc.BTCUSD.last,
+    "2"
+  );
+
+  useEffect(() => {
+    dispatch(WazirxBtcAction());
+    dispatch(ZebpayAction());
+    dispatch(CrossTowerBtcAction());
+    dispatch(CoindcxBtcAction());
+    dispatch(usdToInrAction());
+  }, [dispatch]);
   return (
     <section className="py-5">
       <p className="text-center section-3-heading1">
@@ -47,12 +109,36 @@ const Section2 = () => {
                   1
                 </th>
                 <td className="py-4">Bitcoin -BTC</td>
-                <td className="py-4">INR 100,433,120,19</td>
-                <td className="py-4">INR 100,433,120,19</td>
-                <td className="py-4">INR 100,433,120,19</td>
-                <td className="py-4">INR 100,433,120,19</td>
+                <td className="py-4">
+                  INR{" "}
+                  {Math.round(
+                    crossTowerBtc &&
+                      crossTowerBtc.BTCUSD &&
+                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                  ) / 100}
+                </td>
+                <td className="py-4">
+                  {/* Wazir X Bitcoin Price */}
+                  {loadingWazirx && "loading"}
+                  INR&nbsp;
+                  {wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last}
+                </td>
+                <td className="py-4">
+                  {loadingZebpay && "loading"}
+                  INR&nbsp;
+                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]}
+                </td>
+                <td className="py-4">
+                  {loadingcoinDcx && "loading"}
+                  INR&nbsp;
+                  {Math.round(
+                    coinDcxBtc &&
+                      coinDcxBtc[0] &&
+                      coinDcxBtc[0]["last_price"] * 100
+                  ) / 100}
+                </td>
               </tr>
-              <tr className=" ">
+              {/* <tr className=" ">
                 <th scope="row" className="py-4">
                   2
                 </th>
@@ -61,7 +147,7 @@ const Section2 = () => {
                 <td className="py-4">INR 100,433,120,19</td>
                 <td className="py-4">INR 100,433,120,19</td>
                 <td className="py-4">INR 100,433,120,19</td>
-              </tr>
+              </tr> */}
             </tbody>
           </table>
         </div>
