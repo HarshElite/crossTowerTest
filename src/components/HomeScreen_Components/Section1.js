@@ -15,7 +15,6 @@ import {
 
 const Section1 = () => {
   const dispatch = useDispatch();
-
   const usdToInrBtcReducers = useSelector((state) => state.usdToInrBtcReducers);
   const {
     loading: loadingusdToInrBtc,
@@ -31,8 +30,21 @@ const Section1 = () => {
     error: errorcrossTowerBtc,
     crossTowerBtc,
   } = crossTowerBtcReducer;
-  console.log(usdToInr, "1");
-  console.log(crossTowerBtc);
+
+  const {
+    ZECETH,
+    DOGEUSDT20,
+    DOGEBTC,
+    UNIBTC,
+    BTCUSD,
+    COMPBTC,
+    BTCUSDC,
+    BTCUSDC_TR,
+    DOGEUSD,
+    NMRUSD,
+    DAIBTC,
+    MKRUSDC,
+  } = crossTowerBtc && crossTowerBtc;
 
   useEffect(() => {
     dispatch(WazirxBtcAction());
@@ -289,15 +301,63 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 ">
                       <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
                         <img src={B1} alt="" className="main-btc-top-card" />
-                        BTC
+                        BTCUSD
                       </div>
                       <p className="mb-0 hrs-section1-card hrs-section1-card">
                         Last 24hrs
                       </p>
                     </div>
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">₹33,230.30</div>
-                      <p className="mb-0 loss-section1-card">-0.42%</p>
+                      <div className="mb-0 gentextsect-1">
+                        ₹
+                        {crossTowerBtc && crossTowerBtc.BTCUSD && BTCUSD
+                          ? (BTCUSD.last * usdToInr.inr).toFixed(6)
+                          : "loading"}
+                      </div>
+                      <p className="mb-0 loss-section1-card">
+                        {crossTowerBtc && crossTowerBtc.BTCUSD && BTCUSD
+                          ? ((BTCUSD.open - BTCUSD.last) / BTCUSD.open).toFixed(
+                              4
+                            )
+                          : "loading"}
+                        %
+                      </p>
+                    </div>
+                    <div className="div-height-control">
+                      <LineChart />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3 col-12 mt-5">
+                <div className="card card-carouse-sect1 shadow">
+                  <div className="card-body">
+                    <div className="d-flex justify-content-between align-items-center w-100 ">
+                      <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
+                        <img src={B1} alt="" className="main-btc-top-card" />
+                        DOGEBTC
+                      </div>
+                      <p className="mb-0 hrs-section1-card hrs-section1-card">
+                        Last 24hrs
+                      </p>
+                    </div>
+                    <div className="d-flex justify-content-between align-items-center w-100 mt-3">
+                      <div className="mb-0 gentextsect-1">
+                        ₹
+                        {crossTowerBtc && crossTowerBtc.DOGEBTC && DOGEBTC
+                          ? (DOGEBTC.last * usdToInr.inr).toFixed(6)
+                          : "loading"}
+                      </div>
+                      <p className="mb-0 loss-section1-card">
+                        {" "}
+                        {crossTowerBtc && crossTowerBtc.DOGEBTC && DOGEBTC
+                          ? (
+                              (DOGEBTC.open - DOGEBTC.last) /
+                              DOGEBTC.open
+                            ).toFixed(4)
+                          : "loading"}
+                        %
+                      </p>
                     </div>
                     <div className="div-height-control">
                       <LineChart />
@@ -318,8 +378,21 @@ const Section1 = () => {
                       </p>
                     </div>
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">₹33,230.30</div>
-                      <p className="mb-0 loss-section1-card">-0.42%</p>
+                      <div className="mb-0 gentextsect-1">
+                        ₹
+                        {crossTowerBtc && crossTowerBtc.ZECETH && ZECETH
+                          ? (ZECETH.last * usdToInr.inr).toFixed(6)
+                          : "loading"}
+                      </div>
+                      <p className="mb-0 loss-section1-card">
+                        {" "}
+                        {crossTowerBtc && crossTowerBtc.ZECETH && ZECETH
+                          ? ((ZECETH.open - ZECETH.last) / ZECETH.open).toFixed(
+                              4
+                            )
+                          : "loading"}
+                        %
+                      </p>
                     </div>
                     <div className="div-height-control">
                       <LineChart />
@@ -333,129 +406,29 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 ">
                       <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
                         <img src={B1} alt="" className="main-btc-top-card" />
-                        BTC
+                        DOGEUSDT20
                       </div>
                       <p className="mb-0 hrs-section1-card hrs-section1-card">
                         Last 24hrs
                       </p>
                     </div>
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">₹33,230.30</div>
-                      <p className="mb-0 loss-section1-card">-0.42%</p>
-                    </div>
-                    <div className="div-height-control">
-                      <LineChart />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-12 mt-5">
-                <div className="card card-carouse-sect1 shadow">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center w-100 ">
-                      <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
-                        <img src={B1} alt="" className="main-btc-top-card" />
-                        BTC
+                      <div className="mb-0 gentextsect-1">
+                        ₹
+                        {crossTowerBtc && crossTowerBtc.DOGEUSDT20 && DOGEUSDT20
+                          ? (DOGEUSDT20.last * usdToInr.inr).toFixed(6)
+                          : "loading"}
                       </div>
-                      <p className="mb-0 hrs-section1-card hrs-section1-card">
-                        Last 24hrs
+                      <p className="mb-0 loss-section1-card">
+                        {" "}
+                        {crossTowerBtc && crossTowerBtc.DOGEUSDT20 && DOGEUSDT20
+                          ? (
+                              (DOGEUSDT20.open - DOGEUSDT20.last) /
+                              DOGEUSDT20.open
+                            ).toFixed(4)
+                          : "loading"}
+                        %
                       </p>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">₹33,230.30</div>
-                      <p className="mb-0 loss-section1-card">-0.42%</p>
-                    </div>
-                    <div className="div-height-control">
-                      <LineChart />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div className="row">
-              <div className="col-md-3 col-12 mt-5">
-                <div className="card card-carouse-sect1 shadow">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center w-100 ">
-                      <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
-                        <img src={B1} alt="" className="main-btc-top-card" />
-                        BTC
-                      </div>
-                      <p className="mb-0 hrs-section1-card hrs-section1-card">
-                        Last 24hrs
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">₹33,230.30</div>
-                      <p className="mb-0 loss-section1-card">-0.42%</p>
-                    </div>
-                    <div className="div-height-control">
-                      <LineChart />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-12 mt-5">
-                <div className="card card-carouse-sect1 shadow">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center w-100 ">
-                      <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
-                        <img src={B1} alt="" className="main-btc-top-card" />
-                        BTC
-                      </div>
-                      <p className="mb-0 hrs-section1-card hrs-section1-card">
-                        Last 24hrs
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">₹33,230.30</div>
-                      <p className="mb-0 loss-section1-card">-0.42%</p>
-                    </div>
-                    <div className="div-height-control">
-                      <LineChart />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-12 mt-5">
-                <div className="card card-carouse-sect1 shadow">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center w-100 ">
-                      <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
-                        <img src={B1} alt="" className="main-btc-top-card" />
-                        BTC
-                      </div>
-                      <p className="mb-0 hrs-section1-card hrs-section1-card">
-                        Last 24hrs
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">₹33,230.30</div>
-                      <p className="mb-0 loss-section1-card">-0.42%</p>
-                    </div>
-                    <div className="div-height-control">
-                      <LineChart />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-12 mt-5">
-                <div className="card card-carouse-sect1 shadow">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center w-100 ">
-                      <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
-                        <img src={B1} alt="" className="main-btc-top-card" />
-                        BTC
-                      </div>
-                      <p className="mb-0 hrs-section1-card hrs-section1-card">
-                        Last 24hrs
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">₹33,230.30</div>
-                      <p className="mb-0 loss-section1-card">-0.42%</p>
                     </div>
                     <div className="div-height-control">
                       <LineChart />
@@ -473,15 +446,28 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 ">
                       <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
                         <img src={B1} alt="" className="main-btc-top-card" />
-                        BTC
+                        UNIBTC
                       </div>
                       <p className="mb-0 hrs-section1-card hrs-section1-card">
                         Last 24hrs
                       </p>
                     </div>
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">₹33,230.30</div>
-                      <p className="mb-0 loss-section1-card">-0.42%</p>
+                      <div className="mb-0 gentextsect-1">
+                        ₹
+                        {crossTowerBtc && crossTowerBtc.UNIBTC && UNIBTC
+                          ? (UNIBTC.last * usdToInr.inr).toFixed(6)
+                          : "loading"}
+                      </div>
+                      <p className="mb-0 loss-section1-card">
+                        {" "}
+                        {crossTowerBtc && crossTowerBtc.UNIBTC && UNIBTC
+                          ? ((UNIBTC.open - UNIBTC.last) / UNIBTC.open).toFixed(
+                              4
+                            )
+                          : "loading"}
+                        %
+                      </p>
                     </div>
                     <div className="div-height-control">
                       <LineChart />
@@ -495,15 +481,29 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 ">
                       <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
                         <img src={B1} alt="" className="main-btc-top-card" />
-                        BTC
+                        BTCUSDC
                       </div>
                       <p className="mb-0 hrs-section1-card hrs-section1-card">
                         Last 24hrs
                       </p>
                     </div>
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">₹33,230.30</div>
-                      <p className="mb-0 loss-section1-card">-0.42%</p>
+                      <div className="mb-0 gentextsect-1">
+                        ₹
+                        {crossTowerBtc && crossTowerBtc.BTCUSDC && BTCUSDC
+                          ? (BTCUSDC.last * usdToInr.inr).toFixed(6)
+                          : "loading"}
+                      </div>
+                      <p className="mb-0 loss-section1-card">
+                        {" "}
+                        {crossTowerBtc && crossTowerBtc.BTCUSDC && BTCUSDC
+                          ? (
+                              (BTCUSDC.open - BTCUSDC.last) /
+                              BTCUSDC.open
+                            ).toFixed(4)
+                          : "loading"}
+                        %
+                      </p>
                     </div>
                     <div className="div-height-control">
                       <LineChart />
@@ -517,15 +517,29 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 ">
                       <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
                         <img src={B1} alt="" className="main-btc-top-card" />
-                        BTC
+                        COMPBTC
                       </div>
                       <p className="mb-0 hrs-section1-card hrs-section1-card">
                         Last 24hrs
                       </p>
                     </div>
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">₹33,230.30</div>
-                      <p className="mb-0 loss-section1-card">-0.42%</p>
+                      <div className="mb-0 gentextsect-1">
+                        ₹
+                        {crossTowerBtc && crossTowerBtc.COMPBTC && COMPBTC
+                          ? (COMPBTC.last * usdToInr.inr).toFixed(6)
+                          : "loading"}
+                      </div>
+                      <p className="mb-0 loss-section1-card">
+                        {" "}
+                        {crossTowerBtc && crossTowerBtc.COMPBTC && COMPBTC
+                          ? (
+                              (COMPBTC.open - COMPBTC.last) /
+                              COMPBTC.open
+                            ).toFixed(4)
+                          : "loading"}
+                        %
+                      </p>
                     </div>
                     <div className="div-height-control">
                       <LineChart />
@@ -539,15 +553,29 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 ">
                       <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
                         <img src={B1} alt="" className="main-btc-top-card" />
-                        BTC
+                        BTCUSDC_TR
                       </div>
                       <p className="mb-0 hrs-section1-card hrs-section1-card">
                         Last 24hrs
                       </p>
                     </div>
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">₹33,230.30</div>
-                      <p className="mb-0 loss-section1-card">-0.42%</p>
+                      <div className="mb-0 gentextsect-1">
+                        ₹
+                        {crossTowerBtc && crossTowerBtc.BTCUSDC_TR && BTCUSDC_TR
+                          ? (BTCUSDC_TR.last * usdToInr.inr).toFixed(6)
+                          : "loading"}
+                      </div>
+                      <p className="mb-0 loss-section1-card">
+                        {" "}
+                        {crossTowerBtc && crossTowerBtc.BTCUSDC_TR && BTCUSDC_TR
+                          ? (
+                              (BTCUSDC_TR.open - BTCUSDC_TR.last) /
+                              BTCUSDC_TR.open
+                            ).toFixed(4)
+                          : "loading"}
+                        %
+                      </p>
                     </div>
                     <div className="div-height-control">
                       <LineChart />

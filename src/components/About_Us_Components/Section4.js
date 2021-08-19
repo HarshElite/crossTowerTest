@@ -12,9 +12,11 @@ const Section4 = () => {
         <p className="text-center section-3-heading1">
           <span>The Team</span>
         </p>
-        <p className="text-center generic-para-text mt-5 mb-5">
+        <p className="text-center generic-para-text mt-5 mb-5 maxwidthfortext">
           We understand the importance of liquidity and have partnered with
-          global liquidity providers and market makers.
+          global liquidity providers and market makers.- change to- We make it
+          our personal mission to give you an advanced and safe ecosystem for
+          trading.
         </p>
 
         <div className="row">

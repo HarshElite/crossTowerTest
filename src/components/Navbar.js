@@ -173,14 +173,14 @@ const Navbar = () => {
           </li> */}
 
             <Link
-              to="/aboutus"
+              to="/comingsoon"
               href="#"
               className="marginright30 top-nav-link-nav  dropdown-nav-main"
             >
               Exchange
             </Link>
             <Link
-              to="/aboutus"
+              to="/comingsoon"
               href="#"
               className="marginright30 top-nav-link-nav  dropdown-nav-main"
             >
@@ -201,7 +201,7 @@ const Navbar = () => {
               </svg>
             </Link>
             <Link
-              to="/aboutus"
+              to="/comingsoon"
               href="#"
               className="marginright30 top-nav-link-nav  dropdown-nav-main"
             >

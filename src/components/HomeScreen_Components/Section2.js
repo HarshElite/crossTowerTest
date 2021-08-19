@@ -54,8 +54,6 @@ const Section2 = () => {
 
   // console.log(wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last);
   // console.log(zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]);
-  console.log(usdToInr, "1");
-  console.log(crossTowerBtc);
 
   useEffect(() => {
     dispatch(WazirxBtcAction());
@@ -70,7 +68,7 @@ const Section2 = () => {
         <span>Current Market Rate </span>
       </p>
 
-      <p className="text-center generic-para-text mt-5 mb-5">
+      <p className="text-center generic-para-text mt-5 mb-5 maxwidthfortext">
         Liquid cash is the future of currencies and finances and we understand
         your modern requirements. We leverage our global liquidity partners and
         market makers in making your trading easy and convenient.

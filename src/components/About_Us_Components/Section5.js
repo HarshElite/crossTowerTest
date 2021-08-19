@@ -7,10 +7,12 @@ const Section5 = () => {
         <div className="image-back-about-section5 p-md-5 ">
           <div className="col-md-6 col-12 d-flex justify-content-center align-items-center px-md-5 px-0 my-5">
             <div>
-              <p className="generic-title-heading  mt-3">Want to join Us?</p>
+              <p className="generic-title-heading  mt-3">Join Our Team!</p>
               <p className="generic-para-text  mt-3">
                 We understand the importance of liquidity and have partnered
-                with global liquidity providers and market makers.
+                with global liquidity providers and market makers.- change to-
+                Our team is our strength and we welcome you to be a part of this
+                family.
               </p>
               <button className="homescreen-section-1-button mt-3">
                 Join Us

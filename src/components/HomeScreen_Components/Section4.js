@@ -9,7 +9,7 @@ const Section4 = () => {
             <p className="generic-title-heading text-white">
               Trusted by Verified Users
             </p>
-            <p className="generic-para-text text-white">
+            <p className="generic-para-text text-white ">
               We offer tight bid-ask spreads, deep order books, best-in-class
               risk management, and high-quality trade execution. For this reason
               we have partnered with active global liquidity providers and the

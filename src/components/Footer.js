@@ -41,34 +41,104 @@ const Footer = () => {
               <div class="d-flex flex-column">
                 <div class="p-2 header-text-col5-footer">About</div>
                 <div class="p-2 secondary-text-col5-footer">
-                  Leadership Team
+                  <Link
+                    className="text-white"
+                    to="/aboutus"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Leadership Team
+                  </Link>
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
-                  Referral Program
+                  <Link
+                    className="text-white"
+                    to="/comingsoon"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Referral Program
+                  </Link>
                 </div>
-                <div class="p-2 secondary-text-col5-footer"> Blog</div>
-                <div class="p-2 secondary-text-col5-footer"> Careers</div>
-                <div class="p-2 secondary-text-col5-footer"> News & Media</div>
+                <div class="p-2 secondary-text-col5-footer">
+                  <Link
+                    className="text-white"
+                    to="/comingsoon"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Blog
+                  </Link>
+                </div>
+                <div class="p-2 secondary-text-col5-footer">
+                  <Link
+                    className="text-white"
+                    to="/comingsoon"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Careers
+                  </Link>
+                </div>
+                <div class="p-2 secondary-text-col5-footer">
+                  <Link
+                    className="text-white"
+                    to="/comingsoon"
+                    style={{ textDecoration: "none" }}
+                  >
+                    News & Media
+                  </Link>
+                </div>
               </div>
             </div>
             <div class="col-footer span_1_of_5-footer">
               <div class="d-flex flex-column">
                 <div class="p-2 header-text-col5-footer">Products</div>
                 <div class="p-2 secondary-text-col5-footer">
-                  Crypto Exchange
+                  <Link
+                    className="text-white"
+                    to="/comingsoon"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Crypto Exchange
+                  </Link>
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
-                  Buy and Sell Bitcoin
+                  <Link
+                    className="text-white"
+                    to="/comingsoon"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Buy and Sell Bitcoin
+                  </Link>
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
-                  Crypto Wallet App
+                  <Link
+                    className="text-white"
+                    to="/comingsoon"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Crypto Wallet App
+                  </Link>
                 </div>
               </div>
             </div>
             <div class="col-footer span_1_of_5-footer">
               <div class="d-flex flex-column">
-                <div class="p-2 header-text-col5-footer"> Support</div>
-                <div class="p-2 secondary-text-col5-footer">Help & Support</div>
+                <div class="p-2 header-text-col5-footer">
+                  <Link
+                    className="text-white"
+                    to="/support"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Support
+                  </Link>
+                </div>
+                <div class="p-2 secondary-text-col5-footer">
+                  <Link
+                    className="text-white"
+                    to="/faq"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Help & Support
+                  </Link>
+                </div>
                 <div class="p-2 secondary-text-col5-footer">
                   <Link
                     className="text-white"
@@ -79,7 +149,13 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
-                  Partnership and Enquires
+                  <Link
+                    to="/contactus"
+                    className="text-white"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Partnership and Enquires
+                  </Link>
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
                   <Link
@@ -113,14 +189,33 @@ const Footer = () => {
             <div class="col-footer span_1_of_5-footer">
               <div class="d-flex flex-column">
                 <div class="p-2 header-text-col5-footer">Resources</div>
+
                 <div class="p-2 secondary-text-col5-footer">
-                  Market Insights
+                  <Link
+                    to="/comingsoon"
+                    className="text-white"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Market Insights
+                  </Link>
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
-                  Research Reports
+                  <Link
+                    to="/comingsoon"
+                    className="text-white"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Research Reports
+                  </Link>
                 </div>
                 <div class="p-2 secondary-text-col5-footer">
-                  Learning and Education
+                  <Link
+                    to="/comingsoon"
+                    className="text-white"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Learning and Education
+                  </Link>
                 </div>
               </div>
             </div>
@@ -177,11 +272,12 @@ const Footer = () => {
             </p>
             <p className="col-md-6 col-xs-12 d-flex justify-content-end">
               <div className="d-flex flex-wrap">
-                <Link to='/termsofuse' 
-                    className="text-white"
-                    to="/termsofuse"
-                    style={{ textDecoration: "none" }}>
-                <span className="marginright20"> Terms of Use</span>
+                <Link
+                  to="/termsofuse"
+                  className="text-white"
+                  style={{ textDecoration: "none" }}
+                >
+                  <span className="marginright20"> Terms of Use</span>
                 </Link>
                 <span className="marginright20">
                   <Link
@@ -189,18 +285,18 @@ const Footer = () => {
                     to="/privacypolicy"
                     style={{ textDecoration: "none" }}
                   >
-                    Privacy Policy{" "}
+                    Privacy Policy
                   </Link>
                 </span>
                 <span className="marginright20">
-                <Link
+                  <Link
                     className="text-white"
                     to="/security"
                     style={{ textDecoration: "none" }}
                   >
-                  Security
+                    Security
                   </Link>
-                  </span>
+                </span>
                 <span className="marginright20">
                   <Link
                     className="text-white"
@@ -211,12 +307,12 @@ const Footer = () => {
                   </Link>
                 </span>
                 <Link
-                    className="text-white"
-                    to="/cookiepolicy"
-                    style={{ textDecoration: "none" }}
-                  >
-                  <span className="marginright20">Cookie Policy</span>    
-                  </Link>
+                  className="text-white"
+                  to="/cookiepolicy"
+                  style={{ textDecoration: "none" }}
+                >
+                  <span className="marginright20">Cookie Policy</span>
+                </Link>
               </div>
             </p>
           </div>

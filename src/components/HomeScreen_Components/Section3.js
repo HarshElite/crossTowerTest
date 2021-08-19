@@ -12,7 +12,7 @@ const Section3 = () => {
         <span>Why Crosstower?</span>
       </p>
 
-      <p className="text-center generic-para-text mt-5 mb-5">
+      <p className="text-center generic-para-text mt-5 mb-5 maxwidthfortext">
         We will help you stay one step ahead of your counterparts, with our
         deep-rooted insights, easy trading options, and competitive prices.
       </p>

@@ -10,7 +10,7 @@ const Section7 = () => {
           <span>Buy. Sell. Trade</span>
         </p>
 
-        <p className="text-center generic-para-text mt-5 mb-5">
+        <p className="text-center generic-para-text mt-5 mb-5 maxwidthfortext">
           Crosstower allows you to trade, buy, and sell over 100
           cryptocurrencies in less than 10 minutes.
         </p>

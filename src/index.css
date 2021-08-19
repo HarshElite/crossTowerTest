@@ -125,6 +125,12 @@ code {
   text-align: left;
 }
 
+.maxwidthfortext {
+  max-width: 648px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .drop-chevron {
   width: 18px;
   margin-left: 5px;

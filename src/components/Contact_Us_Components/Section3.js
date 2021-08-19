@@ -12,8 +12,8 @@ const Section3 = () => {
               Support resources
             </p>
             <p className="generic-para-text primary-color-blue-dark px-md-5 px-0">
-              We understand the importance of liquidity and have partnered with
-              global liquidity providers and market makers.
+              We are here to answer your questions if you need any help with our
+              services. Refer to FAQs or give us a call.
             </p>
           </div>
         </div>
