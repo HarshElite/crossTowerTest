@@ -179,7 +179,7 @@ const Footer = () => {
               <div className="d-flex flex-wrap">
                 <Link to='/termsofuse' 
                     className="text-white"
-                    to="/privacypolicy"
+                    to="/termsofuse"
                     style={{ textDecoration: "none" }}>
                 <span className="marginright20"> Terms of Use</span>
                 </Link>
