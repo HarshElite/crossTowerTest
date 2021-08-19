@@ -31,17 +31,6 @@ const Section1 = () => {
     crossTowerBtc,
   } = crossTowerBtcReducer;
 
-  const {
-    ZECETH,
-    DOGEUSDT20,
-    DOGEBTC,
-    UNIBTC,
-    BTCUSD,
-    COMPBTC,
-    BTCUSDC,
-    BTCUSDC_TR,
-  } = crossTowerBtc && crossTowerBtc;
-
   useEffect(() => {
     dispatch(WazirxBtcAction());
     dispatch(ZebpayAction());
@@ -306,15 +295,23 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                       <div className="mb-0 gentextsect-1">
                         ₹
-                        {crossTowerBtc && crossTowerBtc.BTCUSD && BTCUSD
-                          ? (BTCUSD.last * usdToInr.inr).toFixed(6)
+                        {crossTowerBtc &&
+                        crossTowerBtc.BTCUSD &&
+                        crossTowerBtc.BTCUSD
+                          ? (crossTowerBtc.BTCUSD.last * usdToInr.inr).toFixed(
+                              6
+                            )
                           : "loading"}
                       </div>
                       <p className="mb-0 loss-section1-card">
-                        {crossTowerBtc && crossTowerBtc.BTCUSD && BTCUSD
-                          ? ((BTCUSD.open - BTCUSD.last) / BTCUSD.open).toFixed(
-                              4
-                            )
+                        {crossTowerBtc &&
+                        crossTowerBtc.BTCUSD &&
+                        crossTowerBtc.BTCUSD
+                          ? (
+                              (crossTowerBtc.BTCUSD.open -
+                                crossTowerBtc.BTCUSD.last) /
+                              crossTowerBtc.BTCUSD.open
+                            ).toFixed(4)
                           : "loading"}
                         %
                       </p>
@@ -340,16 +337,23 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                       <div className="mb-0 gentextsect-1">
                         ₹
-                        {crossTowerBtc && crossTowerBtc.DOGEBTC && DOGEBTC
-                          ? (DOGEBTC.last * usdToInr.inr).toFixed(6)
+                        {crossTowerBtc &&
+                        crossTowerBtc.DOGEBTC &&
+                        crossTowerBtc.DOGEBTC
+                          ? (crossTowerBtc.DOGEBTC.last * usdToInr.inr).toFixed(
+                              6
+                            )
                           : "loading"}
                       </div>
                       <p className="mb-0 loss-section1-card">
                         {" "}
-                        {crossTowerBtc && crossTowerBtc.DOGEBTC && DOGEBTC
+                        {crossTowerBtc &&
+                        crossTowerBtc.DOGEBTC &&
+                        crossTowerBtc.DOGEBTC
                           ? (
-                              (DOGEBTC.open - DOGEBTC.last) /
-                              DOGEBTC.open
+                              (crossTowerBtc.DOGEBTC.open -
+                                crossTowerBtc.DOGEBTC.last) /
+                              crossTowerBtc.DOGEBTC.open
                             ).toFixed(4)
                           : "loading"}
                         %
@@ -376,16 +380,24 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                       <div className="mb-0 gentextsect-1">
                         ₹
-                        {crossTowerBtc && crossTowerBtc.ZECETH && ZECETH
-                          ? (ZECETH.last * usdToInr.inr).toFixed(6)
+                        {crossTowerBtc &&
+                        crossTowerBtc.ZECETH &&
+                        crossTowerBtc.ZECETH
+                          ? (crossTowerBtc.ZECETH.last * usdToInr.inr).toFixed(
+                              6
+                            )
                           : "loading"}
                       </div>
                       <p className="mb-0 loss-section1-card">
                         {" "}
-                        {crossTowerBtc && crossTowerBtc.ZECETH && ZECETH
-                          ? ((ZECETH.open - ZECETH.last) / ZECETH.open).toFixed(
-                              4
-                            )
+                        {crossTowerBtc &&
+                        crossTowerBtc.ZECETH &&
+                        crossTowerBtc.ZECETH
+                          ? (
+                              (crossTowerBtc.ZECETH.open -
+                                crossTowerBtc.ZECETH.last) /
+                              crossTowerBtc.ZECETH.open
+                            ).toFixed(4)
                           : "loading"}
                         %
                       </p>
@@ -411,16 +423,23 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                       <div className="mb-0 gentextsect-1">
                         ₹
-                        {crossTowerBtc && crossTowerBtc.DOGEUSDT20 && DOGEUSDT20
-                          ? (DOGEUSDT20.last * usdToInr.inr).toFixed(6)
+                        {crossTowerBtc &&
+                        crossTowerBtc.DOGEUSDT20 &&
+                        crossTowerBtc.DOGEUSDT20
+                          ? (
+                              crossTowerBtc.DOGEUSDT20.last * usdToInr.inr
+                            ).toFixed(6)
                           : "loading"}
                       </div>
                       <p className="mb-0 loss-section1-card">
                         {" "}
-                        {crossTowerBtc && crossTowerBtc.DOGEUSDT20 && DOGEUSDT20
+                        {crossTowerBtc &&
+                        crossTowerBtc.DOGEUSDT20 &&
+                        crossTowerBtc.DOGEUSDT20
                           ? (
-                              (DOGEUSDT20.open - DOGEUSDT20.last) /
-                              DOGEUSDT20.open
+                              (crossTowerBtc.DOGEUSDT20.open -
+                                crossTowerBtc.DOGEUSDT20.last) /
+                              crossTowerBtc.DOGEUSDT20.open
                             ).toFixed(4)
                           : "loading"}
                         %
@@ -451,16 +470,24 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                       <div className="mb-0 gentextsect-1">
                         ₹
-                        {crossTowerBtc && crossTowerBtc.UNIBTC && UNIBTC
-                          ? (UNIBTC.last * usdToInr.inr).toFixed(6)
+                        {crossTowerBtc &&
+                        crossTowerBtc.UNIBTC &&
+                        crossTowerBtc.UNIBTC
+                          ? (crossTowerBtc.UNIBTC.last * usdToInr.inr).toFixed(
+                              6
+                            )
                           : "loading"}
                       </div>
                       <p className="mb-0 loss-section1-card">
                         {" "}
-                        {crossTowerBtc && crossTowerBtc.UNIBTC && UNIBTC
-                          ? ((UNIBTC.open - UNIBTC.last) / UNIBTC.open).toFixed(
-                              4
-                            )
+                        {crossTowerBtc &&
+                        crossTowerBtc.UNIBTC &&
+                        crossTowerBtc.UNIBTC
+                          ? (
+                              (crossTowerBtc.UNIBTC.open -
+                                crossTowerBtc.UNIBTC.last) /
+                              crossTowerBtc.UNIBTC.open
+                            ).toFixed(4)
                           : "loading"}
                         %
                       </p>
@@ -486,16 +513,23 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                       <div className="mb-0 gentextsect-1">
                         ₹
-                        {crossTowerBtc && crossTowerBtc.BTCUSDC && BTCUSDC
-                          ? (BTCUSDC.last * usdToInr.inr).toFixed(6)
+                        {crossTowerBtc &&
+                        crossTowerBtc.BTCUSDC &&
+                        crossTowerBtc.BTCUSDC
+                          ? (crossTowerBtc.BTCUSDC.last * usdToInr.inr).toFixed(
+                              6
+                            )
                           : "loading"}
                       </div>
                       <p className="mb-0 loss-section1-card">
                         {" "}
-                        {crossTowerBtc && crossTowerBtc.BTCUSDC && BTCUSDC
+                        {crossTowerBtc &&
+                        crossTowerBtc.BTCUSDC &&
+                        crossTowerBtc.BTCUSDC
                           ? (
-                              (BTCUSDC.open - BTCUSDC.last) /
-                              BTCUSDC.open
+                              (crossTowerBtc.BTCUSDC.open -
+                                crossTowerBtc.BTCUSDC.last) /
+                              crossTowerBtc.BTCUSDC.open
                             ).toFixed(4)
                           : "loading"}
                         %
@@ -522,16 +556,23 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                       <div className="mb-0 gentextsect-1">
                         ₹
-                        {crossTowerBtc && crossTowerBtc.COMPBTC && COMPBTC
-                          ? (COMPBTC.last * usdToInr.inr).toFixed(6)
+                        {crossTowerBtc &&
+                        crossTowerBtc.COMPBTC &&
+                        crossTowerBtc.COMPBTC
+                          ? (crossTowerBtc.COMPBTC.last * usdToInr.inr).toFixed(
+                              6
+                            )
                           : "loading"}
                       </div>
                       <p className="mb-0 loss-section1-card">
                         {" "}
-                        {crossTowerBtc && crossTowerBtc.COMPBTC && COMPBTC
+                        {crossTowerBtc &&
+                        crossTowerBtc.COMPBTC &&
+                        crossTowerBtc.COMPBTC
                           ? (
-                              (COMPBTC.open - COMPBTC.last) /
-                              COMPBTC.open
+                              (crossTowerBtc.COMPBTC.open -
+                                crossTowerBtc.COMPBTC.last) /
+                              crossTowerBtc.COMPBTC.open
                             ).toFixed(4)
                           : "loading"}
                         %
@@ -558,16 +599,23 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                       <div className="mb-0 gentextsect-1">
                         ₹
-                        {crossTowerBtc && crossTowerBtc.BTCUSDC_TR && BTCUSDC_TR
-                          ? (BTCUSDC_TR.last * usdToInr.inr).toFixed(6)
+                        {crossTowerBtc &&
+                        crossTowerBtc.BTCUSDC_TR &&
+                        crossTowerBtc.BTCUSDC_TR
+                          ? (
+                              crossTowerBtc.BTCUSDC_TR.last * usdToInr.inr
+                            ).toFixed(6)
                           : "loading"}
                       </div>
                       <p className="mb-0 loss-section1-card">
                         {" "}
-                        {crossTowerBtc && crossTowerBtc.BTCUSDC_TR && BTCUSDC_TR
+                        {crossTowerBtc &&
+                        crossTowerBtc.BTCUSDC_TR &&
+                        crossTowerBtc.BTCUSDC_TR
                           ? (
-                              (BTCUSDC_TR.open - BTCUSDC_TR.last) /
-                              BTCUSDC_TR.open
+                              (crossTowerBtc.BTCUSDC_TR.open -
+                                crossTowerBtc.BTCUSDC_TR.last) /
+                              crossTowerBtc.BTCUSDC_TR.open
                             ).toFixed(4)
                           : "loading"}
                         %
