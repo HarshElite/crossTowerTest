@@ -20,7 +20,7 @@ const Section3 = () => {
       <div className="row p-md-5 p-3">
         <div className="col-sm-12 col-md-3 ">
           <div className="card card-section-3re shadow-lg mt-md-3 mt-3">
-            <div className="card-body">
+            <div className="card-body card-section-3re-body">
               <div className=" mb-3 d-flex justify-content-center">
                 <img src={Bitcoin4} alt="" className="image-section-3" />
               </div>
@@ -33,7 +33,7 @@ const Section3 = () => {
         </div>
         <div className="col-sm-12 col-md-3 ">
           <div className="card card-section-3re shadow-lg mt-md-3 mt-3">
-            <div className="card-body">
+            <div className="card-body card-section-3re-body">
               <div className=" mb-3 d-flex justify-content-center">
                 <img src={Bitcoin5} alt="" className="image-section-3" />
               </div>
@@ -44,7 +44,7 @@ const Section3 = () => {
         </div>
         <div className="col-sm-12 col-md-3 ">
           <div className="card card-section-3re shadow-lg mt-md-3 mt-3">
-            <div className="card-body">
+            <div className="card-body card-section-3re-body">
               <div className=" mb-3 d-flex justify-content-center align-items-center">
                 <img src={Bitcoin7} alt="" className="image-section-3" />
               </div>
@@ -60,7 +60,7 @@ const Section3 = () => {
         </div>
         <div className="col-sm-12 col-md-3 ">
           <div className="card card-section-3re shadow-lg mt-md-3 mt-3">
-            <div className="card-body">
+            <div className="card-body card-section-3re-body">
               <div className=" mb-3 d-flex justify-content-center align-items-center">
                 <img src={Bitcoin6} alt="" className="image-section-3" />
               </div>
