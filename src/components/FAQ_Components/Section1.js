@@ -9,7 +9,7 @@ const Section1 = () => {
             Investor FAQs
           </p>
           <p className="generic-title-heading primary-color-blue-dark text-center">
-            frequently asked questions
+            Frequently Asked Questions
           </p>
         </div>
       </div>

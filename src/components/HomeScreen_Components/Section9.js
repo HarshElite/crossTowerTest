@@ -7,6 +7,9 @@ const Section9 = () => {
   const [toggle3, setToggle3] = useState(false);
   const [toggle4, setToggle4] = useState(false);
   const [toggle5, setToggle5] = useState(false);
+  const [toggle6, setToggle6] = useState(false);
+
+  
 
   const triggerToggle1 = () => {
     setToggle1(!toggle1);
@@ -23,6 +26,10 @@ const Section9 = () => {
   const triggerToggle5 = () => {
     setToggle5(!toggle5);
   };
+  const triggerToggle6 = () => {
+    setToggle6(!toggle6);
+  };
+    
 
   return (
     <section className="section9-homescreen  p-md-5 p-3">
@@ -30,7 +37,7 @@ const Section9 = () => {
         <span className="generic-title-para-blue">General</span>
         <span className="generic-title-para-red"> Queries</span>
       </p>
-      <p className="generic-title-heading">Frequently asked questions</p>
+      <p className="generic-title-heading">Frequently Asked Questions</p>
 
       <div className="accordian-container-main p-md-5 p-0">
         <div className="accordian-container">
@@ -51,7 +58,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseOne"
                   >
-                    Can You Trust Bitcoin ?
+                    How to Deposit INR in CrossTower India Wallet ?
                   </p>
 
                   <button
@@ -73,12 +80,7 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  With bitcoin, trust has to work on both sides. Even though you
-                  as the user are always in control of your own finances, you
-                  still have to trust the rest of the bitcoin network to not
-                  drop off the face of the earth tomorrow. The chances of
-                  bitcoin disappearing are so slim that it isn't something you
-                  should worry about.
+                You can deposit the Funds Using MobiKwik Wallet/Debit Card and through UPI
                 </div>
               </div>
             </div>
@@ -103,7 +105,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    What are the benefits of cryptocurrency?
+                    How to Withdraw INR from CrossTower India Wallet ?
                   </p>
 
                   <button
@@ -125,12 +127,7 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  With bitcoin, trust has to work on both sides. Even though you
-                  as the user are always in control of your own finances, you
-                  still have to trust the rest of the bitcoin network to not
-                  drop off the face of the earth tomorrow. The chances of
-                  bitcoin disappearing are so slim that it isn't something you
-                  should worry about.
+                Its Simple, You can withdraw funds by placing a request under the Withdraw tab
                 </div>
               </div>
             </div>
@@ -157,7 +154,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    Which country is best for cryptocurrency?
+                    When will my Crosstower Wallet be Updated after Deposit and Withdraw ?
                   </p>
 
                   <button
@@ -179,12 +176,10 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  With bitcoin, trust has to work on both sides. Even though you
-                  as the user are always in control of your own finances, you
-                  still have to trust the rest of the bitcoin network to not
-                  drop off the face of the earth tomorrow. The chances of
-                  bitcoin disappearing are so slim that it isn't something you
-                  should worry about.
+                In case of Deposit, Your Cross Tower wallet will be updated instantly 
+                once the transaction is successful. In case of Withdraw, 
+                Your cross Tower wallet will be updated once 
+                it is processed successfully from our side at the end of the day
                 </div>
               </div>
             </div>
@@ -209,7 +204,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseFour"
                   >
-                    Do cryptocurrencies have a future?
+                    When Will I receive Funds in My Bank account after placing Withdrawal request at Cross Tower ?
                   </p>
 
                   <button
@@ -231,12 +226,7 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  With bitcoin, trust has to work on both sides. Even though you
-                  as the user are always in control of your own finances, you
-                  still have to trust the rest of the bitcoin network to not
-                  drop off the face of the earth tomorrow. The chances of
-                  bitcoin disappearing are so slim that it isn't something you
-                  should worry about.
+                Funds are credited in your bank account on Next Day (Excluding weekends and Bank Holidays)
                 </div>
               </div>
             </div>
@@ -261,7 +251,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseFive"
                   >
-                    What is cryptocurrency & How it works?
+                    By what time I can place withdraw request with Cross Tower India ?
                   </p>
 
                   <button
@@ -283,18 +273,59 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  With bitcoin, trust has to work on both sides. Even though you
-                  as the user are always in control of your own finances, you
-                  still have to trust the rest of the bitcoin network to not
-                  drop off the face of the earth tomorrow. The chances of
-                  bitcoin disappearing are so slim that it isn't something you
-                  should worry about.
+                You can place the request any time during the day
                 </div>
               </div>
             </div>
           </div>
         </div>
         {/* end 5 */}
+        <div className="accordian-container mt-5">
+          <div id="accordion my-5">
+            <div class="card accordain-tag-1-c ">
+              <div
+                class="card-header color-card-acc "
+                id="headingTwo"
+                className={`banner ${toggle6 ? "color-card-acc-white" : "color-card-acc"
+                  }`}
+              >
+                <div className="d-flex justify-content-between align-items-center p-3">
+                  <p
+                    onClick={triggerToggle6}
+                    className="mb-0 generic-text-bold"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                   What is the Maximum / Minimum INR Deposit Limit?
+                  </p>
+                  <button
+                    class="btn-accordion"
+                    onClick={triggerToggle6}
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    {toggle2 ? "-" : "+"}
+                  </button>
+                </div>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                Minimum Deposit is INR 100, There is no bar on maximum deposit
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* end 6 */}
       </div>
     </section>
   );
