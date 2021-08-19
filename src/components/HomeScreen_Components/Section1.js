@@ -40,10 +40,6 @@ const Section1 = () => {
     COMPBTC,
     BTCUSDC,
     BTCUSDC_TR,
-    DOGEUSD,
-    NMRUSD,
-    DAIBTC,
-    MKRUSDC,
   } = crossTowerBtc && crossTowerBtc;
 
   useEffect(() => {
