@@ -177,7 +177,12 @@ const Footer = () => {
             </p>
             <p className="col-md-6 col-xs-12 d-flex justify-content-end">
               <div className="d-flex flex-wrap">
+                <Link to='/termsofuse' 
+                    className="text-white"
+                    to="/privacypolicy"
+                    style={{ textDecoration: "none" }}>
                 <span className="marginright20"> Terms of Use</span>
+                </Link>
                 <span className="marginright20">
                   <Link
                     className="text-white"
@@ -187,7 +192,15 @@ const Footer = () => {
                     Privacy Policy{" "}
                   </Link>
                 </span>
-                <span className="marginright20">Security</span>
+                <span className="marginright20">
+                <Link
+                    className="text-white"
+                    to="/security"
+                    style={{ textDecoration: "none" }}
+                  >
+                  Security
+                  </Link>
+                  </span>
                 <span className="marginright20">
                   <Link
                     className="text-white"
@@ -197,7 +210,13 @@ const Footer = () => {
                     Disclaimer
                   </Link>
                 </span>
-                <span className="marginright20">Cookie Policy</span>
+                <Link
+                    className="text-white"
+                    to="/cookiepolicy"
+                    style={{ textDecoration: "none" }}
+                  >
+                  <span className="marginright20">Cookie Policy</span>    
+                  </Link>
               </div>
             </p>
           </div>

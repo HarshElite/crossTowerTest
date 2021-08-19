@@ -24,7 +24,7 @@ const Section2 = () => {
         </div>
         <div className="col-md-6 col-12 justify-content-center align-items-center d-flex">
           <div className="parent-div-section2 justify-content-center align-items-center d-flex p-5">
-            <img src={Image2} alt="" className="w-100" />
+            <img src={Image2} alt="" className="w-100"/>
           </div>
         </div>
       </div>

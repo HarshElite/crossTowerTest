@@ -5,6 +5,7 @@ import BoilerScreen from "./screens/BoilerScreen";
 import SupportScreen from "./screens/SupportScreen";
 import Cookie from './screens/CookieScreen';
 import Security from './screens/SecurityScreen';
+import TermsOfUse from './screens/TermsOfUse';
 import FAQ from "./screens/FAQ";
 import PrivacyPolicy from "./screens/PrivacyPolicy";
 import RefundPolicy from "./screens/RefundPolicy";
@@ -30,6 +31,7 @@ function App() {
       <Route path="/cookiepolicy" component={Cookie}></Route>
       <Route path="/refundpolicy" component={RefundPolicy}></Route>
       <Route path="/disclaimer" component={Disclaimer}></Route>
+      <Route path="/termsofuse" component={TermsOfUse}></Route>
       <Route path="/contactus" component={ContactUs}></Route>
       <Route path="/login" component={ComingSoon}></Route>
       <Footer />
