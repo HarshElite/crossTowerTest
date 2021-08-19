@@ -8,11 +8,12 @@ const Section10 = () => {
           <div className="col-md-6 col-sm-12 p-md-5  d-flex justify-content-center align-items-center">
             <div className="mx-3 section-10-maxwidth">
               <p className="generic-title-heading text-white">
-                Ready To get Started
+                Change Ready To Get Started Content
               </p>
               <p className="generic-para-text text-white">
-                We understand the importance of liquidity and have partnered
-                with global liquidity providers and market makers.
+                Get Started with Crosstower Diversify your portfolio with
+                Utilimeme. Start your crypto journey with a stable,
+                decentralized, and utility-based currency, today!
               </p>
               <div className="email-search-top">
                 <form className="search-wrapper cf d-flex align-items-center d-flex justify-content-evenly">

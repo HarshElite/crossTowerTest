@@ -1,11 +1,47 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import B1 from "../../images/aboutus/1acc.png";
 import Iphone from "../../images/section10image.png";
 import LineChart from "../LineChart";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
-import Header from "../../images/homepage/h1top.png";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  WazirxBtcAction,
+  ZebpayAction,
+  CrossTowerBtcAction,
+  CoindcxBtcAction,
+  usdToInrAction,
+} from "../../action/homepageActions";
+
 const Section1 = () => {
+  const dispatch = useDispatch();
+
+  const usdToInrBtcReducers = useSelector((state) => state.usdToInrBtcReducers);
+  const {
+    loading: loadingusdToInrBtc,
+    error: errorusdToInrBtc,
+    usdToInr,
+  } = usdToInrBtcReducers;
+
+  const crossTowerBtcReducer = useSelector(
+    (state) => state.crossTowerBtcReducer
+  );
+  const {
+    loading: loadingcrossTowerBtc,
+    error: errorcrossTowerBtc,
+    crossTowerBtc,
+  } = crossTowerBtcReducer;
+  console.log(usdToInr, "1");
+  console.log(crossTowerBtc);
+
+  useEffect(() => {
+    dispatch(WazirxBtcAction());
+    dispatch(ZebpayAction());
+    dispatch(CrossTowerBtcAction());
+    dispatch(CoindcxBtcAction());
+    dispatch(usdToInrAction());
+  }, [dispatch]);
+
   function ControlledTabs() {
     const [key, setKey] = useState("Buy");
 

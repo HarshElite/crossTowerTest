@@ -55,10 +55,7 @@ const Section2 = () => {
   // console.log(wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last);
   // console.log(zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]);
   console.log(usdToInr, "1");
-  console.log(
-    crossTowerBtc && crossTowerBtc.BTCUSD && crossTowerBtc.BTCUSD.last,
-    "2"
-  );
+  console.log(crossTowerBtc);
 
   useEffect(() => {
     dispatch(WazirxBtcAction());
@@ -110,6 +107,7 @@ const Section2 = () => {
                 </th>
                 <td className="py-4">Bitcoin -BTC</td>
                 <td className="py-4">
+                  {loadingcrossTowerBtc && "loading"}
                   INR{" "}
                   {Math.round(
                     crossTowerBtc &&

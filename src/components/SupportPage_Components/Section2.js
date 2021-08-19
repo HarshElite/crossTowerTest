@@ -14,7 +14,7 @@ const Section2 = () => {
       <div class="row px-5">
         <div class="col-md-4 col-12 px-md-5 px-3">
           <div class="card shadow-lg support-card mb-5">
-            <div class="card-body d-flex justify-content-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
               <div className="container-card-content-support d-flex flex-column">
                 <img src={S1} className="img-support" alt="" />
                 <p className="text-center mb-0 mt-4">Account</p>
@@ -24,7 +24,7 @@ const Section2 = () => {
         </div>
         <div class="col-md-4 col-12 px-md-5 px-3">
           <div class="card shadow-lg support-card mb-5">
-            <div class="card-body d-flex justify-content-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
               <div className="container-card-content-support d-flex flex-column">
                 <img src={S2} className="img-support" alt="" />
                 <p className="text-center mb-0 mt-4">Deposit</p>
@@ -34,7 +34,7 @@ const Section2 = () => {
         </div>
         <div class="col-md-4 col-12 px-md-5 px-3">
           <div class="card shadow-lg support-card mb-5">
-            <div class="card-body d-flex justify-content-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
               <div className="container-card-content-support d-flex flex-column">
                 <img src={S3} className="img-support" alt="" />
                 <p className="text-center mb-0 mt-4">Trading</p>
@@ -46,7 +46,7 @@ const Section2 = () => {
       <div class="row px-5">
         <div class="col-md-4 col-12 px-md-5 px-3">
           <div class="card shadow-lg support-card mb-5">
-            <div class="card-body d-flex justify-content-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
               <div className="container-card-content-support d-flex flex-column">
                 <img src={S4} className="img-support" alt="" />
                 <p className="text-center mb-0 mt-4">Withdrawal</p>
@@ -56,7 +56,7 @@ const Section2 = () => {
         </div>
         <div class="col-md-4 col-12 px-md-5 px-3">
           <div class="card shadow-lg support-card mb-5">
-            <div class="card-body d-flex justify-content-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
               <div className="container-card-content-support d-flex flex-column">
                 <img src={S5} className="img-support" alt="" />
                 <p className="text-center mb-0 mt-4">Transfer</p>
@@ -66,8 +66,8 @@ const Section2 = () => {
         </div>
         <div class="col-md-4 col-12 px-md-5 px-3">
           <div class="card shadow-lg support-card mb-5">
-            <div class="card-body d-flex justify-content-center">
-              <div className="container-card-content-support d-flex flex-column">
+            <div class="card-body d-flex justify-content-center align-items-center">
+              <div className="container-card-content-support d-flex flex-column justify-content-center align-items-center">
                 <img src={S6} className="img-support" alt="" />
                 <p className="text-center mb-0 mt-4">
                   Legal, Privacy & Security
@@ -80,7 +80,7 @@ const Section2 = () => {
       <div class="row px-5">
         <div class="col-md-4 col-12 px-md-5 px-3">
           <div class="card shadow-lg support-card mb-5">
-            <div class="card-body d-flex justify-content-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
               <div className="container-card-content-support d-flex flex-column">
                 <img src={S7} className="img-support" alt="" />
                 <p className="text-center mb-0 mt-4">API</p>
@@ -90,8 +90,8 @@ const Section2 = () => {
         </div>
         <div class="col-md-4 col-12 px-md-5 px-3">
           <div class="card shadow-lg support-card mb-5">
-            <div class="card-body d-flex justify-content-center">
-              <div className="container-card-content-support d-flex flex-column">
+            <div class="card-body d-flex justify-content-center align-items-center">
+              <div className="container-card-content-support d-flex flex-column justify-content-center">
                 <img src={S8} className="img-support" alt="" />
                 <p className="text-center mb-0 mt-4">App</p>
               </div>

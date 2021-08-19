@@ -9,8 +9,6 @@ const Section9 = () => {
   const [toggle5, setToggle5] = useState(false);
   const [toggle6, setToggle6] = useState(false);
 
-  
-
   const triggerToggle1 = () => {
     setToggle1(!toggle1);
   };
@@ -29,11 +27,10 @@ const Section9 = () => {
   const triggerToggle6 = () => {
     setToggle6(!toggle6);
   };
-    
 
   return (
-    <section className="section9-homescreen  p-md-5 p-3">
-      <p className="homescreen-section-1-para pt-5">
+    <section className="section9-homescreen py-md-2 py-3 px-md-5 px-3">
+      <p className="homescreen-section-1-para">
         <span className="generic-title-para-blue">General</span>
         <span className="generic-title-para-red"> Queries</span>
       </p>
@@ -46,8 +43,9 @@ const Section9 = () => {
               <div
                 class="card-header color-card-acc "
                 id="headingOne"
-                className={`banner ${toggle1 ? "color-card-acc-white" : "color-card-acc"
-                  }`}
+                className={`banner ${
+                  toggle1 ? "color-card-acc-white" : "color-card-acc"
+                }`}
               >
                 <div className="d-flex justify-content-between align-items-center p-3">
                   <p
@@ -80,7 +78,8 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                You can deposit the Funds Using MobiKwik Wallet/Debit Card and through UPI
+                  You can deposit the Funds Using MobiKwik Wallet/Debit Card and
+                  through UPI
                 </div>
               </div>
             </div>
@@ -93,8 +92,9 @@ const Section9 = () => {
               <div
                 class="card-header color-card-acc "
                 id="headingTwo"
-                className={`banner ${toggle2 ? "color-card-acc-white" : "color-card-acc"
-                  }`}
+                className={`banner ${
+                  toggle2 ? "color-card-acc-white" : "color-card-acc"
+                }`}
               >
                 <div className="d-flex justify-content-between align-items-center p-3">
                   <p
@@ -127,7 +127,8 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                Its Simple, You can withdraw funds by placing a request under the Withdraw tab
+                  Its Simple, You can withdraw funds by placing a request under
+                  the Withdraw tab
                 </div>
               </div>
             </div>
@@ -142,8 +143,9 @@ const Section9 = () => {
               <div
                 class="card-header color-card-acc "
                 id="headingThree"
-                className={`banner ${toggle3 ? "color-card-acc-white" : "color-card-acc"
-                  }`}
+                className={`banner ${
+                  toggle3 ? "color-card-acc-white" : "color-card-acc"
+                }`}
               >
                 <div className="d-flex justify-content-between align-items-center p-3">
                   <p
@@ -154,7 +156,8 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    When will my Crosstower Wallet be Updated after Deposit and Withdraw ?
+                    When will my Crosstower Wallet be Updated after Deposit and
+                    Withdraw ?
                   </p>
 
                   <button
@@ -176,10 +179,10 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                In case of Deposit, Your Cross Tower wallet will be updated instantly 
-                once the transaction is successful. In case of Withdraw, 
-                Your cross Tower wallet will be updated once 
-                it is processed successfully from our side at the end of the day
+                  In case of Deposit, Your Cross Tower wallet will be updated
+                  instantly once the transaction is successful. In case of
+                  Withdraw, Your cross Tower wallet will be updated once it is
+                  processed successfully from our side at the end of the day
                 </div>
               </div>
             </div>
@@ -192,8 +195,9 @@ const Section9 = () => {
               <div
                 class="card-header color-card-acc "
                 id="headingFour"
-                className={`banner ${toggle4 ? "color-card-acc-white" : "color-card-acc"
-                  }`}
+                className={`banner ${
+                  toggle4 ? "color-card-acc-white" : "color-card-acc"
+                }`}
               >
                 <div className="d-flex justify-content-between align-items-center p-3">
                   <p
@@ -204,7 +208,8 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseFour"
                   >
-                    When Will I receive Funds in My Bank account after placing Withdrawal request at Cross Tower ?
+                    When Will I receive Funds in My Bank account after placing
+                    Withdrawal request at Cross Tower ?
                   </p>
 
                   <button
@@ -226,7 +231,8 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                Funds are credited in your bank account on Next Day (Excluding weekends and Bank Holidays)
+                  Funds are credited in your bank account on Next Day (Excluding
+                  weekends and Bank Holidays)
                 </div>
               </div>
             </div>
@@ -239,8 +245,9 @@ const Section9 = () => {
               <div
                 class="card-header color-card-acc "
                 id="headingFive"
-                className={`banner ${toggle5 ? "color-card-acc-white" : "color-card-acc"
-                  }`}
+                className={`banner ${
+                  toggle5 ? "color-card-acc-white" : "color-card-acc"
+                }`}
               >
                 <div className="d-flex justify-content-between align-items-center p-3">
                   <p
@@ -251,7 +258,8 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseFive"
                   >
-                    By what time I can place withdraw request with Cross Tower India ?
+                    By what time I can place withdraw request with Cross Tower
+                    India ?
                   </p>
 
                   <button
@@ -273,53 +281,54 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                You can place the request any time during the day
+                  You can place the request any time during the day
                 </div>
               </div>
             </div>
           </div>
         </div>
         {/* end 5 */}
-        <div className="accordian-container mt-5">
+        <div className="accordian-container">
           <div id="accordion my-5">
             <div class="card accordain-tag-1-c ">
               <div
                 class="card-header color-card-acc "
-                id="headingTwo"
-                className={`banner ${toggle6 ? "color-card-acc-white" : "color-card-acc"
-                  }`}
+                id="headingSix"
+                className={`banner ${
+                  toggle6 ? "color-card-acc-white" : "color-card-acc"
+                }`}
               >
                 <div className="d-flex justify-content-between align-items-center p-3">
                   <p
                     onClick={triggerToggle6}
                     className="mb-0 generic-text-bold"
                     data-toggle="collapse"
-                    data-target="#collapseTwo"
+                    data-target="#collapseSix"
                     aria-expanded="false"
-                    aria-controls="collapseTwo"
+                    aria-controls="collapseSix"
                   >
-                   What is the Maximum / Minimum INR Deposit Limit?
+                    What is the Maximum / Minimum INR Deposit Limit?
                   </p>
                   <button
                     class="btn-accordion"
                     onClick={triggerToggle6}
                     data-toggle="collapse"
-                    data-target="#collapseTwo"
+                    data-target="#collapseSix"
                     aria-expanded="false"
-                    aria-controls="collapseTwo"
+                    aria-controls="collapseSix"
                   >
                     {toggle2 ? "-" : "+"}
                   </button>
                 </div>
               </div>
               <div
-                id="collapseTwo"
+                id="collapseSix"
                 class="collapse"
-                aria-labelledby="headingTwo"
+                aria-labelledby="headingSix"
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                Minimum Deposit is INR 100, There is no bar on maximum deposit
+                  Minimum Deposit is INR 100, There is no bar on maximum deposit
                 </div>
               </div>
             </div>
