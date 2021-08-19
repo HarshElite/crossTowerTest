@@ -13,7 +13,7 @@ const Section3 = () => {
       </p>
 
       <p className="text-center generic-para-text mt-5 mb-5">
-        We will help you stay one step ahead of your counterparts, with your
+        We will help you stay one step ahead of your counterparts, with our
         deep-rooted insights, easy trading options, and competitive prices.
       </p>
 
