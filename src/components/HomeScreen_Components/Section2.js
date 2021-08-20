@@ -73,7 +73,7 @@ const Section2 = () => {
         your modern requirements. We leverage our global liquidity partners and
         market makers in making your trading easy and convenient.
       </p>
-      <div className="card shadow-lg table-responsive-sm main-table-card">
+      {/* <div className="card shadow-lg table-responsive-sm main-table-card">
         <div className="card-body">
           <table class="table table-borderless table-responsive table-hover">
             <thead>
@@ -106,7 +106,7 @@ const Section2 = () => {
                 <td className="py-4">Bitcoin -BTC</td>
                 <td className="py-4">
                   {loadingcrossTowerBtc && "loading"}
-                  INR{" "}
+                  INR
                   {Math.round(
                     crossTowerBtc &&
                       crossTowerBtc.BTCUSD &&
@@ -114,7 +114,6 @@ const Section2 = () => {
                   ) / 100}
                 </td>
                 <td className="py-4">
-                  {/* Wazir X Bitcoin Price */}
                   {loadingWazirx && "loading"}
                   INR&nbsp;
                   {wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last}
@@ -134,20 +133,10 @@ const Section2 = () => {
                   ) / 100}
                 </td>
               </tr>
-              {/* <tr className=" ">
-                <th scope="row" className="py-4">
-                  2
-                </th>
-                <td className="py-4">Bitcoin -BTC</td>
-                <td className="py-4">INR 100,433,120,19</td>
-                <td className="py-4">INR 100,433,120,19</td>
-                <td className="py-4">INR 100,433,120,19</td>
-                <td className="py-4">INR 100,433,120,19</td>
-              </tr> */}
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
       <div className="row d-flex justify-content-center align-items-center mt-5">
         <button className="start-trading-button" type="submit">
           Start Trading

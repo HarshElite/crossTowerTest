@@ -20,9 +20,7 @@ import axios from "axios";
 export const WazirxBtcAction = () => async (dispatch) => {
   try {
     dispatch({ type: WAZIRX_BTC_REQUEST });
-    const { data } = await axios.get(
-      "http://cors-anywhere.herokuapp.com/https://api.wazirx.com/api/v2/tickers"
-    );
+    const { data } = await axios.get("/api/v2/tickers");
     dispatch({ type: WAZIRX_BTC_SUCCESS, payload: data });
   } catch (error) {
     dispatch({
@@ -37,9 +35,7 @@ export const WazirxBtcAction = () => async (dispatch) => {
 export const ZebpayAction = () => async (dispatch) => {
   try {
     dispatch({ type: ZEBPAY_BTC_REQUEST });
-    const { data } = await axios.get(
-      "http://cors-anywhere.herokuapp.com/https://www.zebapi.com/pro/v1/market"
-    );
+    const { data } = await axios.get("/pro/v1/market");
     dispatch({ type: ZEBPAY_BTC_SUCCESS, payload: data });
   } catch (error) {
     dispatch({
@@ -54,9 +50,7 @@ export const ZebpayAction = () => async (dispatch) => {
 export const CrossTowerBtcAction = () => async (dispatch) => {
   try {
     dispatch({ type: CROSSTOWER_BTC_REQUEST });
-    const { data } = await axios.get(
-      "http://cors-anywhere.herokuapp.com/https://api.crosstower.com/api/3/public/ticker"
-    );
+    const { data } = await axios.get("/api/3/public/ticker");
     dispatch({ type: CROSSTOWER_BTC_SUCCESS, payload: data });
   } catch (error) {
     dispatch({
@@ -71,9 +65,7 @@ export const CrossTowerBtcAction = () => async (dispatch) => {
 export const CoindcxBtcAction = () => async (dispatch) => {
   try {
     dispatch({ type: COINDCX_BTC_REQUEST });
-    const { data } = await axios.get(
-      "http://cors-anywhere.herokuapp.com/https://api.coindcx.com/exchange/ticker"
-    );
+    const { data } = await axios.get("/exchange/ticker");
     dispatch({ type: COINDCX_BTC_SUCCESS, payload: data });
   } catch (error) {
     dispatch({
@@ -90,7 +82,7 @@ export const usdToInrAction = () => async (dispatch) => {
   try {
     dispatch({ type: USD_TO_INR_REQUEST });
     const { data } = await axios.get(
-      "http://cors-anywhere.herokuapp.com/https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd/inr.json"
+      "/gh/fawazahmed0/currency-api@1/latest/currencies/usd/inr.json"
     );
     dispatch({ type: USD_TO_INR_SUCCESS, payload: data });
   } catch (error) {

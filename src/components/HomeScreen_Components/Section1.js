@@ -266,13 +266,13 @@ const Section1 = () => {
           </div>
         </div>
       </div>
-
+      {/* 
       <div className="px-5">
         <p className="gentextsect-1 mb-0 mt-5">Popular Assets</p>
         <hr />
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         id="carouselExampleControls"
         class="carousel slide"
         data-bs-ride="carousel"
@@ -654,7 +654,7 @@ const Section1 = () => {
           ></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> */}
       {/* <div className="row px-md-5 px-4 row-card-top-section-1">
         <div className="card card-top-section1-homepage shadow-lg rounded">
           <div className="card-body currency-buy-flexbox">
