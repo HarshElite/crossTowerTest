@@ -38,7 +38,7 @@ const Section4 = () => {
                     Kapil Rathi
                   </p>
                   <p className="text-center text-para-abtus-sec4">
-                    Chief Executive Officer & Co-Founder
+                    Global Chief Executive Officer & Co-Founder
                   </p>
                   <div className="d-flex justify-content-center ">
                     <hr className="hr-line-abtsec4" />
@@ -83,7 +83,7 @@ const Section4 = () => {
                     Vikas Ahuja
                   </p>
                   <p className="text-center text-para-abtus-sec4">
-                    Chief Executive Officer
+                    India Chief Executive Officer
                   </p>
                   <div className="d-flex justify-content-center ">
                     <hr className="hr-line-abtsec4" />
