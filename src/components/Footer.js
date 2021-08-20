@@ -19,9 +19,7 @@ const Footer = () => {
           <div className="row p-2">
             <div className="d-flex flex-column col-md-6 col-sm-12 mt-3">
               <p className="mb-0 mt-2">CrossTower is on a mission to</p>
-              <p className="mb-0 mt-2">
-                mainstream digital asset investing and trading
-              </p>
+              <p className="mb-0 mt-2">mainstream investing and trading</p>
             </div>
             <div className="d-flex col-md-6 col-sm-12 justify-content-md-end justify  -content-sm-start mt-3">
               <div className="row">

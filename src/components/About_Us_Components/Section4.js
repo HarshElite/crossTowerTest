@@ -1,7 +1,7 @@
 import React from "react";
 import Member1 from "../../images/aboutus/p1.png";
 import Member2 from "../../images/aboutus/MaskGroup-1.png";
-import Member3 from "../../images/aboutus/MaskGroup-7.png";
+import Member3 from "../../images/aboutus/MaskGroup-4.png";
 import Twitter from "../../images/homepage/Footer/tw.png";
 import Linkedin from "../../images/homepage/Footer/lk.png";
 import IB from "../../images/aboutus/bg-about-card.png";
@@ -13,10 +13,8 @@ const Section4 = () => {
           <span>The Team</span>
         </p>
         <p className="text-center generic-para-text mt-5 mb-5 maxwidthfortext">
-          We understand the importance of liquidity and have partnered with
-          global liquidity providers and market makers.- change to- We make it
-          our personal mission to give you an advanced and safe ecosystem for
-          trading.
+          We make it our personal mission to give you an advanced and safe
+          ecosystem for trading.
         </p>
 
         <div className="row">

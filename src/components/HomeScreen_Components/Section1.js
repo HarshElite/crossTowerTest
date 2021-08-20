@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import B1 from "../../images/aboutus/1acc.png";
-import Iphone from "../../images/section10image.png";
+import Iphone from "../../images/homepage/h1sec1.png";
 import LineChart from "../LineChart";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";

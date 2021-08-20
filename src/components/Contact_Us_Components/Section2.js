@@ -107,13 +107,13 @@ const Section2 = () => {
               </div>
               <div>
                 <p className="contact-us-blue-heading mb-0">General</p>
-                <p className="contact-us-blue-para">info@crosstower.in</p>
+                <p className="contact-us-blue-para">support@crosstower.in</p>
               </div>
             </div>
 
             <p className="marginleft71 contact-us-blue-heading mb-0">Media</p>
             <p className="marginleft71 contact-us-blue-para">
-              info@crosstower.in
+              support@crosstower.in
             </p>
             <p className="marginleft71 contact-us-blue-heading mb-0">Phone</p>
             <p className="marginleft71 contact-us-blue-para">0124-4382555</p>
@@ -124,7 +124,7 @@ const Section2 = () => {
               </div>
               <div>
                 <p className="contact-us-blue-heading">Support</p>
-                <p className="contact-us-blue-para mb-0">CrossTower Inc. </p>
+                <p className="contact-us-blue-para mb-0">CrossTower. </p>
                 <p className="contact-us-blue-para">
                   CrossTower India Trading Pvt Ltd, First Floor, Plot No. 13,
                   Sector-33, Gurugram (Delhi NCR), Haryana 122001 India.
