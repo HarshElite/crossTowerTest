@@ -10,7 +10,7 @@ const ComingSoon = () => {
             Stay Tuned For More Crypto Features. CrossTower India prohibits
             access to U.S. Residents. If you are a U.S. Resident, please click
             here to visit the CrossTower US platform.
-          </p>{" "}
+          </p>
           <div className="email-search-top">
             <form className="search-wrapper cf d-flex align-items-center d-flex justify-content-evenly">
               <input type="text" placeholder="Email Address" required />
