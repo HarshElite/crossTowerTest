@@ -332,7 +332,7 @@ const Section9 = () => {
             <div class="card accordain-tag-1-c ">
               <div
                 class="card-header color-card-acc "
-                id="headingSix"
+                id="headingSeven"
                 className={`banner ${
                   toggle6 ? "color-card-acc-white" : "color-card-acc"
                 }`}
@@ -342,9 +342,9 @@ const Section9 = () => {
                     onClick={triggerToggle6}
                     className="mb-0 generic-text-bold"
                     data-toggle="collapse"
-                    data-target="#collapseSix"
+                    data-target="#collapseSeven"
                     aria-expanded="false"
-                    aria-controls="collapseSix"
+                    aria-controls="collapseSeven"
                   >
                    What is the Maximum / Minimum INR Withdraw Limit?
                   </p>
@@ -352,18 +352,18 @@ const Section9 = () => {
                     class="btn-accordion"
                     onClick={triggerToggle6}
                     data-toggle="collapse"
-                    data-target="#collapseSix"
+                    data-target="#collapseSeven"
                     aria-expanded="false"
-                    aria-controls="collapseSix"
+                    aria-controls="collapseSeven"
                   >
                     {toggle2 ? "-" : "+"}
                   </button>
                 </div>
               </div>
               <div
-                id="collapseSix"
+                id="collapseSeven"
                 class="collapse"
-                aria-labelledby="headingSix"
+                aria-labelledby="headingSeven"
                 data-parent="#accordion"
               >
                 <div class="card-body">
