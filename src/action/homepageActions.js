@@ -21,7 +21,7 @@ export const WazirxBtcAction = () => async (dispatch) => {
   try {
     dispatch({ type: WAZIRX_BTC_REQUEST });
     const { data } = await axios.get(
-      "http://157.245.106.83:3000/wazirx/api/v2/tickers"
+      " https://ct.bucle.dev/wazirx/api/v2/tickers"
     );
     dispatch({ type: WAZIRX_BTC_SUCCESS, payload: data });
   } catch (error) {
@@ -38,7 +38,7 @@ export const ZebpayAction = () => async (dispatch) => {
   try {
     dispatch({ type: ZEBPAY_BTC_REQUEST });
     const { data } = await axios.get(
-      "http://157.245.106.83:3000/zebapi/pro/v1/market/"
+      " https://ct.bucle.dev/zebapi/pro/v1/market/"
     );
     dispatch({ type: ZEBPAY_BTC_SUCCESS, payload: data });
   } catch (error) {
@@ -55,7 +55,7 @@ export const CrossTowerBtcAction = () => async (dispatch) => {
   try {
     dispatch({ type: CROSSTOWER_BTC_REQUEST });
     const { data } = await axios.get(
-      "http://157.245.106.83:3000/crosstower/api/3/public/ticker"
+      " https://ct.bucle.dev/crosstower/api/3/public/ticker"
     );
     dispatch({ type: CROSSTOWER_BTC_SUCCESS, payload: data });
   } catch (error) {
@@ -72,7 +72,7 @@ export const CoindcxBtcAction = () => async (dispatch) => {
   try {
     dispatch({ type: COINDCX_BTC_REQUEST });
     const { data } = await axios.get(
-      "http://157.245.106.83:3000/coindcx/exchange/ticker"
+      " https://ct.bucle.dev/coindcx/exchange/ticker"
     );
     dispatch({ type: COINDCX_BTC_SUCCESS, payload: data });
   } catch (error) {
