@@ -303,7 +303,21 @@ const Section1 = () => {
                             )
                           : "loading"}
                       </div>
-                      <p className="mb-0 loss-section1-card">
+                      <p
+                        className="mb-0 loss-section1-card"
+                        style={{
+                          color:
+                            crossTowerBtc &&
+                            crossTowerBtc.BTCUSD &&
+                            (
+                              (crossTowerBtc.BTCUSD.open -
+                                crossTowerBtc.BTCUSD.last) /
+                              crossTowerBtc.BTCUSD.open
+                            ).toFixed(4) < 0
+                              ? "red"
+                              : "green",
+                        }}
+                      >
                         {crossTowerBtc &&
                         crossTowerBtc.BTCUSD &&
                         crossTowerBtc.BTCUSD
@@ -345,7 +359,21 @@ const Section1 = () => {
                             )
                           : "loading"}
                       </div>
-                      <p className="mb-0 loss-section1-card">
+                      <p
+                        className="mb-0 loss-section1-card"
+                        style={{
+                          color:
+                            crossTowerBtc &&
+                            crossTowerBtc.DOGEBTC &&
+                            (
+                              (crossTowerBtc.DOGEBTC.open -
+                                crossTowerBtc.DOGEBTC.last) /
+                              crossTowerBtc.DOGEBTC.open
+                            ).toFixed(4) < 0
+                              ? "red"
+                              : "green",
+                        }}
+                      >
                         {" "}
                         {crossTowerBtc &&
                         crossTowerBtc.DOGEBTC &&
@@ -371,7 +399,7 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 ">
                       <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
                         <img src={B1} alt="" className="main-btc-top-card" />
-                        BTC
+                        ZECETH
                       </div>
                       <p className="mb-0 hrs-section1-card hrs-section1-card">
                         Last 24hrs
@@ -388,8 +416,21 @@ const Section1 = () => {
                             )
                           : "loading"}
                       </div>
-                      <p className="mb-0 loss-section1-card">
-                        {" "}
+                      <p
+                        className="mb-0 loss-section1-card"
+                        style={{
+                          color:
+                            crossTowerBtc &&
+                            crossTowerBtc.ZECETH &&
+                            (
+                              (crossTowerBtc.ZECETH.open -
+                                crossTowerBtc.ZECETH.last) /
+                              crossTowerBtc.ZECETH.open
+                            ).toFixed(4) < 0
+                              ? "red"
+                              : "green",
+                        }}
+                      >
                         {crossTowerBtc &&
                         crossTowerBtc.ZECETH &&
                         crossTowerBtc.ZECETH
@@ -431,8 +472,21 @@ const Section1 = () => {
                             ).toFixed(6)
                           : "loading"}
                       </div>
-                      <p className="mb-0 loss-section1-card">
-                        {" "}
+                      <p
+                        className="mb-0 loss-section1-card"
+                        style={{
+                          color:
+                            crossTowerBtc &&
+                            crossTowerBtc.DOGEUSDT20 &&
+                            (
+                              (crossTowerBtc.DOGEUSDT20.open -
+                                crossTowerBtc.DOGEUSDT20.last) /
+                              crossTowerBtc.DOGEUSDT20.open
+                            ).toFixed(4) < 0
+                              ? "red"
+                              : "green",
+                        }}
+                      >
                         {crossTowerBtc &&
                         crossTowerBtc.DOGEUSDT20 &&
                         crossTowerBtc.DOGEUSDT20
@@ -478,7 +532,21 @@ const Section1 = () => {
                             )
                           : "loading"}
                       </div>
-                      <p className="mb-0 loss-section1-card">
+                      <p
+                        className="mb-0 loss-section1-card"
+                        style={{
+                          color:
+                            crossTowerBtc &&
+                            crossTowerBtc.UNIBTC &&
+                            (
+                              (crossTowerBtc.UNIBTC.open -
+                                crossTowerBtc.UNIBTC.last) /
+                              crossTowerBtc.UNIBTC.open
+                            ).toFixed(4) < 0
+                              ? "red"
+                              : "green",
+                        }}
+                      >
                         {" "}
                         {crossTowerBtc &&
                         crossTowerBtc.UNIBTC &&
@@ -521,7 +589,21 @@ const Section1 = () => {
                             )
                           : "loading"}
                       </div>
-                      <p className="mb-0 loss-section1-card">
+                      <p
+                        className="mb-0 loss-section1-card"
+                        style={{
+                          color:
+                            crossTowerBtc &&
+                            crossTowerBtc.BTCUSDC &&
+                            (
+                              (crossTowerBtc.BTCUSDC.open -
+                                crossTowerBtc.BTCUSDC.last) /
+                              crossTowerBtc.BTCUSDC.open
+                            ).toFixed(4) < 0
+                              ? "red"
+                              : "green",
+                        }}
+                      >
                         {" "}
                         {crossTowerBtc &&
                         crossTowerBtc.BTCUSDC &&
@@ -564,7 +646,21 @@ const Section1 = () => {
                             )
                           : "loading"}
                       </div>
-                      <p className="mb-0 loss-section1-card">
+                      <p
+                        className="mb-0 loss-section1-card"
+                        style={{
+                          color:
+                            crossTowerBtc &&
+                            crossTowerBtc.COMPBTC &&
+                            (
+                              (crossTowerBtc.COMPBTC.open -
+                                crossTowerBtc.COMPBTC.last) /
+                              crossTowerBtc.COMPBTC.open
+                            ).toFixed(4) < 0
+                              ? "red"
+                              : "green",
+                        }}
+                      >
                         {" "}
                         {crossTowerBtc &&
                         crossTowerBtc.COMPBTC &&
@@ -607,7 +703,21 @@ const Section1 = () => {
                             ).toFixed(6)
                           : "loading"}
                       </div>
-                      <p className="mb-0 loss-section1-card">
+                      <p
+                        className="mb-0 loss-section1-card"
+                        style={{
+                          color:
+                            crossTowerBtc &&
+                            crossTowerBtc.BTCUSDC_TR &&
+                            (
+                              (crossTowerBtc.BTCUSDC_TR.open -
+                                crossTowerBtc.BTCUSDC_TR.last) /
+                              crossTowerBtc.BTCUSDC_TR.open
+                            ).toFixed(4) < 0
+                              ? "red"
+                              : "green",
+                        }}
+                      >
                         {" "}
                         {crossTowerBtc &&
                         crossTowerBtc.BTCUSDC_TR &&
