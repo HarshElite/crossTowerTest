@@ -56,7 +56,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseOne"
                   >
-                    How to Deposit INR in CrossTower India Wallet ?
+                    How to Deposit INR in Crosstower India Wallet?
                   </p>
 
                   <button
@@ -78,8 +78,7 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  You can deposit the Funds Using MobiKwik Wallet/Debit Card and
-                  through UPI
+                You can deposit the funds using MobiKwik Wallet/Debit Card and through UPI.
                 </div>
               </div>
             </div>
@@ -105,7 +104,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    How to Withdraw INR from CrossTower India Wallet ?
+                    How to Withdraw INR from Crosstower India Wallet?
                   </p>
 
                   <button
@@ -127,8 +126,7 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  Its Simple, You can withdraw funds by placing a request under
-                  the Withdraw tab
+                Its Simple, You can withdraw funds by placing a request under the Withdraw INR tab.
                 </div>
               </div>
             </div>
@@ -156,8 +154,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    When will my Crosstower Wallet be Updated after Deposit and
-                    Withdraw ?
+                    When will my Crosstower India Wallet be Updated after Deposit?
                   </p>
 
                   <button
@@ -179,10 +176,8 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  In case of Deposit, Your Cross Tower wallet will be updated
-                  instantly once the transaction is successful. In case of
-                  Withdraw, Your cross Tower wallet will be updated once it is
-                  processed successfully from our side at the end of the day
+                Your Crosstower wallet will be updated instantly once the transaction is 
+                successful at the Payment Gateway's End.
                 </div>
               </div>
             </div>
@@ -208,8 +203,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseFour"
                   >
-                    When Will I receive Funds in My Bank account after placing
-                    Withdrawal request at Cross Tower ?
+                    When will I receive funds in my bank account after placing Withdrawal request?
                   </p>
 
                   <button
@@ -231,8 +225,7 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  Funds are credited in your bank account on Next Day (Excluding
-                  weekends and Bank Holidays)
+                Funds are credited in your bank account within 24 Hours (Excluding weekends and Bank Holidays).
                 </div>
               </div>
             </div>
@@ -258,8 +251,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseFive"
                   >
-                    By what time I can place withdraw request with Cross Tower
-                    India ?
+                    By what time I can place withdraw request with Cross Tower India?
                   </p>
 
                   <button
@@ -281,14 +273,14 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  You can place the request any time during the day
+                You can place the request any time during the day.
                 </div>
               </div>
             </div>
           </div>
         </div>
         {/* end 5 */}
-        <div className="accordian-container">
+        <div className="accordian-container  pb-5">
           <div id="accordion my-5">
             <div class="card accordain-tag-1-c ">
               <div
@@ -307,7 +299,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseSix"
                   >
-                    What is the Maximum / Minimum INR Deposit Limit?
+                   What is the Maximum / Minimum INR Deposit Limit?
                   </p>
                   <button
                     class="btn-accordion"
@@ -328,13 +320,60 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  Minimum Deposit is INR 100, There is no bar on maximum deposit
+                Minimum Deposit is INR 100, there is no bar on maximum deposit.
                 </div>
               </div>
             </div>
           </div>
         </div>
         {/* end 6 */}
+        <div className="accordian-container  pb-5">
+          <div id="accordion my-5">
+            <div class="card accordain-tag-1-c ">
+              <div
+                class="card-header color-card-acc "
+                id="headingSix"
+                className={`banner ${
+                  toggle6 ? "color-card-acc-white" : "color-card-acc"
+                }`}
+              >
+                <div className="d-flex justify-content-between align-items-center p-3">
+                  <p
+                    onClick={triggerToggle6}
+                    className="mb-0 generic-text-bold"
+                    data-toggle="collapse"
+                    data-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                   What is the Maximum / Minimum INR Withdraw Limit?
+                  </p>
+                  <button
+                    class="btn-accordion"
+                    onClick={triggerToggle6}
+                    data-toggle="collapse"
+                    data-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    {toggle2 ? "-" : "+"}
+                  </button>
+                </div>
+              </div>
+              <div
+                id="collapseSix"
+                class="collapse"
+                aria-labelledby="headingSix"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                Minimum Withdraw is INR 200, there is no bar on maximum withdraw.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* end of 7 */}
       </div>
     </section>
   );
