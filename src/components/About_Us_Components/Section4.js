@@ -73,17 +73,17 @@ const Section4 = () => {
                     className="imagebackground-abt-us-card-bgground"
                   />
                   <img
-                    src={Member1}
+                    src={Member3}
                     alt=""
                     className="imagebackground-abt-us-card-image"
                   />
                 </div>
                 <div className="mt-5 pb-5 pt-5">
                   <p className="text-center text-capitalize text-head-abtus-sec4">
-                    Vikas Ahuja
+                    Kristin Boggiano
                   </p>
                   <p className="text-center text-para-abtus-sec4">
-                    India Chief Executive Officer
+                    President & Co-Founder
                   </p>
                   <div className="d-flex justify-content-center ">
                     <hr className="hr-line-abtsec4" />
@@ -118,17 +118,17 @@ const Section4 = () => {
                     className="imagebackground-abt-us-card-bgground"
                   />
                   <img
-                    src={Member3}
+                    src={Member1}
                     alt=""
                     className="imagebackground-abt-us-card-image"
                   />
                 </div>
                 <div className="mt-5 pb-5 pt-5">
                   <p className="text-center text-capitalize text-head-abtus-sec4">
-                    Kristin Boggiano
+                    Vikas Ahuja
                   </p>
                   <p className="text-center text-para-abtus-sec4">
-                    President & Co-Founder
+                    India Chief Executive Officer
                   </p>
                   <div className="d-flex justify-content-center ">
                     <hr className="hr-line-abtsec4" />

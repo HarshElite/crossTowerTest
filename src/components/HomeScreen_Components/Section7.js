@@ -11,8 +11,8 @@ const Section7 = () => {
         </p>
 
         <p className="text-center generic-para-text mt-5 mb-5 maxwidthfortext">
-          Crosstower allows you to trade, buy, and sell over 100
-          cryptocurrencies in less than 10 minutes.
+          CrossTower allows you to trade,buy and sell over multiple crypto
+          currencies in less than few minutes.
         </p>
         <div className="row p-md-5 p-3">
           <div className="col-md-4 col-sm-12">
@@ -52,8 +52,7 @@ const Section7 = () => {
                     Complete Your KYC
                   </p>
                   <p className="text-blue-section7 mb-0 ">
-                    Under 5 minutes finish your KYC with just your Selfie,
-                    Aadhar, and PAN after download. 
+                    Submit your KYC documents and get KYC ready in few minutes
                   </p>
                 </div>
               </div>
@@ -74,8 +73,7 @@ const Section7 = () => {
                     Get Set Trade
                   </p>
                   <p className="text-blue-section7 mb-0 ">
-                    You are just one click away from 100s of cryptocurrencies,
-                    so start trading! 
+                    You are just one click away to start trading in Crypto  
                   </p>
                 </div>
               </div>

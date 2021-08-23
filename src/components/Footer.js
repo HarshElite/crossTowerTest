@@ -328,7 +328,7 @@ const Footer = () => {
             <span className="footer-bottom-header-text"> Exchange :</span>
             <span className="footer-bottom-span-green">Bitcoin | Ripple</span>
           </p>
-          <p className="footer-bottom-header-text pt-5">About</p>
+          <p className="footer-bottom-header-text pt-5">About Us</p>
           <p className="footer-bottom-header-para">
             CrossTower is a US based digital asset exchange company founded in
             by financial industry veterans who are on a mission to bring digital

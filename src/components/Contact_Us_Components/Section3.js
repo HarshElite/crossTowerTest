@@ -13,7 +13,7 @@ const Section3 = () => {
             </p>
             <p className="generic-para-text primary-color-blue-dark px-md-5 px-0">
               We are here to answer your questions if you need any help with our
-              services. Refer to FAQs or give us a call.
+              services. Refer to FAQs or write to us at support@crosstower.in
             </p>
           </div>
         </div>
@@ -47,7 +47,7 @@ const Section3 = () => {
                   />
                 </div>
                 <p className="generic-medium-text primary-color-blue text-center mb-4">
-                  frequently asked questions
+                  Frequently Asked Questions
                 </p>
               </div>
             </div>

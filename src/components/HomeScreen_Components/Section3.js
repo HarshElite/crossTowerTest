@@ -9,12 +9,12 @@ const Section3 = () => {
   return (
     <section className="py-5 section3-back">
       <p className="text-center section-3-heading1">
-        <span>Why Crosstower?</span>
+        <span>Why CrossTower?</span>
       </p>
 
       <p className="text-center generic-para-text mt-5 mb-5 maxwidthfortext">
-        We will help you stay one step ahead of your counterparts, with our
-        deep-rooted insights, easy trading options, and competitive prices.
+        We will help you stay one step ahead of your counterparts, with easy
+        trading options and competitive prices.
       </p>
 
       <div className="row p-md-5 p-3">
