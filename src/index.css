@@ -79,6 +79,7 @@ code {
   font-style: normal;
 }
 
+
 .generic-title-para-blue {
   color: #354bcc;
   font-family: OpenSansRegular;
@@ -1082,11 +1083,11 @@ code {
 
 .card-section-7 {
   border: none;
-  max-height: 320px;
+  max-height: 243px;
 }
 
 .card-body-sec7-green {
-  border-left: 2px solid #01fab3;
+  /* border-left: 2px solid #01fab3; */
   height: 280px;
 }
 
@@ -1106,6 +1107,10 @@ code {
 
 .image-container-section7-image {
   width: 100%;
+}
+.logo-img{
+  position:absolute;
+  z-index: 1;
 }
 
 /* ---------------------------------------------------------------- End Section 7 ---------------------------------------------------------------- */

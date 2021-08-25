@@ -3,7 +3,7 @@ import VideoPlaceHolder from "../../images/homepage/videothumb.png";
 
 const Section5 = () => {
   return (
-    <section className="py-5 p-md-5 p-3">
+    <section className="py-5 p-md-5 p-3" style={{backgroundImage:'linear-gradient(55.04deg, #A5B9E5 0%, #EDF1F8 52.55%, #CCD9F1 98.91%)'}}>
       <div className="row p-md-5 p-3 d-flex align-items-center">
         <div className="col-md-6 col-sm-12">
           <img src={VideoPlaceHolder} alt="" className="w-100" />

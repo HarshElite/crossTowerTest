@@ -29,12 +29,16 @@ const Section9 = () => {
   };
 
   return (
-    <section className="section9-homescreen py-md-2 py-3 px-md-5 px-3">
-      <p className="homescreen-section-1-para">
+    <section className="section9-homescreen py-md-2 py-3 px-md-5 px-3" style={{backgroundImage:'linear-gradient(55.04deg, #A5B9E5 0%, #EDF1F8 52.55%, #CCD9F1 98.91%)'}}>
+      {/* <p className="homescreen-section-1-para">
         <span className="generic-title-para-blue">General</span>
         <span className="generic-title-para-red"> Queries</span>
-      </p>
-      <p className="generic-title-heading">Frequently Asked Questions</p>
+      </p> */}
+      <p className="text-center section-3-heading1" >
+          <span style={{fontSize:"24px",backgroundColor:'#CCD9F1'}}>General Queries</span>
+        </p>
+      <p className="generic-title-heading text-center">Frequently Asked Questions</p>
+
 
       <div className="accordian-container-main p-md-5 p-0">
         <div className="accordian-container">
