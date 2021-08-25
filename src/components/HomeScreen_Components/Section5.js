@@ -14,7 +14,7 @@ const Section5 = () => {
             <span className="generic-title-para-red"> Platform</span>
           </p>
           <p className="generic-title-heading primary-color-blue-dark">
-            Trusted & Secure Cryptocurrency Trading
+          India’s trusted & Secure Cryptocurrency
           </p>
           <p className="generic-para-text">
             We are aiming to create an exchange that will become a community for
