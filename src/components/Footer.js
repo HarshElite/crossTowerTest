@@ -16,12 +16,14 @@ const Footer = () => {
           <p className="logo-text-footer pt-5">
             <img src={LogoDark} alt="" />
           </p>
+          <p className="mb-0 mt-2">CrossTower is on a mission to 
+         </p>
+              <p className="mb-0 mt-2">
+              mainstream digital asset investing and trading.
+              </p>
           <div className="row p-2">
             <div className="d-flex flex-column col-md-6 col-sm-12 mt-3">
-              <p className="mb-0 mt-2">CrossTower is on a mission to</p>
-              <p className="mb-0 mt-2">
-                mainstream crypto investing and trading
-              </p>
+              
             </div>
             <div className="d-flex col-md-6 col-sm-12 justify-content-md-end justify  -content-sm-start mt-3">
               <div className="row">
@@ -325,20 +327,16 @@ const Footer = () => {
             Most popular on CrossTower
           </p>
           <p>
-            <span className="footer-bottom-header-text"> Exchange :</span>
-            <span className="footer-bottom-span-green">Bitcoin | Ripple</span>
+            <span className="footer-bottom-header-text"> Exchange : </span>
+            <span className="footer-bottom-span-blue">Bitcoin | Litecoin | Ethereum | Ripple </span>
           </p>
           <p className="footer-bottom-header-text pt-5">About Us</p>
           <p className="footer-bottom-header-para">
-            CrossTower is a US based digital asset exchange company founded in
-            by financial industry veterans who are on a mission to bring digital
-            asset trading and investing to institutional and professional
-            traders. The founding team at CrossTower has an average of 25 years
-            of experience in building equity, options, and digital asset
-            exchanges along with strong regulatory and legal expertise in
-            developing structured products and blockchain technology. We are
-            setting up our operations in India to launch our digital exchange
-            and other fintech products for Indian & US customers.
+          CrossTower is a digital assets capital markets firm founded by financial industry veterans 
+          on a mission to bring digital asset trading and investing to retail traders. 
+          CrossTower has leveraged its vast experience in trading, technology, operational infrastructure, 
+          innovative pricing, regulations and compliance to open up digital assets to a sophisticated audience.
+
           </p>
           <p className="footer-bottom-header-text">Disclaimer</p>
           <p className="footer-bottom-header-para">

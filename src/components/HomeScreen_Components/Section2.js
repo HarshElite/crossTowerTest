@@ -138,6 +138,9 @@ const Section2 = () => {
           </table>
         </div>
       </div>
+      <p className='generic-para-text text-center'>
+      *Please refer to our terms and conditions for Price accuracy status
+      </p>
       <div className="row d-flex justify-content-center align-items-center mt-5">
         <button className="start-trading-button" type="submit">
           Start Trading

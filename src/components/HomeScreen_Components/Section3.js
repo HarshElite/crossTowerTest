@@ -13,8 +13,8 @@ const Section3 = () => {
       </p>
 
       <p className="text-center generic-para-text mt-5 mb-5 maxwidthfortext">
-        We will help you stay one step ahead of your counterparts, with easy
-        trading options and competitive prices.
+      We will help you stay one step ahead of your counterparts, with easy trading options 
+      and competitive prices.
       </p>
 
       <div className="row p-md-5 p-3">

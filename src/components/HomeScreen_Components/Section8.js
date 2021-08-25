@@ -31,6 +31,9 @@ const NewsCard = () => {
                 Formerly known as MATIC, Polygon is the first well-organized, 
                 easy-to-use platform for Ethereum scaling and infrastructure development. 
                 </p>
+                <p style={{marginBottom:"30px"}}>
+
+                </p>
                 <p className="card-news-date">April 30, 2021</p>
               </div>
             </div>
@@ -47,6 +50,7 @@ const NewsCard = () => {
                 CrossTower Global has added Ren, Chiliz, 
                 and Swipe markets to our exchange. 
                 </p>
+                <p style={{marginBottom:"75px"}}></p>
                 <p className="card-news-date">May 12, 2021</p>
               </div>
             </div>

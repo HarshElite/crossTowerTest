@@ -5,15 +5,15 @@ import Iphone2 from "../../images/homepage/step_12home.png";
 import Iphone3 from "../../images/homepage/step_13home.png";
 const Section7 = () => {
   return (
-    <section className="py-md-1 py-5" style={{marginBottom:"120px"}}>
-      <div className="container py-md-1 p-3 px-md-5">
+    <section className="py-md-1 py-5" >
+      <div className="container py-md-5 p-3 px-md-5">
         <p className="text-center section-3-heading1">
           <span>Buy. Sell. Trade</span>
         </p>
 
         <p className="text-center generic-para-text mt-5 mb-5 maxwidthfortext">
-          CrossTower allows you to trade,buy and sell over multiple crypto
-          currencies in less than few minutes.
+        CrossTower allows you to trade,buy and sell over
+         multiple crypto currencies in less than few minutes.
         </p>
         <div className="row p-md-5 p-3">
           <div className="col-md-4 col-sm-12 ">
@@ -80,7 +80,7 @@ const Section7 = () => {
                     Get Set Trade
                   </p>
                   <p className="text-blue-section7 mb-0 ">
-                  You are just one click away to start trading in Crypto 
+                  You are just one click away to start trading in Crypto
                   </p>
                 </div>
               </div>

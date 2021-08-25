@@ -74,7 +74,8 @@ code {
 
 .generic-para-text {
   font-family: OpenSansRegular;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
   font-family: OpenSansRegular;
   font-style: normal;
 }
@@ -1207,8 +1208,8 @@ code {
   object-fit: cover;
 }
 
-.footer-bottom-span-green {
-  color: #01fab3;
+.footer-bottom-span-blue {
+  color: #012ffa;
 }
 
 .footer-bottom-header-text {
