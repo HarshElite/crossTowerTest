@@ -302,6 +302,7 @@ const Section1 = () => {
                               6
                             )
                           : "loading"}
+                          {console.log(usdToInr)}
                       </div>
                       <p
                         className="mb-0 loss-section1-card"
@@ -331,7 +332,7 @@ const Section1 = () => {
                       </p>
                     </div>
                     <div className="div-height-control">
-                      <LineChart />
+                      {/* <LineChart /> */}
                     </div>
                   </div>
                 </div>
@@ -388,7 +389,7 @@ const Section1 = () => {
                       </p>
                     </div>
                     <div className="div-height-control">
-                      <LineChart />
+                      {/* <LineChart /> */}
                     </div>
                   </div>
                 </div>
@@ -444,7 +445,7 @@ const Section1 = () => {
                       </p>
                     </div>
                     <div className="div-height-control">
-                      <LineChart />
+                      {/* <LineChart /> */}
                     </div>
                   </div>
                 </div>
@@ -500,7 +501,7 @@ const Section1 = () => {
                       </p>
                     </div>
                     <div className="div-height-control">
-                      <LineChart />
+                      {/* <LineChart /> */}
                     </div>
                   </div>
                 </div>
@@ -561,7 +562,7 @@ const Section1 = () => {
                       </p>
                     </div>
                     <div className="div-height-control">
-                      <LineChart />
+                      {/* <LineChart /> */}
                     </div>
                   </div>
                 </div>
@@ -618,7 +619,7 @@ const Section1 = () => {
                       </p>
                     </div>
                     <div className="div-height-control">
-                      <LineChart />
+                      {/* <LineChart /> */}
                     </div>
                   </div>
                 </div>
@@ -675,7 +676,7 @@ const Section1 = () => {
                       </p>
                     </div>
                     <div className="div-height-control">
-                      <LineChart />
+                      {/* <LineChart /> */}
                     </div>
                   </div>
                 </div>
@@ -732,7 +733,7 @@ const Section1 = () => {
                       </p>
                     </div>
                     <div className="div-height-control">
-                      <LineChart />
+                      {/* <LineChart /> */}
                     </div>
                   </div>
                 </div>
