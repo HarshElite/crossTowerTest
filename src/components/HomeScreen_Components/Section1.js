@@ -295,13 +295,16 @@ const Section1 = () => {
                     <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                       <div className="mb-0 gentextsect-1">
                         ₹
-                        {crossTowerBtc &&
-                        crossTowerBtc.BTCUSD &&
-                        crossTowerBtc.BTCUSD
-                          ? (crossTowerBtc.BTCUSD.last * usdToInr.inr).toFixed(
-                              6
-                            )
-                          : "loading"}
+                        { 
+                           crossTowerBtc &&
+                           crossTowerBtc.BTCUSD &&
+                           crossTowerBtc.BTCUSD
+                             ? (crossTowerBtc.BTCUSD.last * usdToInr.inr).toFixed(
+                                 2
+                               )
+                             : "loading"
+                          
+                       }
                           {console.log(usdToInr)}
                       </div>
                       <p
@@ -356,7 +359,7 @@ const Section1 = () => {
                         crossTowerBtc.DOGEBTC &&
                         crossTowerBtc.DOGEBTC
                           ? (crossTowerBtc.DOGEBTC.last * usdToInr.inr).toFixed(
-                              6
+                              2
                             )
                           : "loading"}
                       </div>
@@ -413,7 +416,7 @@ const Section1 = () => {
                         crossTowerBtc.ZECETH &&
                         crossTowerBtc.ZECETH
                           ? (crossTowerBtc.ZECETH.last * usdToInr.inr).toFixed(
-                              6
+                              2
                             )
                           : "loading"}
                       </div>
@@ -439,7 +442,7 @@ const Section1 = () => {
                               (crossTowerBtc.ZECETH.open -
                                 crossTowerBtc.ZECETH.last) /
                               crossTowerBtc.ZECETH.open
-                            ).toFixed(4)
+                            ).toFixed(2)
                           : "loading"}
                         %
                       </p>
@@ -470,7 +473,7 @@ const Section1 = () => {
                         crossTowerBtc.DOGEUSDT20
                           ? (
                               crossTowerBtc.DOGEUSDT20.last * usdToInr.inr
-                            ).toFixed(6)
+                            ).toFixed(2)
                           : "loading"}
                       </div>
                       <p
@@ -529,7 +532,7 @@ const Section1 = () => {
                         crossTowerBtc.UNIBTC &&
                         crossTowerBtc.UNIBTC
                           ? (crossTowerBtc.UNIBTC.last * usdToInr.inr).toFixed(
-                              6
+                              2
                             )
                           : "loading"}
                       </div>
@@ -586,7 +589,7 @@ const Section1 = () => {
                         crossTowerBtc.BTCUSDC &&
                         crossTowerBtc.BTCUSDC
                           ? (crossTowerBtc.BTCUSDC.last * usdToInr.inr).toFixed(
-                              6
+                              2
                             )
                           : "loading"}
                       </div>
@@ -643,7 +646,7 @@ const Section1 = () => {
                         crossTowerBtc.COMPBTC &&
                         crossTowerBtc.COMPBTC
                           ? (crossTowerBtc.COMPBTC.last * usdToInr.inr).toFixed(
-                              6
+                              2
                             )
                           : "loading"}
                       </div>
@@ -701,7 +704,7 @@ const Section1 = () => {
                         crossTowerBtc.BTCUSDC_TR
                           ? (
                               crossTowerBtc.BTCUSDC_TR.last * usdToInr.inr
-                            ).toFixed(6)
+                            ).toFixed(2)
                           : "loading"}
                       </div>
                       <p
