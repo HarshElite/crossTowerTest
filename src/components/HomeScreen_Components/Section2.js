@@ -184,7 +184,14 @@ const Section2 = () => {
                 <img src={T1logo} alt="" />
               </th>
               <td td className="py-4">
-                {(33230.3).toLocaleString("en-IN", {
+                {loadingcrossTowerBtc && "loading"}
+                {(
+                  Math.round(
+                    crossTowerBtc &&
+                      crossTowerBtc.BTCUSD &&
+                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                  ) / 100
+                ).toLocaleString("en-IN", {
                   maximumFractionDigits: 2,
                   style: "currency",
                   currency: "INR",
@@ -206,9 +213,18 @@ const Section2 = () => {
                 0.00%
               </td>
               <td className="py-4">
-                {loadingWazirx && "loading"}
-                ₹&nbsp;
-                {wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last}
+                {loadingcrossTowerBtc && "loading"}
+                {(
+                  Math.round(
+                    crossTowerBtc &&
+                      crossTowerBtc.BTCUSD &&
+                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                  ) / 100
+                ).toLocaleString("en-IN", {
+                  maximumFractionDigits: 2,
+                  style: "currency",
+                  currency: "INR",
+                })}
               </td>
               {/* <td className="py-4">
                   {loadingZebpay && "loading"}
@@ -230,27 +246,27 @@ const Section2 = () => {
                 <img src={T2logo} alt="" />
               </th>
               <td td className="py-4">
-                ₹&nbsp;33,230.30
+                {loadingWazirx && "loading"}
+
+                {wazirxBtc &&
+                  wazirxBtc.btcinr &&
+                  Number(wazirxBtc.btcinr.last).toLocaleString("en-IN", {
+                    maximumFractionDigits: 2,
+                    style: "currency",
+                    currency: "INR",
+                  })}
               </td>
-              <td className="py-4">
-                0.20%
-                {/* {loadingcrossTowerBtc && "loading"}
-                {(
-                  Math.round(
-                    crossTowerBtc &&
-                      crossTowerBtc.BTCUSD &&
-                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
-                  ) / 100
-                ).toLocaleString("en-IN", {
-                  maximumFractionDigits: 2,
-                  style: "currency",
-                  currency: "INR",
-                })} */}
-              </td>
+              <td className="py-4">0.20%</td>
               <td className="py-4">
                 {loadingWazirx && "loading"}
-                ₹&nbsp;
-                {wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last}
+
+                {wazirxBtc &&
+                  wazirxBtc.btcinr &&
+                  Number(wazirxBtc.btcinr.last).toLocaleString("en-IN", {
+                    maximumFractionDigits: 2,
+                    style: "currency",
+                    currency: "INR",
+                  })}
               </td>
               {/* <td className="py-4">
                   {loadingZebpay && "loading"}
@@ -272,7 +288,14 @@ const Section2 = () => {
                 <img src={T3logo} alt="" />
               </th>
               <td td className="py-4">
-                ₹&nbsp;33,230.30
+                {loadingZebpay && "loading"}
+                {zebPayBtc &&
+                  zebPayBtc[27] &&
+                  Number(zebPayBtc[27]["24hoursHigh"]).toLocaleString("en-IN", {
+                    maximumFractionDigits: 2,
+                    style: "currency",
+                    currency: "INR",
+                  })}
               </td>
               <td className="py-4">
                 {/* {loadingcrossTowerBtc && "loading"}
@@ -290,9 +313,14 @@ const Section2 = () => {
                 0.15%
               </td>
               <td className="py-4">
-                {loadingWazirx && "loading"}
-                ₹&nbsp;
-                {wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last}
+                {loadingZebpay && "loading"}
+                {zebPayBtc &&
+                  zebPayBtc[27] &&
+                  Number(zebPayBtc[27]["24hoursHigh"]).toLocaleString("en-IN", {
+                    maximumFractionDigits: 2,
+                    style: "currency",
+                    currency: "INR",
+                  })}
               </td>
               {/* <td className="py-4">
                   {loadingZebpay && "loading"}
@@ -314,7 +342,19 @@ const Section2 = () => {
                 <img src={T4logo} alt="" />
               </th>
               <td td className="py-4">
-                ₹&nbsp;33,230.30
+                {loadingcoinDcx && "loading"}
+
+                {Number(
+                  Math.round(
+                    coinDcxBtc &&
+                      coinDcxBtc[0] &&
+                      coinDcxBtc[0]["last_price"] * 100
+                  ) / 100
+                ).toLocaleString("en-IN", {
+                  maximumFractionDigits: 2,
+                  style: "currency",
+                  currency: "INR",
+                })}
               </td>
               <td className="py-4">
                 {/* {loadingcrossTowerBtc && "loading"}
@@ -332,9 +372,18 @@ const Section2 = () => {
                 0.10%
               </td>
               <td className="py-4">
-                {loadingWazirx && "loading"}
-                ₹&nbsp;
-                {wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last}
+                {loadingcoinDcx && "loading"}
+                {Number(
+                  Math.round(
+                    coinDcxBtc &&
+                      coinDcxBtc[0] &&
+                      coinDcxBtc[0]["last_price"] * 100
+                  ) / 100
+                ).toLocaleString("en-IN", {
+                  maximumFractionDigits: 2,
+                  style: "currency",
+                  currency: "INR",
+                })}
               </td>
               {/* <td className="py-4">
                   {loadingZebpay && "loading"}
