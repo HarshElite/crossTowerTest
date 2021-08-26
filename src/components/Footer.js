@@ -13,19 +13,17 @@ const Footer = () => {
     <>
       <section className="footer">
         <div className="container">
-          <p className="logo-text-footer pt-5">
-            <img src={LogoDark} alt="" />
-          </p>
-          <p className="mb-0 mt-2">CrossTower is on a mission to 
-         </p>
-              <p className="mb-0 mt-2">
-              mainstream digital asset investing and trading.
-              </p>
           <div className="row p-2">
             <div className="d-flex flex-column col-md-6 col-sm-12 mt-3">
-              
+              <p className="logo-text-footer pt-5">
+                <img src={LogoDark} alt="" />
+              </p>
+              <p className="mb-0 mt-2">CrossTower is on a mission to</p>
+              <p className="mb-0 mt-2">
+                mainstream digital asset investing and trading.
+              </p>
             </div>
-            <div className="d-flex col-md-6 col-sm-12 justify-content-md-end justify  -content-sm-start mt-3">
+            <div className="d-flex col-md-6 col-sm-12 justify-content-md-end justify-content-sm-start mt-3 align-items-center">
               <div className="row">
                 <div className="col-md-6 mt-2">
                   <img src={AppStore} alt="" className="logo-playstore" />
@@ -328,15 +326,18 @@ const Footer = () => {
           </p>
           <p>
             <span className="footer-bottom-header-text"> Exchange : </span>
-            <span className="footer-bottom-span-blue">Bitcoin | Litecoin | Ethereum | Ripple </span>
+            <span className="footer-bottom-span-blue">
+              Bitcoin | Litecoin | Ethereum | Ripple{" "}
+            </span>
           </p>
           <p className="footer-bottom-header-text pt-5">About Us</p>
           <p className="footer-bottom-header-para">
-          CrossTower is a digital assets capital markets firm founded by financial industry veterans 
-          on a mission to bring digital asset trading and investing to retail traders. 
-          CrossTower has leveraged its vast experience in trading, technology, operational infrastructure, 
-          innovative pricing, regulations and compliance to open up digital assets to a sophisticated audience.
-
+            CrossTower is a digital assets capital markets firm founded by
+            financial industry veterans on a mission to bring digital asset
+            trading and investing to retail traders. CrossTower has leveraged
+            its vast experience in trading, technology, operational
+            infrastructure, innovative pricing, regulations and compliance to
+            open up digital assets to a sophisticated audience.
           </p>
           <p className="footer-bottom-header-text">Disclaimer</p>
           <p className="footer-bottom-header-para">
