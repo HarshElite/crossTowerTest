@@ -18,9 +18,9 @@ const Footer = () => {
               <p className="logo-text-footer pt-5 ">
                 <img src={LogoDark} alt="" />
               </p>
-              <p className="mb-0 mt-2">CrossTower is on a mission to mainstream digital </p>
+              <p className="mb-0 mt-2">CrossTower is on a mission to mainstream crypto</p>
               <p className="mb-0 mt-2">
-                asset investing and trading.
+                 investing and trading.
               </p>
             </div>
             <div className="d-flex col-md-6 col-sm-12 justify-content-md-end  justify-content-sm-start mt-1 align-items-end">

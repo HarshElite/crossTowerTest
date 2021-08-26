@@ -8,7 +8,7 @@ const Section10 = () => {
           <div className="col-md-6 col-sm-12 p-md-5  d-flex justify-content-center align-items-center">
             <div className="mx-2 section-10-maxwidth">
               <p className="generic-title-heading text-white">
-                Get Started with Crosstower
+                Get Started with CrossTower
               </p>
               {/* <p className="generic-para-text text-white">
                 Get Started with Crosstower Diversify your portfolio with

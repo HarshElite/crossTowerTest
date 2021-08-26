@@ -86,6 +86,9 @@ const NewsCard = () => {
             </div>
           </div>
           <div className="col-md-4 col-sm-12 mt-3">
+            <a 
+            style={{textDecoration:"none"}}
+            href='https://www.globenewswire.com/news-release/2021/08/23/2285046/0/en/CrossTower-ranked-among-the-top-four-global-exchanges-in-Exchange-Benchmark-Report-published-by-CryptoCompare.html'>
             <div class="card border-0 shadow-lg rounded-3 h-100">
               <div class="card-body">
                 <img src={media3} alt="" class="card-img-top pb-3" />
@@ -107,16 +110,16 @@ const NewsCard = () => {
                     fontSize: "20px",
                   }}
                 >
-                  CrossTower teams up with Omniex to advance institutional
-                  adoption of crypto
+                  CrossTower ranked among the top four global exchanges 
                 </p>
-                <p class="generic-para-text ">
-                  Omniex customers can now access CrossTower’s consistently
-                  best-of-book pricing
+                <p class="generic-para-text " style={{color:"black"}}>
+                CrossTower,  has received an AA ranking from crypto-asset
+                 data provider CryptoCompare in its August 2021 Exchange Benchmark report.
                 </p>
                 {/* <p className="card-news-date">May 26, 2021</p> */}
               </div>
             </div>
+            </a>
           </div>
         </div>
         <div className="d-flex justify-content-center p-5">
