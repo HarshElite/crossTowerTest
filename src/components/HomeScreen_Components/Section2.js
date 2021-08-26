@@ -53,6 +53,8 @@ const Section2 = () => {
     crossTowerBtc,
   } = crossTowerBtcReducer;
 
+  console.log(wazirxBtc);
+
   // console.log(wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last);
   // console.log(zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]);
 
@@ -64,17 +66,17 @@ const Section2 = () => {
     dispatch(usdToInrAction());
   }, [dispatch]);
   return (
-    <section className="py-5">
-      <p className="text-center section-3-heading1">
-        <span>Current Market Rate </span>
+    <section className="py-5 tablesection3darkbg">
+      <p className="text-center generic-title-heading text-white text-white">
+        <span>CrossTower Advantage</span>
       </p>
 
-      <p className="text-center generic-para-text mt-5 mb-5 maxwidthfortext">
+      <p className="text-center generic-para-text mt-5 mb-5 maxwidthfortext text-white">
         Liquid cash is the future of currencies and finances and we understand
         your modern requirements. We leverage our global liquidity partners and
         market makers in making your trading easy and convenient.
       </p>
-      <div className="card shadow-lg table-responsive-sm main-table-card">
+      {/* <div className="card shadow-lg table-responsive-sm main-table-card">
         <div className="card-body">
           <table class="table table-borderless table-responsive table-hover">
             <thead>
@@ -104,7 +106,7 @@ const Section2 = () => {
                 <th scope="row" className="py-4">
                   1
                 </th>
-                <td className="py-4">Bitcoin -BTC</td>
+                <td className="py-4">₹33,230.30</td>
                 <td className="py-4">
                   {loadingcrossTowerBtc && "loading"}
                   INR
@@ -137,12 +139,197 @@ const Section2 = () => {
             </tbody>
           </table>
         </div>
+      </div> */}
+      {/* <div className="card shadow-lg ">
+        <div className="card-body p-0"> */}
+      <div className="table-maxwidth-sec1 table-responsive table-responsive-sm">
+        <table class="table  table-hover  main-table-card">
+          <thead>
+            <tr>
+              <th
+                scope="col-3"
+                className="text-center text-white col-md-3  dark-blue-table p-4"
+              >
+                Exchange
+              </th>
+              <th
+                scope="col-3"
+                className="text-center text-white   col-md-3 light-blue-table p-4"
+              >
+                Buy Price
+                {/* <img src={T1logo} alt="" /> */}
+              </th>
+              <th
+                scope="col-3"
+                className="text-center text-white col-md-3  dark-blue-table p-4"
+              >
+                {/* <img src={T2logo} alt="" /> */}
+                Exchange fees
+              </th>
+              <th
+                scope="col-3"
+                className="text-center text-white   col-md-3 light-blue-table p-4"
+              >
+                {/* <img src={T3logo} alt="" /> */}
+                Total Cost
+              </th>
+              {/* <th scope="col-3" className="pb-4">
+                  <img src={T4logo} alt="" />
+                </th> */}
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="table-light text-center tr-text-styles">
+              <th scope="row" className="py-4">
+                <img src={T1logo} alt="" />
+              </th>
+              <td td className="py-4">
+                ₹&nbsp;33,230.30
+              </td>
+              <td className="py-4">
+                {loadingcrossTowerBtc && "loading"}₹&nbsp;
+                {Math.round(
+                  crossTowerBtc &&
+                    crossTowerBtc.BTCUSD &&
+                    crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                ) / 100}
+              </td>
+              <td className="py-4">
+                {loadingWazirx && "loading"}
+                ₹&nbsp;
+                {wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last}
+              </td>
+              {/* <td className="py-4">
+                  {loadingZebpay && "loading"}
+                  INR&nbsp;
+                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]}
+                </td> */}
+              {/* <td className="py-4">
+                  {loadingcoinDcx && "loading"}
+                  INR&nbsp;
+                  {Math.round(
+                    coinDcxBtc &&
+                      coinDcxBtc[0] &&
+                      coinDcxBtc[0]["last_price"] * 100
+                  ) / 100}
+                </td> */}
+            </tr>
+            <tr className="table-light text-center tr-text-styles">
+              <th scope="row" className="py-4">
+                <img src={T2logo} alt="" />
+              </th>
+              <td td className="py-4">
+                ₹&nbsp;33,230.30
+              </td>
+              <td className="py-4">
+                {loadingcrossTowerBtc && "loading"}₹&nbsp;
+                {Math.round(
+                  crossTowerBtc &&
+                    crossTowerBtc.BTCUSD &&
+                    crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                ) / 100}
+              </td>
+              <td className="py-4">
+                {loadingWazirx && "loading"}
+                ₹&nbsp;
+                {wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last}
+              </td>
+              {/* <td className="py-4">
+                  {loadingZebpay && "loading"}
+                  INR&nbsp;
+                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]}
+                </td> */}
+              {/* <td className="py-4">
+                  {loadingcoinDcx && "loading"}
+                  INR&nbsp;
+                  {Math.round(
+                    coinDcxBtc &&
+                      coinDcxBtc[0] &&
+                      coinDcxBtc[0]["last_price"] * 100
+                  ) / 100}
+                </td> */}
+            </tr>
+            <tr className="table-light text-center tr-text-styles">
+              <th scope="row" className="py-4">
+                <img src={T3logo} alt="" />
+              </th>
+              <td td className="py-4">
+                ₹&nbsp;33,230.30
+              </td>
+              <td className="py-4">
+                {loadingcrossTowerBtc && "loading"}₹&nbsp;
+                {Math.round(
+                  crossTowerBtc &&
+                    crossTowerBtc.BTCUSD &&
+                    crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                ) / 100}
+              </td>
+              <td className="py-4">
+                {loadingWazirx && "loading"}
+                ₹&nbsp;
+                {wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last}
+              </td>
+              {/* <td className="py-4">
+                  {loadingZebpay && "loading"}
+                  INR&nbsp;
+                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]}
+                </td> */}
+              {/* <td className="py-4">
+                  {loadingcoinDcx && "loading"}
+                  INR&nbsp;
+                  {Math.round(
+                    coinDcxBtc &&
+                      coinDcxBtc[0] &&
+                      coinDcxBtc[0]["last_price"] * 100
+                  ) / 100}
+                </td> */}
+            </tr>
+            <tr className="table-light text-center tr-text-styles">
+              <th scope="row" className="py-4">
+                <img src={T4logo} alt="" />
+              </th>
+              <td td className="py-4">
+                ₹&nbsp;33,230.30
+              </td>
+              <td className="py-4">
+                {loadingcrossTowerBtc && "loading"}₹&nbsp;
+                {Math.round(
+                  crossTowerBtc &&
+                    crossTowerBtc.BTCUSD &&
+                    crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                ) / 100}
+              </td>
+              <td className="py-4">
+                {loadingWazirx && "loading"}
+                ₹&nbsp;
+                {wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last}
+              </td>
+              {/* <td className="py-4">
+                  {loadingZebpay && "loading"}
+                  INR&nbsp;
+                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]}
+                </td> */}
+              {/* <td className="py-4">
+                  {loadingcoinDcx && "loading"}
+                  INR&nbsp;
+                  {Math.round(
+                    coinDcxBtc &&
+                      coinDcxBtc[0] &&
+                      coinDcxBtc[0]["last_price"] * 100
+                  ) / 100}
+                </td> */}
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <p className='generic-para-text text-center'>
-      *Please refer to our terms and conditions for Price accuracy status
+
+      {/* </div>
+      </div> */}
+      <p className="generic-para-text text-center text-white">
+        *Please refer to our terms and conditions for Price accuracy status
       </p>
       <div className="row d-flex justify-content-center align-items-center mt-5">
-        <button className="start-trading-button" type="submit">
+        <button className="start-trading-white" type="submit">
           Start Trading
         </button>
       </div>

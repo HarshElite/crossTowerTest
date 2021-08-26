@@ -80,7 +80,6 @@ code {
   font-style: normal;
 }
 
-
 .generic-title-para-blue {
   color: #354bcc;
   font-family: OpenSansRegular;
@@ -454,13 +453,11 @@ code {
   background-image: url(./images/homepage/buttonright.png);
   margin: 0 !important;
   poopensansregular-events: none;
-
   opacity: 1 !important;
 }
 
 .icon-bootstrap-prev:focus {
   poopensansregular-events: none;
-
   opacity: 1 !important;
 }
 .icon-bootstrap-prev:hover {
@@ -632,7 +629,38 @@ code {
 }
 
 .main-table-card {
-  border-radius: 10px;
+  border-radius: 0px;
+}
+
+.main-heading-table {
+  color: #0b1435;
+}
+
+.dark-blue-table {
+  background: #1f33a6 !important;
+}
+
+.light-blue-table {
+  background: #3e54d1 !important;
+}
+
+.table-maxwidth-sec1 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tr-text-styles {
+  font-weight: 600;
+}
+
+.tablesection3darkbg {
+  position: relative;
+  height: 100%;
+  background: url("./images/homepage/tablebgdark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*----------------------------------------------------------------------End Section 3 ----------------------------------------------------------------------*/
@@ -817,6 +845,21 @@ code {
   padding-left: 25px;
   font-size: 12px;
   color: #fff;
+  border: 0;
+  border-radius: 25px;
+  font-family: OpenSansRegular;
+  font-style: normal;
+  font-weight: normal;
+  padding-right: 25px;
+}
+.start-trading-white {
+  background: #fff;
+  color: #1f33a6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 180px;
+  padding-left: 25px;
+  font-size: 14px;
   border: 0;
   border-radius: 25px;
   font-family: OpenSansRegular;
@@ -1109,8 +1152,8 @@ code {
 .image-container-section7-image {
   width: 100%;
 }
-.logo-img{
-  position:absolute;
+.logo-img {
+  position: absolute;
   z-index: 1;
 }
 
