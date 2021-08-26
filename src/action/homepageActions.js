@@ -14,6 +14,9 @@ import {
   USD_TO_INR_REQUEST,
   USD_TO_INR_SUCCESS,
   USD_TO_INR_FAIL,
+  MAIN_CARD_API_REQUEST,
+  MAIN_CARD_API_SUCCESS,
+  MAIN_CARD_API_FAIL,
 } from "../constants/homepageConstants";
 import axios from "axios";
 
@@ -96,6 +99,24 @@ export const usdToInrAction = () => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: USD_TO_INR_FAIL,
+      payload:
+        error.response && error.response.data && error.response.data.message
+          ? error.response.data.message
+          : error.message,
+    });
+  }
+};
+
+export const mainCardApiAction = () => async (dispatch) => {
+  try {
+    dispatch({ type: MAIN_CARD_API_REQUEST });
+    const { data } = await axios.get(
+      "https://ct.bucle.dev/crosstower/product-master/ticker/list"
+    );
+    dispatch({ type: MAIN_CARD_API_SUCCESS, payload: data });
+  } catch (error) {
+    dispatch({
+      type: MAIN_CARD_API_FAIL,
       payload:
         error.response && error.response.data && error.response.data.message
           ? error.response.data.message

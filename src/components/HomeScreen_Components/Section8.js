@@ -18,9 +18,9 @@ const NewsCard = () => {
           We aim to keep you updated with the latest industry news from the best
           economic news agencies.{" "}
         </p> */}
-        <div className="row d-flex justify-space-between">
+        <div className="row d-flex justify-space-between row-newstable">
           <div className="col-md-4 col-sm-12 mt-3">
-            <div class="card border-0 shadow-lg rounded-3">
+            <div class="card border-0 shadow-lg rounded-3 h-100">
               <div class="card-body">
                 <img src={media2} alt="" class="card-img-top pb-3" />
                 <p
@@ -54,7 +54,7 @@ const NewsCard = () => {
             </div>
           </div>
           <div className="col-md-4 col-sm-12 mt-3">
-            <div class="card border-0 shadow-lg rounded-3">
+            <div class="card border-0 shadow-lg rounded-3 h-100">
               <div class="card-body">
                 <img src={media1} alt="" class="card-img-top pb-3" />
                 <p
@@ -86,7 +86,7 @@ const NewsCard = () => {
             </div>
           </div>
           <div className="col-md-4 col-sm-12 mt-3">
-            <div class="card border-0 shadow-lg rounded-3">
+            <div class="card border-0 shadow-lg rounded-3 h-100">
               <div class="card-body">
                 <img src={media3} alt="" class="card-img-top pb-3" />
                 <p

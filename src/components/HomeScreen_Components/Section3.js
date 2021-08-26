@@ -12,12 +12,12 @@ const Section3 = () => {
         <span>Why CrossTower?</span>
       </p>
 
-      <p className="text-center generic-para-text mt-5 mb-5 maxwidthfortext">
-      We will help you stay one step ahead of your counterparts, with easy trading options 
-      and competitive prices.
+      <p className="text-center generic-para-text mt-5 maxwidthfortext">
+        We will help you stay one step ahead of your counterparts, with easy
+        trading options and competitive prices.
       </p>
 
-      <div className="row p-md-5 p-3">
+      <div className="row py-md-3 py-5 px-md-5 p-3 mb-3">
         <div className="col-sm-12 col-md-3 ">
           <div className="card card-section-3re shadow-lg mt-md-3 mt-3">
             <div className="card-body card-section-3re-body">

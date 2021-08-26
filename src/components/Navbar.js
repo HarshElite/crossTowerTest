@@ -221,6 +221,55 @@ const Navbar = () => {
                 />
               </svg>
             </Link>
+            <Link
+              to="/aboutus"
+              href="#"
+              className="marginright30 top-nav-link-nav  dropdown-nav-main hidebigscreen"
+            >
+              About Us
+            </Link>
+            <Link
+              to="/login"
+              href="#"
+              className="marginright30 top-nav-link-nav  dropdown-nav-main hidebigscreen"
+            >
+              Support
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 drop-chevron"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </Link>
+            <Link
+              to="/comingsoon"
+              href="#"
+              className="marginright30 top-nav-link-nav  dropdown-nav-main hidebigscreen"
+            >
+              Login
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 drop-chevron"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </Link>
 
             {/* <div class="dropdown dropdown-nav-main">
               <Link

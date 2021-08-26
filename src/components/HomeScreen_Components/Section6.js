@@ -4,23 +4,23 @@ const Section6 = () => {
   return (
     <section className="section-6-main-section p-md-5 p-3">
       <div className="container py-5 p-md-5 p-3">
-        <div className="row">
-          <p>
-            <span className="generic-title-para text-white">USER</span>
-            <span className="generic-title-para-red"> STORIES</span>
-          </p>
-        </div>
-        <div className="row">
-          <div className="col-sm-12 col-md-5">
-            <p className="generic-title-heading text-white">
-              What people say about us
+        {/* <div className="row">
+            <p>
+              <span className="generic-title-para text-white">USER</span>
+              <span className="generic-title-para-red"> STORIES</span>
+            </p>
+          </div> */}
+        <div className="row mb-5">
+          <div className="col-12">
+            <p className="generic-title-heading text-center text-white">
+              Testimonials
             </p>
           </div>
-          <div className="col-sm-12 col-md-7 d-flex justify-content-end">
+          {/* <div className="col-sm-12 col-md-7 d-flex justify-content-end">
             <span className="generic-title-para-white text-white">
               View More &rarr;
             </span>
-          </div>
+          </div> */}
         </div>
 
         <div class="scrolling-wrapper-flexbox" id="style-4">

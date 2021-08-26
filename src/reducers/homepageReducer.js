@@ -14,6 +14,9 @@ import {
   USD_TO_INR_REQUEST,
   USD_TO_INR_SUCCESS,
   USD_TO_INR_FAIL,
+  MAIN_CARD_API_REQUEST,
+  MAIN_CARD_API_SUCCESS,
+  MAIN_CARD_API_FAIL,
 } from "../constants/homepageConstants";
 
 export const wazirxReducers = (state = { wazirxBtc: [] }, action) => {
@@ -74,6 +77,19 @@ export const usdToInrReducers = (state = { usdToInr: [] }, action) => {
     case USD_TO_INR_SUCCESS:
       return { loading: false, usdToInr: action.payload };
     case USD_TO_INR_FAIL:
+      return { loading: false, error: action.payload };
+    default:
+      return state;
+  }
+};
+
+export const mainCardApiReducers = (state = { cardApiMain: [] }, action) => {
+  switch (action.type) {
+    case MAIN_CARD_API_REQUEST:
+      return { loading: true, cardApiMain: [] };
+    case MAIN_CARD_API_SUCCESS:
+      return { loading: false, cardApiMain: action.payload };
+    case MAIN_CARD_API_FAIL:
       return { loading: false, error: action.payload };
     default:
       return state;

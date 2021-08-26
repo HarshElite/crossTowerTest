@@ -11,10 +11,12 @@ import {
   CrossTowerBtcAction,
   CoindcxBtcAction,
   usdToInrAction,
+  mainCardApiAction,
 } from "../../action/homepageActions";
 
 const Section1 = () => {
   const dispatch = useDispatch();
+
   const usdToInrBtcReducers = useSelector((state) => state.usdToInrBtcReducers);
   const {
     loading: loadingusdToInrBtc,
@@ -31,12 +33,20 @@ const Section1 = () => {
     crossTowerBtc,
   } = crossTowerBtcReducer;
 
+  const mainCardApiBtcReducers = useSelector(
+    (state) => state.mainCardApiBtcReducers
+  );
+  const {
+    loading: loadingMainCardApiLoader,
+    error: errorMainCardApiError,
+    cardApiMain,
+  } = mainCardApiBtcReducers;
+
+  console.log(cardApiMain && cardApiMain && cardApiMain);
+
   useEffect(() => {
-    dispatch(WazirxBtcAction());
-    dispatch(ZebpayAction());
     dispatch(CrossTowerBtcAction());
-    dispatch(CoindcxBtcAction());
-    dispatch(usdToInrAction());
+    dispatch(mainCardApiAction());
   }, [dispatch]);
 
   function ControlledTabs() {
@@ -280,411 +290,97 @@ const Section1 = () => {
         <div class="carousel-inner px-5">
           <div class="carousel-item active">
             <div className="row">
-              <div className="col-md-3 col-12 mt-5">
-                <div className="card card-carouse-sect1 shadow">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center w-100 ">
-                      <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
-                        <img src={B1} alt="" className="main-btc-top-card" />
-                        BTCUSD
+              {cardApiMain &&
+                cardApiMain &&
+                cardApiMain.slice(0, 4).map((cards) => (
+                  <div className="col-md-3 col-12 my-5">
+                    <div className="card card-carouse-sect1 shadow">
+                      <div className="card-body">
+                        <div className="d-flex justify-content-between align-items-center w-100 ">
+                          <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
+                            <img
+                              src={cards.currency_image_url}
+                              alt=""
+                              className="main-btc-top-card"
+                            />
+                            {cards.currencyName}
+                          </div>
+                          <p className="mb-0 hrs-section1-card hrs-section1-card">
+                            Last 24hrs
+                          </p>
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center w-100 mt-3">
+                          <div className="mb-0 gentextsect-1">
+                            {(
+                              Math.round(cards.last * 100) / 100
+                            ).toLocaleString("en-IN", {
+                              maximumFractionDigits: 2,
+                              style: "currency",
+                              currency: "INR",
+                            })}
+                          </div>
+                          <p
+                            className="mb-0 loss-section1-card"
+                            style={{
+                              color: cards.change24Hours < 0 ? "red" : "green",
+                            }}
+                          >
+                            {cards.change24Hours}
+                          </p>
+                        </div>
                       </div>
-                      <p className="mb-0 hrs-section1-card hrs-section1-card">
-                        Last 24hrs
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">
-                        ₹
-                        { 
-                           crossTowerBtc &&
-                           crossTowerBtc.BTCUSD &&
-                           crossTowerBtc.BTCUSD
-                             ? (crossTowerBtc.BTCUSD.last * usdToInr.inr).toFixed(
-                                 2
-                               )
-                             : "loading"
-                          
-                       }
-                          {console.log(usdToInr)}
-                      </div>
-                      <p
-                        className="mb-0 loss-section1-card"
-                        style={{
-                          color:
-                            crossTowerBtc &&
-                            crossTowerBtc.BTCUSD &&
-                            (
-                              (crossTowerBtc.BTCUSD.open -
-                                crossTowerBtc.BTCUSD.last) /
-                              crossTowerBtc.BTCUSD.open
-                            ).toFixed(4) < 0
-                              ? "red"
-                              : "green",
-                        }}
-                      >
-                        {crossTowerBtc &&
-                        crossTowerBtc.BTCUSD &&
-                        crossTowerBtc.BTCUSD
-                          ? (
-                              (crossTowerBtc.BTCUSD.open -
-                                crossTowerBtc.BTCUSD.last) /
-                              crossTowerBtc.BTCUSD.open
-                            ).toFixed(4)
-                          : "loading"}
-                        %
-                      </p>
-                    </div>
-                    <div className="div-height-control">
-                      {/* <LineChart /> */}
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-12 mt-5">
-                <div className="card card-carouse-sect1 shadow">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center w-100 ">
-                      <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
-                        <img src={B1} alt="" className="main-btc-top-card" />
-                        DOGEBTC
-                      </div>
-                      <p className="mb-0 hrs-section1-card hrs-section1-card">
-                        Last 24hrs
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">
-                        ₹
-                        {crossTowerBtc &&
-                        crossTowerBtc.DOGEBTC &&
-                        crossTowerBtc.DOGEBTC
-                          ? (crossTowerBtc.DOGEBTC.last * usdToInr.inr).toFixed(
-                              2
-                            )
-                          : "loading"}
-                      </div>
-                      <p
-                        className="mb-0 loss-section1-card"
-                        style={{
-                          color:
-                            crossTowerBtc &&
-                            crossTowerBtc.DOGEBTC &&
-                            (
-                              (crossTowerBtc.DOGEBTC.open -
-                                crossTowerBtc.DOGEBTC.last) /
-                              crossTowerBtc.DOGEBTC.open
-                            ).toFixed(4) < 0
-                              ? "red"
-                              : "green",
-                        }}
-                      >
-                        {" "}
-                        {crossTowerBtc &&
-                        crossTowerBtc.DOGEBTC &&
-                        crossTowerBtc.DOGEBTC
-                          ? (
-                              (crossTowerBtc.DOGEBTC.open -
-                                crossTowerBtc.DOGEBTC.last) /
-                              crossTowerBtc.DOGEBTC.open
-                            ).toFixed(4)
-                          : "loading"}
-                        %
-                      </p>
-                    </div>
-                    <div className="div-height-control">
-                      {/* <LineChart /> */}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-12 mt-5">
-                <div className="card card-carouse-sect1 shadow">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center w-100 ">
-                      <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
-                        <img src={B1} alt="" className="main-btc-top-card" />
-                        ZECETH
-                      </div>
-                      <p className="mb-0 hrs-section1-card hrs-section1-card">
-                        Last 24hrs
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">
-                        ₹
-                        {crossTowerBtc &&
-                        crossTowerBtc.ZECETH &&
-                        crossTowerBtc.ZECETH
-                          ? (crossTowerBtc.ZECETH.last * usdToInr.inr).toFixed(
-                              2
-                            )
-                          : "loading"}
-                      </div>
-                      <p
-                        className="mb-0 loss-section1-card"
-                        style={{
-                          color:
-                            crossTowerBtc &&
-                            crossTowerBtc.ZECETH &&
-                            (
-                              (crossTowerBtc.ZECETH.open -
-                                crossTowerBtc.ZECETH.last) /
-                              crossTowerBtc.ZECETH.open
-                            ).toFixed(4) < 0
-                              ? "red"
-                              : "green",
-                        }}
-                      >
-                        {crossTowerBtc &&
-                        crossTowerBtc.ZECETH &&
-                        crossTowerBtc.ZECETH
-                          ? (
-                              (crossTowerBtc.ZECETH.open -
-                                crossTowerBtc.ZECETH.last) /
-                              crossTowerBtc.ZECETH.open
-                            ).toFixed(2)
-                          : "loading"}
-                        %
-                      </p>
-                    </div>
-                    <div className="div-height-control">
-                      {/* <LineChart /> */}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-12 mt-5">
-                <div className="card card-carouse-sect1 shadow">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center w-100 ">
-                      <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
-                        <img src={B1} alt="" className="main-btc-top-card" />
-                        DOGEUSDT20
-                      </div>
-                      <p className="mb-0 hrs-section1-card hrs-section1-card">
-                        Last 24hrs
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">
-                        ₹
-                        {crossTowerBtc &&
-                        crossTowerBtc.DOGEUSDT20 &&
-                        crossTowerBtc.DOGEUSDT20
-                          ? (
-                              crossTowerBtc.DOGEUSDT20.last * usdToInr.inr
-                            ).toFixed(2)
-                          : "loading"}
-                      </div>
-                      <p
-                        className="mb-0 loss-section1-card"
-                        style={{
-                          color:
-                            crossTowerBtc &&
-                            crossTowerBtc.DOGEUSDT20 &&
-                            (
-                              (crossTowerBtc.DOGEUSDT20.open -
-                                crossTowerBtc.DOGEUSDT20.last) /
-                              crossTowerBtc.DOGEUSDT20.open
-                            ).toFixed(4) < 0
-                              ? "red"
-                              : "green",
-                        }}
-                      >
-                        {crossTowerBtc &&
-                        crossTowerBtc.DOGEUSDT20 &&
-                        crossTowerBtc.DOGEUSDT20
-                          ? (
-                              (crossTowerBtc.DOGEUSDT20.open -
-                                crossTowerBtc.DOGEUSDT20.last) /
-                              crossTowerBtc.DOGEUSDT20.open
-                            ).toFixed(4)
-                          : "loading"}
-                        %
-                      </p>
-                    </div>
-                    <div className="div-height-control">
-                      {/* <LineChart /> */}
-                    </div>
-                  </div>
-                </div>
-              </div>
+                ))}
             </div>
           </div>
+
           <div class="carousel-item">
             <div className="row">
-              <div className="col-md-3 col-12 mt-5">
-                <div className="card card-carouse-sect1 shadow">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center w-100 ">
-                      <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
-                        <img src={B1} alt="" className="main-btc-top-card" />
-                        UNIBTC
+              {cardApiMain &&
+                cardApiMain &&
+                cardApiMain.slice(5, 9).map((cards) => (
+                  <div className="col-md-3 col-12 my-5">
+                    <div className="card card-carouse-sect1 shadow">
+                      <div className="card-body">
+                        <div className="d-flex justify-content-between align-items-center w-100 ">
+                          <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
+                            <img
+                              src={cards.currency_image_url}
+                              alt=""
+                              className="main-btc-top-card"
+                            />
+                            {cards.currencyName}
+                          </div>
+                          <p className="mb-0 hrs-section1-card hrs-section1-card">
+                            Last 24hrs
+                          </p>
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center w-100 mt-3">
+                          <div className="mb-0 gentextsect-1">
+                            {(
+                              Math.round(cards.last * 100) / 100
+                            ).toLocaleString("en-IN", {
+                              maximumFractionDigits: 2,
+                              style: "currency",
+                              currency: "INR",
+                            })}
+                          </div>
+                          <p
+                            className="mb-0 loss-section1-card"
+                            style={{
+                              color: cards.change24Hours < 0 ? "red" : "green",
+                            }}
+                          >
+                            {cards.change24Hours}
+                          </p>
+                        </div>
                       </div>
-                      <p className="mb-0 hrs-section1-card hrs-section1-card">
-                        Last 24hrs
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">
-                        ₹
-                        {crossTowerBtc &&
-                        crossTowerBtc.UNIBTC &&
-                        crossTowerBtc.UNIBTC
-                          ? (crossTowerBtc.UNIBTC.last * usdToInr.inr).toFixed(
-                              2
-                            )
-                          : "loading"}
-                      </div>
-                      <p
-                        className="mb-0 loss-section1-card"
-                        style={{
-                          color:
-                            crossTowerBtc &&
-                            crossTowerBtc.UNIBTC &&
-                            (
-                              (crossTowerBtc.UNIBTC.open -
-                                crossTowerBtc.UNIBTC.last) /
-                              crossTowerBtc.UNIBTC.open
-                            ).toFixed(4) < 0
-                              ? "red"
-                              : "green",
-                        }}
-                      >
-                        {" "}
-                        {crossTowerBtc &&
-                        crossTowerBtc.UNIBTC &&
-                        crossTowerBtc.UNIBTC
-                          ? (
-                              (crossTowerBtc.UNIBTC.open -
-                                crossTowerBtc.UNIBTC.last) /
-                              crossTowerBtc.UNIBTC.open
-                            ).toFixed(4)
-                          : "loading"}
-                        %
-                      </p>
-                    </div>
-                    <div className="div-height-control">
-                      {/* <LineChart /> */}
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-12 mt-5">
-                <div className="card card-carouse-sect1 shadow">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center w-100 ">
-                      <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
-                        <img src={B1} alt="" className="main-btc-top-card" />
-                        BTCUSDC
-                      </div>
-                      <p className="mb-0 hrs-section1-card hrs-section1-card">
-                        Last 24hrs
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">
-                        ₹
-                        {crossTowerBtc &&
-                        crossTowerBtc.BTCUSDC &&
-                        crossTowerBtc.BTCUSDC
-                          ? (crossTowerBtc.BTCUSDC.last * usdToInr.inr).toFixed(
-                              2
-                            )
-                          : "loading"}
-                      </div>
-                      <p
-                        className="mb-0 loss-section1-card"
-                        style={{
-                          color:
-                            crossTowerBtc &&
-                            crossTowerBtc.BTCUSDC &&
-                            (
-                              (crossTowerBtc.BTCUSDC.open -
-                                crossTowerBtc.BTCUSDC.last) /
-                              crossTowerBtc.BTCUSDC.open
-                            ).toFixed(4) < 0
-                              ? "red"
-                              : "green",
-                        }}
-                      >
-                        {" "}
-                        {crossTowerBtc &&
-                        crossTowerBtc.BTCUSDC &&
-                        crossTowerBtc.BTCUSDC
-                          ? (
-                              (crossTowerBtc.BTCUSDC.open -
-                                crossTowerBtc.BTCUSDC.last) /
-                              crossTowerBtc.BTCUSDC.open
-                            ).toFixed(4)
-                          : "loading"}
-                        %
-                      </p>
-                    </div>
-                    <div className="div-height-control">
-                      {/* <LineChart /> */}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-12 mt-5">
-                <div className="card card-carouse-sect1 shadow">
-                  <div className="card-body">
-                    <div className="d-flex justify-content-between align-items-center w-100 ">
-                      <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
-                        <img src={B1} alt="" className="main-btc-top-card" />
-                        COMPBTC
-                      </div>
-                      <p className="mb-0 hrs-section1-card hrs-section1-card">
-                        Last 24hrs
-                      </p>
-                    </div>
-                    <div className="d-flex justify-content-between align-items-center w-100 mt-3">
-                      <div className="mb-0 gentextsect-1">
-                        ₹
-                        {crossTowerBtc &&
-                        crossTowerBtc.COMPBTC &&
-                        crossTowerBtc.COMPBTC
-                          ? (crossTowerBtc.COMPBTC.last * usdToInr.inr).toFixed(
-                              2
-                            )
-                          : "loading"}
-                      </div>
-                      <p
-                        className="mb-0 loss-section1-card"
-                        style={{
-                          color:
-                            crossTowerBtc &&
-                            crossTowerBtc.COMPBTC &&
-                            (
-                              (crossTowerBtc.COMPBTC.open -
-                                crossTowerBtc.COMPBTC.last) /
-                              crossTowerBtc.COMPBTC.open
-                            ).toFixed(4) < 0
-                              ? "red"
-                              : "green",
-                        }}
-                      >
-                        {" "}
-                        {crossTowerBtc &&
-                        crossTowerBtc.COMPBTC &&
-                        crossTowerBtc.COMPBTC
-                          ? (
-                              (crossTowerBtc.COMPBTC.open -
-                                crossTowerBtc.COMPBTC.last) /
-                              crossTowerBtc.COMPBTC.open
-                            ).toFixed(4)
-                          : "loading"}
-                        %
-                      </p>
-                    </div>
-                    <div className="div-height-control">
-                      {/* <LineChart /> */}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-12 mt-5">
+                ))}
+
+              {/* <div className="col-md-3 col-12 my-5">
                 <div className="card card-carouse-sect1 shadow">
                   <div className="card-body">
                     <div className="d-flex justify-content-between align-items-center w-100 ">
@@ -735,17 +431,61 @@ const Section1 = () => {
                         %
                       </p>
                     </div>
-                    <div className="div-height-control">
-                      {/* <LineChart /> */}
-                    </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div className="row">
+              {cardApiMain &&
+                cardApiMain &&
+                cardApiMain.slice(10, 14).map((cards) => (
+                  <div className="col-md-3 col-12 my-5">
+                    <div className="card card-carouse-sect1 shadow">
+                      <div className="card-body">
+                        <div className="d-flex justify-content-between align-items-center w-100 ">
+                          <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
+                            <img
+                              src={cards.currency_image_url}
+                              alt=""
+                              className="main-btc-top-card"
+                            />
+                            {cards.currencyName}
+                          </div>
+                          <p className="mb-0 hrs-section1-card hrs-section1-card">
+                            Last 24hrs
+                          </p>
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center w-100 mt-3">
+                          <div className="mb-0 gentextsect-1">
+                            {(
+                              Math.round(cards.last * 100) / 100
+                            ).toLocaleString("en-IN", {
+                              maximumFractionDigits: 2,
+                              style: "currency",
+                              currency: "INR",
+                            })}
+                          </div>
+                          <p
+                            className="mb-0 loss-section1-card"
+                            style={{
+                              color: cards.change24Hours < 0 ? "red" : "green",
+                            }}
+                          >
+                            {cards.change24Hours}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
             </div>
           </div>
         </div>
         <button
-          class="carousel-control-prev button-bootstrap-prev mt-5"
+          class="carousel-control-prev button-bootstrap-prev my-5"
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="prev"
@@ -757,7 +497,7 @@ const Section1 = () => {
           <span class="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next button-bootstrap-next mt-5"
+          class="carousel-control-next button-bootstrap-next my-5"
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="next"

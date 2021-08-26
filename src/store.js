@@ -8,6 +8,7 @@ import {
   coinDcxReducers,
   crossTowerReducers,
   usdToInrReducers,
+  mainCardApiReducers,
 } from "./reducers/homepageReducer";
 
 const reducer = combineReducers({
@@ -17,6 +18,7 @@ const reducer = combineReducers({
   coinDcxBtcReducer: coinDcxReducers,
   crossTowerBtcReducer: crossTowerReducers,
   usdToInrBtcReducers: usdToInrReducers,
+  mainCardApiBtcReducers: mainCardApiReducers,
 });
 
 const initialState = {};

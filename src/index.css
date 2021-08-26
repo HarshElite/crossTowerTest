@@ -192,6 +192,13 @@ code {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
+.hidesmallscreen {
+  display: block;
+}
+.hidebigscreen {
+  display: none;
+}
 /* --------------------------------------------------------------------------  End of utilities --------------------------------------------------------------------------*/
 
 /* --------------------------------------------------------------------------Section 1 -------------------------------------------------------------------------------- */
@@ -215,7 +222,7 @@ code {
   border-color: none !important;
   border: none !important;
   transition: none !important;
-  border-bottom: 3px solid blue !important;
+  border-bottom: 2px solid #354bcc !important;
   outline: none !important;
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -267,7 +274,7 @@ code {
   -moz-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
-  border-bottom: solid 1px #000 !important;
+  border-bottom: solid 0.5px rgb(206, 198, 198) !important;
 }
 
 .tab-color-top .nav-link:hover {
@@ -293,9 +300,9 @@ code {
   transition-timing-function: none !important;
   transition-delay: none !important;
   font-family: OpenSansRegular;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: right;
@@ -555,14 +562,13 @@ code {
 .section-3-headingrev span {
   padding: 0 30px;
 }
-.section-3-heading1 {
+/* .section-3-heading1 {
   width: 100%;
   text-align: center;
   border-bottom: 1px solid rgb(199, 199, 199);
   line-height: 0.1em;
   margin: 10px 0 20px;
   font-family: GuardianBold;
-
   font-size: 38px;
   font-weight: 600;
   color: #172253;
@@ -570,6 +576,33 @@ code {
 .section-3-heading1 span {
   padding: 0 100px;
   background: white;
+} */
+
+.section-3-heading1 {
+  overflow: hidden;
+  text-align: center;
+  font-family: GuardianBold;
+  font-size: 38px;
+  font-weight: 600;
+  color: #172253;
+}
+.section-3-heading1:before,
+.section-3-heading1:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.section-3-heading1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.section-3-heading1:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 .section-3-para1 {
@@ -1027,6 +1060,12 @@ code {
   padding: 0 50px;
   background: #e5e5e5;
 }
+
+.card-media-news-main {
+}
+
+.row-newstable {
+}
 /* ---------------------------------------------------------------------------------- End of news Card component ---------------------------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------- Start Section 9 ---------------------------------------------------------------- */
@@ -1035,13 +1074,14 @@ code {
 }
 
 .accordian-container {
-  max-width: 100%;
+  max-width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .accordain-tag-1-c {
   border: 3px solid #2271ed;
+  padding: 15px;
 }
 
 .color-card-acc {
@@ -1160,7 +1200,7 @@ code {
 /* ---------------------------------------------------------------- End Section 7 ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- Start Section 6 ---------------------------------------------------------------- */
 .section-6-main-section {
-  background: #0b1435;
+  background: linear-gradient(180deg, #08112d 0%, #162053 100%);
 }
 
 .scrolling-wrapper-flexbox {
@@ -1789,11 +1829,24 @@ code {
   line-height: 34px;
   color: #fff;
 }
+
 /* -------------------------------------------------------------------------END OF COMING SOON---------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
+  .hidesmallscreen {
+    display: none;
+  }
+  .hidebigscreen {
+    display: block;
+  }
+
+  .accordian-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   /* About us section 5 */
 
   /* About us section 2 */

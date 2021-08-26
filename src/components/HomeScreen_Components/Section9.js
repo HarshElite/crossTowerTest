@@ -29,18 +29,25 @@ const Section9 = () => {
   };
 
   return (
-    <section className="section9-homescreen py-md-2 py-3 px-md-5 px-3" style={{backgroundImage:'linear-gradient(55.04deg, #A5B9E5 0%, #EDF1F8 52.55%, #CCD9F1 98.91%)'}}>
+    <section
+      className="section9-homescreen py-md-2 py-3 px-md-5 px-3"
+      style={{
+        backgroundImage:
+          "linear-gradient(55.04deg, #A5B9E5 0%, #EDF1F8 52.55%, #CCD9F1 98.91%)",
+      }}
+    >
       {/* <p className="homescreen-section-1-para">
         <span className="generic-title-para-blue">General</span>
         <span className="generic-title-para-red"> Queries</span>
       </p> */}
-      <p className="text-center section-3-heading1" >
-          <span style={{fontSize:"24px",backgroundColor:'#CCD9F1'}}>General Queries</span>
-        </p>
-      <p className="generic-title-heading text-center">Frequently Asked Questions</p>
+      <p className="text-center section-3-heading1">
+        <span style={{ fontSize: "24px" }}>General Queries</span>
+      </p>
+      <p className="generic-title-heading text-center">
+        Frequently Asked Questions
+      </p>
 
-
-      <div className="accordian-container-main p-md-5 p-0">
+      <div className="accordian-container-main py-1 px-1 px-md-5 p-0">
         <div className="accordian-container">
           <div id="accordion my-5">
             <div class="card accordain-tag-1-c ">
@@ -82,7 +89,8 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                You can deposit the funds using MobiKwik Wallet/Debit Card and through UPI.
+                  You can deposit the funds using MobiKwik Wallet/Debit Card and
+                  through UPI.
                 </div>
               </div>
             </div>
@@ -130,7 +138,8 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                Its Simple, You can withdraw funds by placing a request under the Withdraw INR tab.
+                  Its Simple, You can withdraw funds by placing a request under
+                  the Withdraw INR tab.
                 </div>
               </div>
             </div>
@@ -158,7 +167,8 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    When will my Crosstower India Wallet be Updated after Deposit?
+                    When will my Crosstower India Wallet be Updated after
+                    Deposit?
                   </p>
 
                   <button
@@ -180,8 +190,8 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                Your Crosstower wallet will be updated instantly once the transaction is 
-                successful at the Payment Gateway's End.
+                  Your Crosstower wallet will be updated instantly once the
+                  transaction is successful at the Payment Gateway's End.
                 </div>
               </div>
             </div>
@@ -207,7 +217,8 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseFour"
                   >
-                    When will I receive funds in my bank account after placing Withdrawal request?
+                    When will I receive funds in my bank account after placing
+                    Withdrawal request?
                   </p>
 
                   <button
@@ -229,7 +240,8 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                Funds are credited in your bank account within 24 Hours (Excluding weekends and Bank Holidays).
+                  Funds are credited in your bank account within 24 Hours
+                  (Excluding weekends and Bank Holidays).
                 </div>
               </div>
             </div>
@@ -255,7 +267,8 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseFive"
                   >
-                    By what time I can place withdraw request with Cross Tower India?
+                    By what time I can place withdraw request with Cross Tower
+                    India?
                   </p>
 
                   <button
@@ -277,7 +290,7 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                You can place the request any time during the day.
+                  You can place the request any time during the day.
                 </div>
               </div>
             </div>
@@ -303,7 +316,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseSix"
                   >
-                   What is the Maximum / Minimum INR Deposit Limit?
+                    What is the Maximum / Minimum INR Deposit Limit?
                   </p>
                   <button
                     class="btn-accordion"
@@ -324,7 +337,8 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                Minimum Deposit is INR 100, there is no bar on maximum deposit.
+                  Minimum Deposit is INR 100, there is no bar on maximum
+                  deposit.
                 </div>
               </div>
             </div>
@@ -350,7 +364,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseSeven"
                   >
-                   What is the Maximum / Minimum INR Withdraw Limit?
+                    What is the Maximum / Minimum INR Withdraw Limit?
                   </p>
                   <button
                     class="btn-accordion"
@@ -371,7 +385,8 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                Minimum Withdraw is INR 200, there is no bar on maximum withdraw.
+                  Minimum Withdraw is INR 200, there is no bar on maximum
+                  withdraw.
                 </div>
               </div>
             </div>

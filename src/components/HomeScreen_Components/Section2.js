@@ -184,15 +184,26 @@ const Section2 = () => {
                 <img src={T1logo} alt="" />
               </th>
               <td td className="py-4">
-                ₹&nbsp;33,230.30
+                {(33230.3).toLocaleString("en-IN", {
+                  maximumFractionDigits: 2,
+                  style: "currency",
+                  currency: "INR",
+                })}
               </td>
               <td className="py-4">
-                {loadingcrossTowerBtc && "loading"}₹&nbsp;
-                {Math.round(
-                  crossTowerBtc &&
-                    crossTowerBtc.BTCUSD &&
-                    crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
-                ) / 100}
+                {/* {loadingcrossTowerBtc && "loading"}
+                {(
+                  Math.round(
+                    crossTowerBtc &&
+                      crossTowerBtc.BTCUSD &&
+                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                  ) / 100
+                ).toLocaleString("en-IN", {
+                  maximumFractionDigits: 2,
+                  style: "currency",
+                  currency: "INR",
+                })} */}
+                0.00%
               </td>
               <td className="py-4">
                 {loadingWazirx && "loading"}
@@ -222,12 +233,19 @@ const Section2 = () => {
                 ₹&nbsp;33,230.30
               </td>
               <td className="py-4">
-                {loadingcrossTowerBtc && "loading"}₹&nbsp;
-                {Math.round(
-                  crossTowerBtc &&
-                    crossTowerBtc.BTCUSD &&
-                    crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
-                ) / 100}
+                0.20%
+                {/* {loadingcrossTowerBtc && "loading"}
+                {(
+                  Math.round(
+                    crossTowerBtc &&
+                      crossTowerBtc.BTCUSD &&
+                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                  ) / 100
+                ).toLocaleString("en-IN", {
+                  maximumFractionDigits: 2,
+                  style: "currency",
+                  currency: "INR",
+                })} */}
               </td>
               <td className="py-4">
                 {loadingWazirx && "loading"}
@@ -257,12 +275,19 @@ const Section2 = () => {
                 ₹&nbsp;33,230.30
               </td>
               <td className="py-4">
-                {loadingcrossTowerBtc && "loading"}₹&nbsp;
-                {Math.round(
-                  crossTowerBtc &&
-                    crossTowerBtc.BTCUSD &&
-                    crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
-                ) / 100}
+                {/* {loadingcrossTowerBtc && "loading"}
+                {(
+                  Math.round(
+                    crossTowerBtc &&
+                      crossTowerBtc.BTCUSD &&
+                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                  ) / 100
+                ).toLocaleString("en-IN", {
+                  maximumFractionDigits: 2,
+                  style: "currency",
+                  currency: "INR",
+                })} */}
+                0.15%
               </td>
               <td className="py-4">
                 {loadingWazirx && "loading"}
@@ -292,12 +317,19 @@ const Section2 = () => {
                 ₹&nbsp;33,230.30
               </td>
               <td className="py-4">
-                {loadingcrossTowerBtc && "loading"}₹&nbsp;
-                {Math.round(
-                  crossTowerBtc &&
-                    crossTowerBtc.BTCUSD &&
-                    crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
-                ) / 100}
+                {/* {loadingcrossTowerBtc && "loading"}
+                {(
+                  Math.round(
+                    crossTowerBtc &&
+                      crossTowerBtc.BTCUSD &&
+                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                  ) / 100
+                ).toLocaleString("en-IN", {
+                  maximumFractionDigits: 2,
+                  style: "currency",
+                  currency: "INR",
+                })} */}
+                0.10%
               </td>
               <td className="py-4">
                 {loadingWazirx && "loading"}
