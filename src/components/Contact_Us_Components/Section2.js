@@ -106,30 +106,22 @@ const Section2 = () => {
                 <img src={Message} alt="" className="marginright30" />
               </div>
               <div>
-                <p className="contact-us-blue-heading mb-0">General</p>
+                <p className="contact-us-blue-heading mb-0">Support</p>
                 <p className="contact-us-blue-para">support@crosstower.in</p>
               </div>
             </div>
 
-            <p className="marginleft71 contact-us-blue-heading mb-0">Media</p>
-            <p className="marginleft71 contact-us-blue-para">
-              support@crosstower.in
-            </p>
-            <p className="marginleft71 contact-us-blue-heading mb-0">Phone</p>
-            <p className="marginleft71 contact-us-blue-para">0124-4382555</p>
-
             <div className="d-flex">
-              <div className="locationiconcontact">
+              {/* <div className="locationiconcontact">
                 <img src={Location} alt="" className="marginright30" />
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <p className="contact-us-blue-heading">Support</p>
-                <p className="contact-us-blue-para mb-0">CrossTower. </p>
                 <p className="contact-us-blue-para">
                   CrossTower India Trading Pvt Ltd, First Floor, Plot No. 13,
                   Sector-33, Gurugram (Delhi NCR), Haryana 122001 India.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="divicon-rowcontact d-flex"></div>

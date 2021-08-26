@@ -162,6 +162,12 @@ export const signupandaccmgmt = [
     answers:
       "You need to send a request to csindia@crosstower.in where the Customer Success team can help updating the relevant records and confirm you once done (usually within a period of 1-2 days)",
   },
+  {
+    _id: "4",
+    questions: "How can I change my registered bank account?",
+    answers:
+      "Go to Home -> Connected Bank Accounts -> Change Account -> Enter details to be updated with Cancelled Cheque/Bank Statement as proof-> Submit",
+  }
 ];
 
 export const security = [

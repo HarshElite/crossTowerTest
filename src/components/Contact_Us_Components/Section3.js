@@ -9,7 +9,7 @@ const Section3 = () => {
         <div class="col-md-6 col-12 px-5 px-0 d-flex justify-content-center align-items-center mt-md-0 mt-5">
           <div className="">
             <p className="generic-title-heading primary-color-blue-dark px-md-5 px-0">
-              Support resources
+              Support Resources
             </p>
             <p className="generic-para-text primary-color-blue-dark px-md-5 px-0">
               We are here to answer your questions if you need any help with our
@@ -29,7 +29,7 @@ const Section3 = () => {
                   />
                 </div>
                 <p className="generic-medium-text primary-color-blue text-center">
-                  Support center
+                  Support Center
                 </p>
               </div>
             </div>

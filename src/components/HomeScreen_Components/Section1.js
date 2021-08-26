@@ -180,7 +180,9 @@ const Section1 = () => {
               </p> */}
 
               <p className="generic-title-heading primary-color-blue-dark">
-                A new beginning for your crypto portfolio.
+              Investing in Crytpo Just got Easier, US Most Trusted Platform 
+              <br/>
+              Now in India
               </p>
               <p className="generic-para-text primary-color-blue-dark">
                 CrossTower is the only digital currency platform that can be
@@ -286,7 +288,7 @@ const Section1 = () => {
       </div>
 
       <div className="px-5">
-        <p className="gentextsect-1 mb-0 mt-5">Popular Assets</p>
+        <p className="gentextsect-1 mb-0 mt-5" style={{fontSize:"22px"}}>Popular Assets</p>
         <hr />
       </div>
 

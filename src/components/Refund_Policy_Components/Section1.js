@@ -7,7 +7,7 @@ const Section1 = () => {
         <div class="col-md-12 col-12 py-5">
           <p className="generic-title-para-blue mb-0 text-center">Legal</p>
           <p className="generic-title-heading primary-color-blue-dark text-center">
-            Refund Policy page
+            Refund Policy 
           </p>
         </div>
       </div>

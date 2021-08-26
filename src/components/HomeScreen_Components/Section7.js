@@ -12,7 +12,7 @@ const Section7 = () => {
         </p>
 
         <p className="text-center generic-para-text mt-5 mb-5 maxwidthfortext">
-        CrossTower allows you to trade,buy and sell over
+        CrossTower allows you to trade, buy and sell over
          multiple crypto currencies in less than few minutes.
         </p>
         <div className="row p-md-5 p-3">
@@ -23,11 +23,11 @@ const Section7 = () => {
                 alt=""
                 className="image-container-section7-image"
               />
-              <img
+              {/* <img
                 src={Logo}
                 alt=""
                 className="logo-img"
-              />
+              /> */}
             </div>
             <div className="card shadow border-none  card-section-7">
               <div className="card-body">
@@ -58,7 +58,7 @@ const Section7 = () => {
                   Get KYC Ready
                   </p>
                   <p className="text-blue-section7 mb-0 ">
-                  Submit your KYC documents and get KYC ready in few minutes
+                  Submit your KYC documents and get KYC ready in few minutes.
                   </p>
                 </div>
               </div>
@@ -80,7 +80,7 @@ const Section7 = () => {
                     Get Set Trade
                   </p>
                   <p className="text-blue-section7 mb-0 ">
-                  You are just one click away to start trading in Crypto
+                  You are just one click away to start trading in Crypto.
                   </p>
                 </div>
               </div>

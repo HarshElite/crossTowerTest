@@ -4,7 +4,7 @@ const Section2 = () => {
   return (
     <div className="mt-5 px-md-5 px-3">
       <p className="text-general-policy-title">
-        CANCELLATION / REFUND POLICY Cross Tower
+        CANCELLATION / REFUND POLICY 
       </p>
       <p className="text-general-policy-para">
         Under no circumstance CrossTower India Trading Pvt. Ltd. entertains the

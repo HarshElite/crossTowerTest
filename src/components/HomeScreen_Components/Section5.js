@@ -14,7 +14,7 @@ const Section5 = () => {
             <span className="generic-title-para-red"> Platform</span>
           </p>
           <p className="generic-title-heading primary-color-blue-dark">
-          India’s trusted & Secure Cryptocurrency
+          India’s Trusted & Secure Cryptocurrency
           </p>
           <p className="generic-para-text">
             We are aiming to create an exchange that will become a community for
@@ -24,7 +24,7 @@ const Section5 = () => {
             be a part of this revolution? 
           </p>
           <div className="row d-flex justify-content-center align-items-center">
-        <button className="start-trading-button" type="submit">
+        <button className="start-trading-button" type="submit" style={{fontSize:"18px",fontWeight:"bold"}}>
           Start Trading
         </button>
       </div>

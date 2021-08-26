@@ -406,11 +406,11 @@ const Section2 = () => {
 
       {/* </div>
       </div> */}
-      <p className="generic-para-text text-center text-white">
+      <p className="generic-para-text text-center text-white" style={{fontWeight:"100",fontSize:"15px"}}>
         *Please refer to our terms and conditions for Price accuracy status
       </p>
       <div className="row d-flex justify-content-center align-items-center mt-5">
-        <button className="start-trading-white" type="submit">
+        <button className="start-trading-white" type="submit" style={{fontSize:"18px",fontWeight:"bold"}}>
           Start Trading
         </button>
       </div>

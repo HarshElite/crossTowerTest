@@ -49,7 +49,7 @@ const NewsCard = () => {
                   development.
                 </p>
 
-                <p className="card-news-date">April 30, 2021</p>
+                {/* <p className="card-news-date">April 30, 2021</p> */}
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@ const NewsCard = () => {
                   CrossTower Global has added Ren, Chiliz, and Swipe markets to
                   our exchange.
                 </p>
-                <p className="card-news-date">May 12, 2021</p>
+                {/* <p className="card-news-date">May 12, 2021</p> */}
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ const NewsCard = () => {
                   Omniex customers can now access CrossTower’s consistently
                   best-of-book pricing
                 </p>
-                <p className="card-news-date">May 26, 2021</p>
+                {/* <p className="card-news-date">May 26, 2021</p> */}
               </div>
             </div>
           </div>

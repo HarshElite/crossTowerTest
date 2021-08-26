@@ -92,7 +92,7 @@ const Section2 = () => {
       </div>
       <div class="row px-5">
         <div class="col-md-4 col-12 px-md-5 px-3">
-          <Link to="/faq" style={{ textDecoration: "none" }}>
+          {/* <Link to="/faq" style={{ textDecoration: "none" }}>
             <div class="card shadow-lg support-card mb-5">
               <div class="card-body d-flex justify-content-center align-items-center">
                 <div className="container-card-content-support d-flex flex-column">
@@ -101,7 +101,7 @@ const Section2 = () => {
                 </div>
               </div>
             </div>
-          </Link>
+          </Link> */}
         </div>
         <div class="col-md-4 col-12 px-md-5 px-3">
           <Link to="/faq" style={{ textDecoration: "none" }}>

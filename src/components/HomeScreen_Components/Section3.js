@@ -26,7 +26,7 @@ const Section3 = () => {
               </div>
 
               <p className="para-text-sec3re">
-                Lowest Buy rates for Crypto In India
+                Lowest Buy Rates for Crypto In India
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Section3 = () => {
         </div>
       </div>
       <div className="row d-flex justify-content-center align-items-center">
-        <button className="start-trading-button" type="submit">
+        <button className="start-trading-button " type="submit" style={{fontSize:"18px"}}>
           Start Trading
         </button>
       </div>
