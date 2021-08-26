@@ -9,7 +9,7 @@ const ComingSoon = () => {
           <p className="text-center coming-soon-para">
             Stay Tuned For More Crypto Features. CrossTower India prohibits
             access to U.S. Residents. If you are a U.S. Resident, please 
-            <a href='/www.crosstower.com ' style={{paddingLeft:"5px",paddingRight:"5px"}}>
+            <a href='www.crosstower.com ' style={{paddingLeft:"5px",paddingRight:"5px"}}>
             click here
             </a>
              to visit the CrossTower US platform.

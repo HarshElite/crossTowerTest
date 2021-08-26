@@ -190,16 +190,15 @@ const Section1 = () => {
                 beginners looking for security, flexibility, and simplicity. 
               </p>
               <div>
-              <Link
-              to="/login"
-              href="#"
-              className="marginright30 top-nav-link-nav"
-            >   
-                <button className="homescreen-section-1-button">
-                  Watch: The CrossTower Difference
-                </button>
+                <Link
+                  to="/login"
+                  href="#"
+                  className="marginright30 top-nav-link-nav"
+                >
+                  <button className="homescreen-section-1-button">
+                    Watch: The CrossTower Difference
+                  </button>
                 </Link>
-
               </div>
             </div>
           </div>
@@ -303,7 +302,7 @@ const Section1 = () => {
               {cardApiMain &&
                 cardApiMain &&
                 cardApiMain.slice(0, 4).map((cards) => (
-                  <div className="col-md-3 col-12 my-5">
+                  <div className="col-md-3 col-12 my-2">
                     <div className="card card-carouse-sect1 shadow">
                       <div className="card-body">
                         <div className="d-flex justify-content-between align-items-center w-100 ">
@@ -335,7 +334,7 @@ const Section1 = () => {
                               color: cards.change24Hours < 0 ? "red" : "green",
                             }}
                           >
-                            {cards.change24Hours}
+                            {cards.change24Hours.toFixed(3)}%
                           </p>
                         </div>
                       </div>
@@ -350,7 +349,7 @@ const Section1 = () => {
               {cardApiMain &&
                 cardApiMain &&
                 cardApiMain.slice(5, 9).map((cards) => (
-                  <div className="col-md-3 col-12 my-5">
+                  <div className="col-md-3 col-12 my-2">
                     <div className="card card-carouse-sect1 shadow">
                       <div className="card-body">
                         <div className="d-flex justify-content-between align-items-center w-100 ">
@@ -382,7 +381,7 @@ const Section1 = () => {
                               color: cards.change24Hours < 0 ? "red" : "green",
                             }}
                           >
-                            {cards.change24Hours}
+                            {cards.change24Hours.toFixed(3)}%{" "}
                           </p>
                         </div>
                       </div>
@@ -390,7 +389,7 @@ const Section1 = () => {
                   </div>
                 ))}
 
-              {/* <div className="col-md-3 col-12 my-5">
+              {/* <div className="col-md-3 col-12 my-2">
                 <div className="card card-carouse-sect1 shadow">
                   <div className="card-body">
                     <div className="d-flex justify-content-between align-items-center w-100 ">
@@ -452,7 +451,7 @@ const Section1 = () => {
               {cardApiMain &&
                 cardApiMain &&
                 cardApiMain.slice(10, 14).map((cards) => (
-                  <div className="col-md-3 col-12 my-5">
+                  <div className="col-md-3 col-12 my-2">
                     <div className="card card-carouse-sect1 shadow">
                       <div className="card-body">
                         <div className="d-flex justify-content-between align-items-center w-100 ">
@@ -484,7 +483,148 @@ const Section1 = () => {
                               color: cards.change24Hours < 0 ? "red" : "green",
                             }}
                           >
-                            {cards.change24Hours}
+                            {cards.change24Hours.toFixed(3)}%{" "}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div className="row">
+              {cardApiMain &&
+                cardApiMain &&
+                cardApiMain.slice(15, 19).map((cards) => (
+                  <div className="col-md-3 col-12 my-2">
+                    <div className="card card-carouse-sect1 shadow">
+                      <div className="card-body">
+                        <div className="d-flex justify-content-between align-items-center w-100 ">
+                          <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
+                            <img
+                              src={cards.currency_image_url}
+                              alt=""
+                              className="main-btc-top-card"
+                            />
+                            {cards.currencyName}
+                          </div>
+                          <p className="mb-0 hrs-section1-card hrs-section1-card">
+                            Last 24hrs
+                          </p>
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center w-100 mt-3">
+                          <div className="mb-0 gentextsect-1">
+                            {(
+                              Math.round(cards.last * 100) / 100
+                            ).toLocaleString("en-IN", {
+                              maximumFractionDigits: 2,
+                              style: "currency",
+                              currency: "INR",
+                            })}
+                          </div>
+                          <p
+                            className="mb-0 loss-section1-card"
+                            style={{
+                              color: cards.change24Hours < 0 ? "red" : "green",
+                            }}
+                          >
+                            {cards.change24Hours.toFixed(3)}%
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div className="row">
+              {cardApiMain &&
+                cardApiMain &&
+                cardApiMain.slice(20, 24).map((cards) => (
+                  <div className="col-md-3 col-12 my-2">
+                    <div className="card card-carouse-sect1 shadow">
+                      <div className="card-body">
+                        <div className="d-flex justify-content-between align-items-center w-100 ">
+                          <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
+                            <img
+                              src={cards.currency_image_url}
+                              alt=""
+                              className="main-btc-top-card"
+                            />
+                            {cards.currencyName}
+                          </div>
+                          <p className="mb-0 hrs-section1-card hrs-section1-card">
+                            Last 24hrs
+                          </p>
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center w-100 mt-3">
+                          <div className="mb-0 gentextsect-1">
+                            {(
+                              Math.round(cards.last * 100) / 100
+                            ).toLocaleString("en-IN", {
+                              maximumFractionDigits: 2,
+                              style: "currency",
+                              currency: "INR",
+                            })}
+                          </div>
+                          <p
+                            className="mb-0 loss-section1-card"
+                            style={{
+                              color: cards.change24Hours < 0 ? "red" : "green",
+                            }}
+                          >
+                            {cards.change24Hours.toFixed(3)}%
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div className="row">
+              {cardApiMain &&
+                cardApiMain &&
+                cardApiMain.slice(25, 29).map((cards) => (
+                  <div className="col-md-3 col-12 my-2">
+                    <div className="card card-carouse-sect1 shadow">
+                      <div className="card-body">
+                        <div className="d-flex justify-content-between align-items-center w-100 ">
+                          <div className="mb-0 d-flex align-items-center text-center gentextsect-1">
+                            <img
+                              src={cards.currency_image_url}
+                              alt=""
+                              className="main-btc-top-card"
+                            />
+                            {cards.currencyName}
+                          </div>
+                          <p className="mb-0 hrs-section1-card hrs-section1-card">
+                            Last 24hrs
+                          </p>
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center w-100 mt-3">
+                          <div className="mb-0 gentextsect-1">
+                            {(
+                              Math.round(cards.last * 100) / 100
+                            ).toLocaleString("en-IN", {
+                              maximumFractionDigits: 2,
+                              style: "currency",
+                              currency: "INR",
+                            })}
+                          </div>
+                          <p
+                            className="mb-0 loss-section1-card"
+                            style={{
+                              color: cards.change24Hours < 0 ? "red" : "green",
+                            }}
+                          >
+                            {cards.change24Hours.toFixed(3)}%
                           </p>
                         </div>
                       </div>
@@ -495,7 +635,7 @@ const Section1 = () => {
           </div>
         </div>
         <button
-          class="carousel-control-prev button-bootstrap-prev my-5"
+          class="carousel-control-prev button-bootstrap-prev my-2"
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="prev"
@@ -507,7 +647,7 @@ const Section1 = () => {
           <span class="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next button-bootstrap-next my-5"
+          class="carousel-control-next button-bootstrap-next my-2"
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="next"
