@@ -67,7 +67,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseOne"
                   >
-                    How to Deposit INR in Crosstower India Wallet?
+                    How to Deposit INR in CrossTower India Wallet?
                   </p>
 
                   <button
@@ -116,7 +116,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    How to Withdraw INR from Crosstower India Wallet?
+                    How to Withdraw INR from CrossTower India Wallet?
                   </p>
 
                   <button
@@ -167,7 +167,7 @@ const Section9 = () => {
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    When will my Crosstower India Wallet be Updated after
+                    When will my CrossTower India Wallet be Updated after
                     Deposit?
                   </p>
 
@@ -190,7 +190,7 @@ const Section9 = () => {
                 data-parent="#accordion"
               >
                 <div class="card-body">
-                  Your Crosstower wallet will be updated instantly once the
+                  Your CrossTower wallet will be updated instantly once the
                   transaction is successful at the Payment Gateway's End.
                 </div>
               </div>

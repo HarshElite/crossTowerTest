@@ -17,7 +17,7 @@ const Section2 = () => {
           title="Terms Of Use"
         >
           <div className="mt-5 px-md-5 px-3">
-            <p className="text-general-policy-title">1.Terms Of Use</p>
+            <p className="text-general-policy-title">Terms Of Use</p>
             <p className="text-general-policy-para">
               1. Binding Agreement.This binding Agreement (this “Agreement”)
               sets forth the legally binding terms and conditions youraccess to
@@ -1180,7 +1180,7 @@ const Section2 = () => {
           title="Privacy Policy"
         >
           <div className="mt-5 px-md-5 px-3">
-            <p className="text-general-policy-title">1.Privacy Statement</p>
+            <p className="text-general-policy-title">Privacy Statement</p>
             <p className="text-general-policy-para">
               Your privacy is important to us. We are committed to the fair and
               transparent processing of our clients’, consumers’, and Website/
@@ -1498,7 +1498,7 @@ const Section2 = () => {
         </Tab>
         <Tab className="customstylelink" eventKey="security" title="Security">
           <div className="mt-5 px-md-5 px-3">
-            <p className="text-general-policy-title">1.Security</p>
+            <p className="text-general-policy-title">Security</p>
             <p className="text-general-policy-para">
               At the CrossTower, we consider the security of our systems a top
               priority. But no matter how much effort we put into system
@@ -1581,7 +1581,7 @@ const Section2 = () => {
           title="Disclaimer"
         >
           <div className="mt-5 px-md-5 px-3">
-            <p className="text-general-policy-title">1.Disclaimer</p>
+            <p className="text-general-policy-title">Disclaimer</p>
             <p className="text-general-policy-para">
               Crypto-asset or cryptocurrency investments are subject to market
               risks such as volatility and have no guaranteed returns. Please do
@@ -1596,7 +1596,7 @@ const Section2 = () => {
           title="Cookie Policy"
         >
           <div className="mt-5 px-md-5 px-3">
-            <p className="text-general-policy-title">1.Cookie Policy </p>
+            <p className="text-general-policy-title">Cookie Policy </p>
             <p className="text-general-policy-para">
               CrossTower uses cookies and similar technologies when you visit
               our website or any other websites, pages, features, or content we
