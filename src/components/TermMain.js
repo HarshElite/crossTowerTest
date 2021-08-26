@@ -31,44 +31,7 @@ function ControlledTabs() {
                 </section>
                 :
                 <></>}
-                {key === "security" ?
-                <section className="section1-support">
-                    <div class="row py-5">
-                        <div class="col-md-12 col-12 py-5">
-                            <p className="generic-title-para-blue mb-0 text-center">Legal</p>
-                            <p className="generic-title-heading primary-color-blue-dark text-center">
-                                Security
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                :
-                <></>}{key === "disclaimer" ?
-                <section className="section1-support">
-                    <div class="row py-5">
-                        <div class="col-md-12 col-12 py-5">
-                            <p className="generic-title-para-blue mb-0 text-center">Legal</p>
-                            <p className="generic-title-heading primary-color-blue-dark text-center">
-                                Disclaimer
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                :
-                <></>}
-                {key === "cookiepolicy" ?
-                <section className="section1-support">
-                    <div class="row py-5">
-                        <div class="col-md-12 col-12 py-5">
-                            <p className="generic-title-para-blue mb-0 text-center">Legal</p>
-                            <p className="generic-title-heading primary-color-blue-dark text-center">
-                                Cookie Policy
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                :
-                <></>}
+
 
 
             <Tabs
@@ -823,7 +786,7 @@ function ControlledTabs() {
         </>
     );
 }
-const Section1 = () => {
+const TermMain = () => {
 
     return (
         <>
@@ -842,4 +805,4 @@ const Section1 = () => {
     );
 };
 
-export default Section1;
+export default TermMain;
