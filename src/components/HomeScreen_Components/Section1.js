@@ -332,7 +332,7 @@ const Section1 = () => {
                               color: cards.change24Hours < 0 ? "red" : "green",
                             }}
                           >
-                            {cards.change24Hours}
+                            %{cards.change24Hours.toFixed(2)}
                           </p>
                         </div>
                       </div>
@@ -379,7 +379,7 @@ const Section1 = () => {
                               color: cards.change24Hours < 0 ? "red" : "green",
                             }}
                           >
-                            {cards.change24Hours}
+                            %{cards.change24Hours.toFixed(2)}{" "}
                           </p>
                         </div>
                       </div>
@@ -481,7 +481,7 @@ const Section1 = () => {
                               color: cards.change24Hours < 0 ? "red" : "green",
                             }}
                           >
-                            {cards.change24Hours}
+                            %{cards.change24Hours.toFixed(2)}{" "}
                           </p>
                         </div>
                       </div>
@@ -528,7 +528,7 @@ const Section1 = () => {
                               color: cards.change24Hours < 0 ? "red" : "green",
                             }}
                           >
-                            {cards.change24Hours}
+                            %{cards.change24Hours.toFixed(2)}
                           </p>
                         </div>
                       </div>
@@ -575,7 +575,7 @@ const Section1 = () => {
                               color: cards.change24Hours < 0 ? "red" : "green",
                             }}
                           >
-                            {cards.change24Hours}
+                            %{cards.change24Hours.toFixed(2)}
                           </p>
                         </div>
                       </div>
@@ -622,7 +622,7 @@ const Section1 = () => {
                               color: cards.change24Hours < 0 ? "red" : "green",
                             }}
                           >
-                            {cards.change24Hours}
+                            %{cards.change24Hours.toFixed(2)}
                           </p>
                         </div>
                       </div>
