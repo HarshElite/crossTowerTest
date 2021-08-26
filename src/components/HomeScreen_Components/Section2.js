@@ -183,11 +183,11 @@ const Section2 = () => {
             </tr>
           </thead>
           <tbody>
-            <tr className="table-light text-center tr-text-styles">
-              <th scope="row" className="py-4">
+            <tr className="table-light  tr-text-styles">
+              <th scope="row" className="py-4 text-left" style={{textAlign:"left"}}>
                 <img src={T1logo} alt="" />
               </th>
-              <td td className="py-4">
+              <td td className="py-4 text-center">
                 {loadingcrossTowerBtc && "loading"}
                 {(
                   Math.round(
@@ -201,7 +201,7 @@ const Section2 = () => {
                   currency: "INR",
                 })}
               </td>
-              <td className="py-4">
+              <td className="py-4 text-center">
                 {/* {loadingcrossTowerBtc && "loading"}
                 {(
                   Math.round(
@@ -216,7 +216,7 @@ const Section2 = () => {
                 })} */}
                 0.00%
               </td>
-              <td className="py-4">
+              <td className="py-4 text-center">
                 {loadingcrossTowerBtc && "loading"}
                 {(
                   Math.round(
@@ -245,11 +245,11 @@ const Section2 = () => {
                   ) / 100}
                 </td> */}
             </tr>
-            <tr className="table-light text-center tr-text-styles">
-              <th scope="row" className="py-4">
+            <tr className="table-light  tr-text-styles">
+              <th scope="row" className="py-4 px-0 text-left">
                 <img src={T2logo} alt="" />
               </th>
-              <td td className="py-4">
+              <td td className="py-4 text-center">
                 {loadingWazirx && "loading"}
 
                 {wazirxBtc &&
@@ -260,8 +260,8 @@ const Section2 = () => {
                     currency: "INR",
                   })}
               </td>
-              <td className="py-4">0.20%</td>
-              <td className="py-4">
+              <td className="py-4 text-center">0.20%</td>
+              <td className="py-4 text-center">
                 {loadingWazirx && "loading"}
 
                 {/* {wazirxBtc &&
@@ -296,11 +296,11 @@ const Section2 = () => {
                   ) / 100}
                 </td> */}
             </tr>
-            <tr className="table-light text-center tr-text-styles">
-              <th scope="row" className="py-4">
+            <tr className="table-light  tr-text-styles">
+              <th scope="row" className="py-4 text-left">
                 <img src={T3logo} alt="" />
               </th>
-              <td td className="py-4">
+              <td td className="py-4 text-center">
                 {loadingZebpay && "loading"}
                 {zebPayBtc &&
                   zebPayBtc[27] &&
@@ -310,7 +310,7 @@ const Section2 = () => {
                     currency: "INR",
                   })}
               </td>
-              <td className="py-4">
+              <td className="py-4 text-center">
                 {/* {loadingcrossTowerBtc && "loading"}
                 {(
                   Math.round(
@@ -325,7 +325,7 @@ const Section2 = () => {
                 })} */}
                 0.15%
               </td>
-              <td className="py-4">
+              <td className="py-4 text-center">
                 {loadingZebpay && "loading"}
                 {/* {zebPayBtc &&
                   zebPayBtc[27] &&
@@ -359,11 +359,12 @@ const Section2 = () => {
                   ) / 100}
                 </td> */}
             </tr>
-            <tr className="table-light text-center tr-text-styles">
-              <th scope="row" className="py-4">
+            <tr className="table-light  tr-text-styles">
+              <th scope="row" className="py-4 text-left">
                 <img src={T4logo} alt="" />
               </th>
-              <td td className="py-4">
+              
+              <td td className="py-4 text-center">
                 {loadingcoinDcx && "loading"}
 
                 {Number(
@@ -378,7 +379,7 @@ const Section2 = () => {
                   currency: "INR",
                 })}
               </td>
-              <td className="py-4">
+              <td className="py-4 text-center">
                 {/* {loadingcrossTowerBtc && "loading"}
                 {(
                   Math.round(
@@ -393,7 +394,7 @@ const Section2 = () => {
                 })} */}
                 0.10%
               </td>
-              <td className="py-4">
+              <td className="py-4 text-center">
                 {loadingcoinDcx && "loading"}
                 {calculateNum(
                   coinDcxBtc && coinDcxBtc[0] && coinDcxBtc[0]["last_price"],
