@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import B1 from "../../images/aboutus/1acc.png";
 import Iphone from "../../images/homepage/h1sec1.png";
+import { Link } from "react-router-dom";
 import LineChart from "../LineChart";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
@@ -182,14 +183,21 @@ const Section1 = () => {
                 A new beginning for your crypto portfolio.
               </p>
               <p className="generic-para-text primary-color-blue-dark">
-                Crosstower is the only digital currency platform that can be
+                CrossTower is the only digital currency platform that can be
                 used by professional traders, financial institutions, and
                 beginners looking for security, flexibility, and simplicity. 
               </p>
               <div>
+              <Link
+              to="/login"
+              href="#"
+              className="marginright30 top-nav-link-nav"
+            >   
                 <button className="homescreen-section-1-button">
                   Watch: The CrossTower Difference
                 </button>
+                </Link>
+
               </div>
             </div>
           </div>
@@ -269,7 +277,7 @@ const Section1 = () => {
             </div>
           </div> */}
           {/* MOB Image*/}
-          <div className="col-md-8 col-sm-12 d-flex justify-content-end  align-items-end p-3">
+          <div className="col-md-8 col-sm-12 d-flex justify-content-end  align-items-end p-3 pb-0 pt-4">
             <div className="image-container-iphone-section10  ">
               <img src={Iphone} className="image-iphone-section10" />
             </div>

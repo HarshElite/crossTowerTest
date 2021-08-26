@@ -816,6 +816,7 @@ code {
 /* ------------------------------------------------------------------------------Main Nav --------------------------------------------------------------------*/
 
 .top-nav-link-nav {
+  font-size: 18px;
   text-decoration: none;
   color: #000;
 }
@@ -863,7 +864,6 @@ code {
   cursor: poOpenSansRegular;
   /* height: 40px;
   width: 110px; */
-  font-size: 12px;
   color: #fff;
   background: linear-gradient(90deg, #18225a 0.09%, #374bc9 100.04%);
   border-radius: 25px;

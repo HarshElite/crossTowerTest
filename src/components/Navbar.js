@@ -371,9 +371,15 @@ const Navbar = () => {
           </ul>
 
           <div className="button-top-nav">
+          <Link
+              to="/login"
+              href="#"
+              className="marginright30 top-nav-link-nav"
+            >
             <button className="nav-top-button px-5 py-2" type="submit">
               Start Trading
             </button>
+            </Link>
           </div>
         </div>
       </nav>

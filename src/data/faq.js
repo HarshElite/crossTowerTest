@@ -14,9 +14,9 @@ const inrdeposit = [
   {
     _id: "3",
     questions:
-      "When will my Crosstower India Wallet be Updated after Deposit?",
+      "When will my CrossTower India Wallet be Updated after Deposit?",
     answers:
-      "Your Crosstower wallet will be updated instantly once the transaction is successful at the Payment Gateway's End.",
+      "Your CrossTower wallet will be updated instantly once the transaction is successful at the Payment Gateway's End.",
   },
   {
     _id: "4",
@@ -49,14 +49,14 @@ export const cryptdepositwith = [
   {
     _id: "1",
     questions:
-      "How to Deposit Crypto from another wallet to Crosstower India wallet?",
+      "How to Deposit Crypto from another wallet to CrossTower India wallet?",
     answers:
       "Go to Home -> Click Deposit -> Select Crypto Deposit -> Select Asset -> Copy Deposit Address and Paste into the Wallet from where you want to initiate the request",
   },
   {
     _id: "2",
     questions:
-      "How to Withdraw Crypto from Crosstower India Wallet to another wallet?",
+      "How to Withdraw Crypto from CrossTower India Wallet to another wallet?",
     answers:
       "Go to Home> Click Withdraw > Select Withdraw Crypto > Select Asset and Enter Destination Wallet Address.  ",
   },
@@ -68,7 +68,7 @@ export const cryptdepositwith = [
   {
     _id: "4",
     questions:
-      "When will Crowsstower India Wallet be updated after transferring Crypto?",
+      "When will CrowssTower India Wallet be updated after transferring Crypto?",
     answers:
       "It will be updated as soon as you get the confirmation, usually it take few minutes only.",
   },
@@ -77,20 +77,20 @@ export const cryptdepositwith = [
 export const feesandbrokerage = [
   {
     _id: "1",
-    questions: "What are the charges applicable for adding INR to Crosstower India Wallet?",
+    questions: "What are the charges applicable for adding INR to CrossTower India Wallet?",
     answers:
       "We do not charge any amount on adding INR, however payment gateway charges may be applicable according to method of deposit.",
   },
   {
     _id: "2",
     questions:
-      "What are the charges applicable for withdrawing INR from Crosstower India Wallet?",
+      "What are the charges applicable for withdrawing INR from CrossTower India Wallet?",
     answers: "Flat Fees of INR 100 is applicable for every INR withdraw request.",
   },
   {
     _id: "3",
     questions:
-      "What are the charges applicable for adding crypto to Crowsstower India Wallet?",
+      "What are the charges applicable for adding crypto to CrowssTower India Wallet?",
     answers: "We do not charge any amount on adding crypto to our wallet however other wallet from where you are withdrawing may charge you some fee.",
   },
   // {
@@ -139,7 +139,7 @@ export const kycbankacc = [
     _id: "7",
     questions: "How does Cross Tower India verify Bank account details?",
     answers:
-      "Crosstower India refers to the cancelled cheque copy or Bank account statement uploaded by customer to verify the bank acocunt details.",
+      "CrossTower India refers to the cancelled cheque copy or Bank account statement uploaded by customer to verify the bank acocunt details.",
   },
 ];
 
@@ -154,7 +154,7 @@ export const signupandaccmgmt = [
     _id: "2",
     questions: "How can I change my registered email Address?",
     answers:
-      "You need to send a request to csindia@crosstower.in where the Customer Success team can help updating the relevant records and confirm you once done (usually within a period of 1-2 days)",
+      "You need to send a request to csindia@crosstower.into where the Customer Success team can help updating the relevant records and confirm you once done (usually within a period of 1-2 days)",
   },
   {
     _id: "3",
@@ -174,7 +174,7 @@ export const security = [
   {
     _id: "2",
     questions: "Are my funds safe on CrossTower India?",
-    answers: "Yes your funds are absolutely safe with Crosstower India.",
+    answers: "Yes your funds are absolutely safe with CrossTower India.",
   },
   {
     _id: "3",

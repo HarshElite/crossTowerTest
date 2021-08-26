@@ -14,18 +14,18 @@ const Footer = () => {
       <section className="footer">
         <div className="container">
           <div className="row p-2">
-            <div className="d-flex flex-column col-md-6 col-sm-12 mt-3">
-              <p className="logo-text-footer pt-5">
+            <div className="d-flex flex-column col-md-6 col-sm-12 mt-3 justify-content-start pb-3">
+              <p className="logo-text-footer pt-5 ">
                 <img src={LogoDark} alt="" />
               </p>
-              <p className="mb-0 mt-2">CrossTower is on a mission to</p>
+              <p className="mb-0 mt-2">CrossTower is on a mission to mainstream digital </p>
               <p className="mb-0 mt-2">
-                mainstream digital asset investing and trading.
+                asset investing and trading.
               </p>
             </div>
-            <div className="d-flex col-md-6 col-sm-12 justify-content-md-end justify-content-sm-start mt-3 align-items-center">
+            <div className="d-flex col-md-6 col-sm-12 justify-content-md-end  justify-content-sm-start mt-1 align-items-end">
               <div className="row">
-                <div className="col-md-6 mt-2">
+                <div className="col-md-6 mt-2 pb-3">
                   <img src={AppStore} alt="" className="logo-playstore" />
                 </div>
                 <div className="col-md-6 mt-2">
