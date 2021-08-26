@@ -293,7 +293,7 @@ const Section1 = () => {
               {cardApiMain &&
                 cardApiMain &&
                 cardApiMain.slice(0, 4).map((cards) => (
-                  <div className="col-md-3 col-12 my-5">
+                  <div className="col-md-3 col-12 my-2">
                     <div className="card card-carouse-sect1 shadow">
                       <div className="card-body">
                         <div className="d-flex justify-content-between align-items-center w-100 ">
@@ -340,7 +340,7 @@ const Section1 = () => {
               {cardApiMain &&
                 cardApiMain &&
                 cardApiMain.slice(5, 9).map((cards) => (
-                  <div className="col-md-3 col-12 my-5">
+                  <div className="col-md-3 col-12 my-2">
                     <div className="card card-carouse-sect1 shadow">
                       <div className="card-body">
                         <div className="d-flex justify-content-between align-items-center w-100 ">
@@ -380,7 +380,7 @@ const Section1 = () => {
                   </div>
                 ))}
 
-              {/* <div className="col-md-3 col-12 my-5">
+              {/* <div className="col-md-3 col-12 my-2">
                 <div className="card card-carouse-sect1 shadow">
                   <div className="card-body">
                     <div className="d-flex justify-content-between align-items-center w-100 ">
@@ -442,7 +442,7 @@ const Section1 = () => {
               {cardApiMain &&
                 cardApiMain &&
                 cardApiMain.slice(10, 14).map((cards) => (
-                  <div className="col-md-3 col-12 my-5">
+                  <div className="col-md-3 col-12 my-2">
                     <div className="card card-carouse-sect1 shadow">
                       <div className="card-body">
                         <div className="d-flex justify-content-between align-items-center w-100 ">
@@ -485,7 +485,7 @@ const Section1 = () => {
           </div>
         </div>
         <button
-          class="carousel-control-prev button-bootstrap-prev my-5"
+          class="carousel-control-prev button-bootstrap-prev my-2"
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="prev"
@@ -497,7 +497,7 @@ const Section1 = () => {
           <span class="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next button-bootstrap-next my-5"
+          class="carousel-control-next button-bootstrap-next my-2"
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="next"

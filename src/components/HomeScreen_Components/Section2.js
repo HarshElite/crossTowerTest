@@ -14,6 +14,10 @@ import T4logo from "../../images/homepage/table4.png";
 import LineChart from "../LineChart";
 
 const Section2 = () => {
+  function calculateNum(num, per) {
+    return (num / 100) * per + Math.round(num * 100) / 100;
+  }
+
   const dispatch = useDispatch();
 
   const wazirxBtcReducer = useSelector((state) => state.wazirxBtcReducer);
@@ -260,13 +264,22 @@ const Section2 = () => {
               <td className="py-4">
                 {loadingWazirx && "loading"}
 
-                {wazirxBtc &&
+                {/* {wazirxBtc &&
                   wazirxBtc.btcinr &&
                   Number(wazirxBtc.btcinr.last).toLocaleString("en-IN", {
                     maximumFractionDigits: 2,
                     style: "currency",
                     currency: "INR",
-                  })}
+                  })} */}
+
+                {calculateNum(
+                  wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last,
+                  0.2
+                ).toLocaleString("en-IN", {
+                  maximumFractionDigits: 2,
+                  style: "currency",
+                  currency: "INR",
+                })}
               </td>
               {/* <td className="py-4">
                   {loadingZebpay && "loading"}
@@ -314,13 +327,22 @@ const Section2 = () => {
               </td>
               <td className="py-4">
                 {loadingZebpay && "loading"}
-                {zebPayBtc &&
+                {/* {zebPayBtc &&
                   zebPayBtc[27] &&
                   Number(zebPayBtc[27]["24hoursHigh"]).toLocaleString("en-IN", {
                     maximumFractionDigits: 2,
                     style: "currency",
                     currency: "INR",
-                  })}
+                  })} */}
+
+                {calculateNum(
+                  zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"],
+                  0.15
+                ).toLocaleString("en-IN", {
+                  maximumFractionDigits: 2,
+                  style: "currency",
+                  currency: "INR",
+                })}
               </td>
               {/* <td className="py-4">
                   {loadingZebpay && "loading"}
@@ -373,7 +395,15 @@ const Section2 = () => {
               </td>
               <td className="py-4">
                 {loadingcoinDcx && "loading"}
-                {Number(
+                {calculateNum(
+                  coinDcxBtc && coinDcxBtc[0] && coinDcxBtc[0]["last_price"],
+                  0.1
+                ).toLocaleString("en-IN", {
+                  maximumFractionDigits: 2,
+                  style: "currency",
+                  currency: "INR",
+                })}
+                {/* {Number(
                   Math.round(
                     coinDcxBtc &&
                       coinDcxBtc[0] &&
@@ -383,7 +413,7 @@ const Section2 = () => {
                   maximumFractionDigits: 2,
                   style: "currency",
                   currency: "INR",
-                })}
+                })} */}
               </td>
               {/* <td className="py-4">
                   {loadingZebpay && "loading"}
