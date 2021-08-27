@@ -407,7 +407,10 @@ const Navbar = () => {
 
           <div className="button-top-nav d-flex justify-content-center">
               <button className="nav-top-button px-5 py-2" type="submit">
-              <a href='http://uat.crosstower.in' style={{textDecoration:"none",textAlign:"center",color:"white"}}>
+              <a href='http://uat.crosstower.in'
+              target='_blank'
+              rel="noreferrer"
+               style={{textDecoration:"none",textAlign:"center",color:"white"}}>
                 Start Trading
               </a>
               </button>

@@ -25,7 +25,10 @@ const Section5 = () => {
           </p>
           <div className="row d-flex justify-content-start align-items-center">
         <button className="start-trading-button" type="submit" style={{fontSize:"18px",fontWeight:"bold"}}>
-        <a href='http://uat.crosstower.in' style={{textDecoration:"none",color:"white"}}>
+        <a href='http://uat.crosstower.in' 
+        target='_blank'
+        rel="noreferrer"
+        style={{textDecoration:"none",color:"white"}}>
           Start Trading
           </a>
         </button>

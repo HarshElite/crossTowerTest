@@ -72,7 +72,10 @@ const Section3 = () => {
       </div>
       <div className="row d-flex justify-content-center align-items-center">
         <button className="start-trading-button" type="submit" style={{fontSize:"18px"}}>
-        <a href='http://uat.crosstower.in' style={{textDecoration:"none",textAlign:"center",color:"white"}} >
+        <a href='http://uat.crosstower.in'
+        target='_blank'
+        rel="noreferrer" 
+        style={{textDecoration:"none",textAlign:"center",color:"white"}} >
           Start Trading
           </a>
         </button>

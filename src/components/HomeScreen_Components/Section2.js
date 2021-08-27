@@ -451,8 +451,13 @@ const Section2 = () => {
           type="submit"
           style={{ fontSize: "18px", fontWeight: "bold" }}
         >
-      <a href='http://uat.crosstower.in' style={{textDecoration:"none"}} >
-          Start Trading
+          <a
+            href="http://uat.crosstower.in"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            Start Trading
           </a>
         </button>
       </div>
