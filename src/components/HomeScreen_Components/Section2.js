@@ -57,10 +57,10 @@ const Section2 = () => {
     crossTowerBtc,
   } = crossTowerBtcReducer;
 
-  console.log(wazirxBtc);
+  console.log(zebPayBtc);
 
-  // console.log(wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last);
-  // console.log(zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]);
+  // console.log(wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.sell);
+  // console.log(zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["buy"]);
 
   useEffect(() => {
     dispatch(WazirxBtcAction());
@@ -117,18 +117,18 @@ const Section2 = () => {
                   {Math.round(
                     crossTowerBtc &&
                       crossTowerBtc.BTCUSD &&
-                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                      crossTowerBtc.BTCUSD.bid * usdToInr.inr * 100
                   ) / 100}
                 </td>
                 <td className="py-4">
                   {loadingWazirx && "loading"}
                   INR&nbsp;
-                  {wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last}
+                  {wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.sell}
                 </td>
                 <td className="py-4">
                   {loadingZebpay && "loading"}
                   INR&nbsp;
-                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]}
+                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["buy"]}
                 </td>
                 <td className="py-4">
                   {loadingcoinDcx && "loading"}
@@ -136,7 +136,7 @@ const Section2 = () => {
                   {Math.round(
                     coinDcxBtc &&
                       coinDcxBtc[0] &&
-                      coinDcxBtc[0]["last_price"] * 100
+                      coinDcxBtc[0]["ask"] * 100
                   ) / 100}
                 </td>
               </tr>
@@ -184,7 +184,11 @@ const Section2 = () => {
           </thead>
           <tbody>
             <tr className="table-light  tr-text-styles">
-              <th scope="row" className="py-4 text-left" style={{textAlign:"left"}}>
+              <th
+                scope="row"
+                className="py-4 text-left"
+                style={{ textAlign: "left" }}
+              >
                 <img src={T1logo} alt="" />
               </th>
               <td td className="py-4 text-center">
@@ -193,7 +197,7 @@ const Section2 = () => {
                   Math.round(
                     crossTowerBtc &&
                       crossTowerBtc.BTCUSD &&
-                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                      crossTowerBtc.BTCUSD.bid * usdToInr.inr * 100
                   ) / 100
                 ).toLocaleString("en-IN", {
                   maximumFractionDigits: 2,
@@ -207,7 +211,7 @@ const Section2 = () => {
                   Math.round(
                     crossTowerBtc &&
                       crossTowerBtc.BTCUSD &&
-                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                      crossTowerBtc.BTCUSD.bid * usdToInr.inr * 100
                   ) / 100
                 ).toLocaleString("en-IN", {
                   maximumFractionDigits: 2,
@@ -222,7 +226,7 @@ const Section2 = () => {
                   Math.round(
                     crossTowerBtc &&
                       crossTowerBtc.BTCUSD &&
-                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                      crossTowerBtc.BTCUSD.bid * usdToInr.inr * 100
                   ) / 100
                 ).toLocaleString("en-IN", {
                   maximumFractionDigits: 2,
@@ -233,7 +237,7 @@ const Section2 = () => {
               {/* <td className="py-4">
                   {loadingZebpay && "loading"}
                   INR&nbsp;
-                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]}
+                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["buy"]}
                 </td> */}
               {/* <td className="py-4">
                   {loadingcoinDcx && "loading"}
@@ -241,7 +245,7 @@ const Section2 = () => {
                   {Math.round(
                     coinDcxBtc &&
                       coinDcxBtc[0] &&
-                      coinDcxBtc[0]["last_price"] * 100
+                      coinDcxBtc[0]["ask"] * 100
                   ) / 100}
                 </td> */}
             </tr>
@@ -254,7 +258,7 @@ const Section2 = () => {
 
                 {wazirxBtc &&
                   wazirxBtc.btcinr &&
-                  Number(wazirxBtc.btcinr.last).toLocaleString("en-IN", {
+                  Number(wazirxBtc.btcinr.sell).toLocaleString("en-IN", {
                     maximumFractionDigits: 2,
                     style: "currency",
                     currency: "INR",
@@ -266,14 +270,14 @@ const Section2 = () => {
 
                 {/* {wazirxBtc &&
                   wazirxBtc.btcinr &&
-                  Number(wazirxBtc.btcinr.last).toLocaleString("en-IN", {
+                  Number(wazirxBtc.btcinr.bid).toLocaleString("en-IN", {
                     maximumFractionDigits: 2,
                     style: "currency",
                     currency: "INR",
                   })} */}
 
                 {calculateNum(
-                  wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.last,
+                  wazirxBtc && wazirxBtc.btcinr && wazirxBtc.btcinr.sell,
                   0.2
                 ).toLocaleString("en-IN", {
                   maximumFractionDigits: 2,
@@ -284,7 +288,7 @@ const Section2 = () => {
               {/* <td className="py-4">
                   {loadingZebpay && "loading"}
                   INR&nbsp;
-                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]}
+                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["buy"]}
                 </td> */}
               {/* <td className="py-4">
                   {loadingcoinDcx && "loading"}
@@ -292,7 +296,7 @@ const Section2 = () => {
                   {Math.round(
                     coinDcxBtc &&
                       coinDcxBtc[0] &&
-                      coinDcxBtc[0]["last_price"] * 100
+                      coinDcxBtc[0]["ask"] * 100
                   ) / 100}
                 </td> */}
             </tr>
@@ -304,7 +308,7 @@ const Section2 = () => {
                 {loadingZebpay && "loading"}
                 {zebPayBtc &&
                   zebPayBtc[27] &&
-                  Number(zebPayBtc[27]["24hoursHigh"]).toLocaleString("en-IN", {
+                  Number(zebPayBtc[27]["buy"]).toLocaleString("en-IN", {
                     maximumFractionDigits: 2,
                     style: "currency",
                     currency: "INR",
@@ -316,7 +320,7 @@ const Section2 = () => {
                   Math.round(
                     crossTowerBtc &&
                       crossTowerBtc.BTCUSD &&
-                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                      crossTowerBtc.BTCUSD.bid * usdToInr.inr * 100
                   ) / 100
                 ).toLocaleString("en-IN", {
                   maximumFractionDigits: 2,
@@ -329,14 +333,14 @@ const Section2 = () => {
                 {loadingZebpay && "loading"}
                 {/* {zebPayBtc &&
                   zebPayBtc[27] &&
-                  Number(zebPayBtc[27]["24hoursHigh"]).toLocaleString("en-IN", {
+                  Number(zebPayBtc[27]["buy"]).toLocaleString("en-IN", {
                     maximumFractionDigits: 2,
                     style: "currency",
                     currency: "INR",
                   })} */}
 
                 {calculateNum(
-                  zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"],
+                  zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["buy"],
                   0.15
                 ).toLocaleString("en-IN", {
                   maximumFractionDigits: 2,
@@ -347,7 +351,7 @@ const Section2 = () => {
               {/* <td className="py-4">
                   {loadingZebpay && "loading"}
                   INR&nbsp;
-                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]}
+                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["buy"]}
                 </td> */}
               {/* <td className="py-4">
                   {loadingcoinDcx && "loading"}
@@ -355,7 +359,7 @@ const Section2 = () => {
                   {Math.round(
                     coinDcxBtc &&
                       coinDcxBtc[0] &&
-                      coinDcxBtc[0]["last_price"] * 100
+                      coinDcxBtc[0]["ask"] * 100
                   ) / 100}
                 </td> */}
             </tr>
@@ -363,15 +367,13 @@ const Section2 = () => {
               <th scope="row" className="py-4 text-left">
                 <img src={T4logo} alt="" />
               </th>
-              
+
               <td td className="py-4 text-center">
                 {loadingcoinDcx && "loading"}
 
                 {Number(
                   Math.round(
-                    coinDcxBtc &&
-                      coinDcxBtc[0] &&
-                      coinDcxBtc[0]["last_price"] * 100
+                    coinDcxBtc && coinDcxBtc[0] && coinDcxBtc[0]["ask"] * 100
                   ) / 100
                 ).toLocaleString("en-IN", {
                   maximumFractionDigits: 2,
@@ -385,7 +387,7 @@ const Section2 = () => {
                   Math.round(
                     crossTowerBtc &&
                       crossTowerBtc.BTCUSD &&
-                      crossTowerBtc.BTCUSD.last * usdToInr.inr * 100
+                      crossTowerBtc.BTCUSD.bid * usdToInr.inr * 100
                   ) / 100
                 ).toLocaleString("en-IN", {
                   maximumFractionDigits: 2,
@@ -397,7 +399,7 @@ const Section2 = () => {
               <td className="py-4 text-center">
                 {loadingcoinDcx && "loading"}
                 {calculateNum(
-                  coinDcxBtc && coinDcxBtc[0] && coinDcxBtc[0]["last_price"],
+                  coinDcxBtc && coinDcxBtc[0] && coinDcxBtc[0]["ask"],
                   0.1
                 ).toLocaleString("en-IN", {
                   maximumFractionDigits: 2,
@@ -408,7 +410,7 @@ const Section2 = () => {
                   Math.round(
                     coinDcxBtc &&
                       coinDcxBtc[0] &&
-                      coinDcxBtc[0]["last_price"] * 100
+                      coinDcxBtc[0]["ask"] * 100
                   ) / 100
                 ).toLocaleString("en-IN", {
                   maximumFractionDigits: 2,
@@ -419,7 +421,7 @@ const Section2 = () => {
               {/* <td className="py-4">
                   {loadingZebpay && "loading"}
                   INR&nbsp;
-                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["24hoursHigh"]}
+                  {zebPayBtc && zebPayBtc[27] && zebPayBtc[27]["buy"]}
                 </td> */}
               {/* <td className="py-4">
                   {loadingcoinDcx && "loading"}
@@ -427,7 +429,7 @@ const Section2 = () => {
                   {Math.round(
                     coinDcxBtc &&
                       coinDcxBtc[0] &&
-                      coinDcxBtc[0]["last_price"] * 100
+                      coinDcxBtc[0]["ask"] * 100
                   ) / 100}
                 </td> */}
             </tr>
@@ -437,11 +439,18 @@ const Section2 = () => {
 
       {/* </div>
       </div> */}
-      <p className="generic-para-text text-center text-white" style={{fontWeight:"100",fontSize:"15px"}}>
+      <p
+        className="generic-para-text text-center text-white"
+        style={{ fontWeight: "100", fontSize: "15px" }}
+      >
         *Please refer to our terms and conditions for Price accuracy status
       </p>
       <div className="row d-flex justify-content-center align-items-center mt-5">
-        <button className="start-trading-white" type="submit" style={{fontSize:"18px",fontWeight:"bold"}}>
+        <button
+          className="start-trading-white"
+          type="submit"
+          style={{ fontSize: "18px", fontWeight: "bold" }}
+        >
           Start Trading
         </button>
       </div>
