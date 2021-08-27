@@ -23,10 +23,13 @@ const Section5 = () => {
             have maintained the pace. Are you ready to invest with Crosstower to
             be a part of this revolution? 
           </p>
-          <div className="row d-flex justify-content-center align-items-center">
+          <div className="row d-flex justify-content-start align-items-center">
         <button className="start-trading-button" type="submit" style={{fontSize:"18px",fontWeight:"bold"}}>
+        <a href='http://uat.crosstower.in' style={{textDecoration:"none",color:"white"}}>
           Start Trading
+          </a>
         </button>
+        
       </div>
         </div>
       </div>

@@ -406,15 +406,11 @@ const Navbar = () => {
           </ul>
 
           <div className="button-top-nav d-flex justify-content-center">
-            <Link
-              to="/login"
-              href="#"
-              className="marginright30 top-nav-link-nav"
-            >
               <button className="nav-top-button px-5 py-2" type="submit">
+              <a href='http://uat.crosstower.in' style={{textDecoration:"none",textAlign:"center",color:"white"}}>
                 Start Trading
+              </a>
               </button>
-            </Link>
           </div>
         </div>
       </nav>

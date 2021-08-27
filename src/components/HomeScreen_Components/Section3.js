@@ -71,10 +71,12 @@ const Section3 = () => {
         </div>
       </div>
       <div className="row d-flex justify-content-center align-items-center">
-        <button className="start-trading-button " type="submit" style={{fontSize:"18px"}}>
+        <button className="start-trading-button" type="submit" style={{fontSize:"18px"}}>
+        <a href='http://uat.crosstower.in' style={{textDecoration:"none",textAlign:"center",color:"white"}} >
           Start Trading
+          </a>
         </button>
-      </div>
+        </div>
     </section>
   );
 };

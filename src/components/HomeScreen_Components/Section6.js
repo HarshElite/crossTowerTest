@@ -1,5 +1,6 @@
 import React from "react";
 import feedbackCircle from "../../images/feedbackcircle.jpg";
+import test1 from '../../images/test1.png';
 import test2 from "../../images/test2.png";
 import test3 from "../../images/test3.png";
 const Section6 = () => {
@@ -31,7 +32,7 @@ const Section6 = () => {
               <div className="row">
                 <div className="col-6 d-flex align-items-center">
                   <img
-                    src={feedbackCircle}
+                    src={test1}
                     alt=""
                     className="image-circle-feedback"
                   />
@@ -72,7 +73,7 @@ const Section6 = () => {
               <div className="row">
                 <div className="col-6 d-flex align-items-center">
                   <img
-                    src={feedbackCircle}
+                    src={test3}
                     alt=""
                     className="image-circle-feedback"
                   />
@@ -103,7 +104,7 @@ const Section6 = () => {
               <p className="card-text-2-feedback mb-0 mt-2">
               Extremely simple and easy for users to trade popular cryptocurrencies, that’s what makes it unique. Keep doing a good job.
               </p>
-              <p className="card-text-3-feedback mb-0 mt-2">Ravi Jain</p>
+              <p className="card-text-3-feedback mb-0 mt-2">Anaya Malik</p>
               <p className="card-text-4-feedback mb-0 mt-2">Working Professional</p>
             </div>
           </div>
@@ -145,7 +146,7 @@ const Section6 = () => {
               which could help me with Crypto investing easily. Very useful.
               </p>
               <p className="card-text-3-feedback mb-0 mt-2">Riya Singh</p>
-              <p className="card-text-4-feedback mb-0 mt-2">Entrepreneur</p>
+              <p className="card-text-4-feedback mb-0 mt-2">House Wife</p>
             </div>
           </div>
           {/* <div class="card card-feedback-section6 shadow-lg">
