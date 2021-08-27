@@ -37,7 +37,7 @@ const Navbar = () => {
               href="#"
               className="marginright30 top-nav-link-nav"
             >
-              Support{" "}
+              Support
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6 drop-chevron"
@@ -175,14 +175,14 @@ const Navbar = () => {
             <Link
               to="/comingsoon"
               href="#"
-              className="marginright30 top-nav-link-nav  dropdown-nav-main"
+              className="marginright30 top-nav-link-nav  dropdown-nav-main hidesmallscreen"
             >
               Exchange
             </Link>
             <Link
               to="/comingsoon"
               href="#"
-              className="marginright30 top-nav-link-nav  dropdown-nav-main"
+              className="marginright30 top-nav-link-nav  dropdown-nav-main hidesmallscreen"
             >
               Product
               <svg
@@ -200,10 +200,11 @@ const Navbar = () => {
                 />
               </svg>
             </Link>
+
             <Link
               to="/comingsoon"
               href="#"
-              className="marginright30 top-nav-link-nav  dropdown-nav-main"
+              className="marginright30 top-nav-link-nav  dropdown-nav-main hidesmallscreen"
             >
               Resources
               <svg
@@ -221,55 +222,89 @@ const Navbar = () => {
                 />
               </svg>
             </Link>
-            <Link
-              to="/aboutus"
-              href="#"
-              className="marginright30 top-nav-link-nav  dropdown-nav-main hidebigscreen"
-            >
-              About Us
-            </Link>
-            <Link
-              to="/login"
-              href="#"
-              className="marginright30 top-nav-link-nav  dropdown-nav-main hidebigscreen"
-            >
-              Support
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 drop-chevron"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <Link
+                to="/comingsoon"
+                href="#"
+                className=" top-nav-link-nav  dropdown-nav-main hidebigscreen"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </Link>
-            <Link
-              to="/comingsoon"
-              href="#"
-              className="marginright30 top-nav-link-nav  dropdown-nav-main hidebigscreen"
-            >
-              Login
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 drop-chevron"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                Product
+              </Link>
+            </li>
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <Link
+                to="/comingsoon"
+                href="#"
+                className=" top-nav-link-nav  dropdown-nav-main hidebigscreen"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </Link>
+                Resources
+              </Link>
+            </li>
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <Link
+                to="/comingsoon"
+                href="#"
+                className=" top-nav-link-nav  dropdown-nav-main hidebigscreen"
+              >
+                Exchange
+              </Link>
+            </li>
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <Link
+                to="/aboutus"
+                href="#"
+                className=" top-nav-link-nav  dropdown-nav-main hidebigscreen"
+              >
+                About Us
+              </Link>
+            </li>
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <Link
+                to="/login"
+                href="#"
+                className=" top-nav-link-nav  dropdown-nav-main hidebigscreen"
+              >
+                Support
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 drop-chevron"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </Link>
+            </li>
+
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <Link
+                to="/comingsoon"
+                href="#"
+                className=" top-nav-link-nav  dropdown-nav-main hidebigscreen"
+              >
+                Login
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 drop-chevron"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </Link>
+            </li>
 
             {/* <div class="dropdown dropdown-nav-main">
               <Link
@@ -370,15 +405,15 @@ const Navbar = () => {
             </div> */}
           </ul>
 
-          <div className="button-top-nav">
-          <Link
+          <div className="button-top-nav d-flex justify-content-center">
+            <Link
               to="/login"
               href="#"
               className="marginright30 top-nav-link-nav"
             >
-            <button className="nav-top-button px-5 py-2" type="submit">
-              Start Trading
-            </button>
+              <button className="nav-top-button px-5 py-2" type="submit">
+                Start Trading
+              </button>
             </Link>
           </div>
         </div>

@@ -50,6 +50,8 @@ const Section1 = () => {
     dispatch(mainCardApiAction());
   }, [dispatch]);
 
+  console.log(cardApiMain);
+
   function ControlledTabs() {
     const [key, setKey] = useState("Buy");
 
@@ -322,13 +324,14 @@ const Section1 = () => {
                         </div>
                         <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                           <div className="mb-0 gentextsect-1">
-                            {(
-                              Math.round(cards.last * 100) / 100
-                            ).toLocaleString("en-IN", {
-                              maximumFractionDigits: 2,
-                              style: "currency",
-                              currency: "INR",
-                            })}
+                            {(Math.round(cards.bid * 100) / 100).toLocaleString(
+                              "en-IN",
+                              {
+                                maximumFractionDigits: 2,
+                                style: "currency",
+                                currency: "INR",
+                              }
+                            )}
                           </div>
                           <p
                             className="mb-0 loss-section1-card"
@@ -369,13 +372,14 @@ const Section1 = () => {
                         </div>
                         <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                           <div className="mb-0 gentextsect-1">
-                            {(
-                              Math.round(cards.last * 100) / 100
-                            ).toLocaleString("en-IN", {
-                              maximumFractionDigits: 2,
-                              style: "currency",
-                              currency: "INR",
-                            })}
+                            {(Math.round(cards.bid * 100) / 100).toLocaleString(
+                              "en-IN",
+                              {
+                                maximumFractionDigits: 2,
+                                style: "currency",
+                                currency: "INR",
+                              }
+                            )}
                           </div>
                           <p
                             className="mb-0 loss-section1-card"
@@ -471,13 +475,14 @@ const Section1 = () => {
                         </div>
                         <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                           <div className="mb-0 gentextsect-1">
-                            {(
-                              Math.round(cards.last * 100) / 100
-                            ).toLocaleString("en-IN", {
-                              maximumFractionDigits: 2,
-                              style: "currency",
-                              currency: "INR",
-                            })}
+                            {(Math.round(cards.bid * 100) / 100).toLocaleString(
+                              "en-IN",
+                              {
+                                maximumFractionDigits: 2,
+                                style: "currency",
+                                currency: "INR",
+                              }
+                            )}
                           </div>
                           <p
                             className="mb-0 loss-section1-card"
@@ -518,13 +523,14 @@ const Section1 = () => {
                         </div>
                         <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                           <div className="mb-0 gentextsect-1">
-                            {(
-                              Math.round(cards.last * 100) / 100
-                            ).toLocaleString("en-IN", {
-                              maximumFractionDigits: 2,
-                              style: "currency",
-                              currency: "INR",
-                            })}
+                            {(Math.round(cards.bid * 100) / 100).toLocaleString(
+                              "en-IN",
+                              {
+                                maximumFractionDigits: 2,
+                                style: "currency",
+                                currency: "INR",
+                              }
+                            )}
                           </div>
                           <p
                             className="mb-0 loss-section1-card"
@@ -565,13 +571,14 @@ const Section1 = () => {
                         </div>
                         <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                           <div className="mb-0 gentextsect-1">
-                            {(
-                              Math.round(cards.last * 100) / 100
-                            ).toLocaleString("en-IN", {
-                              maximumFractionDigits: 2,
-                              style: "currency",
-                              currency: "INR",
-                            })}
+                            {(Math.round(cards.bid * 100) / 100).toLocaleString(
+                              "en-IN",
+                              {
+                                maximumFractionDigits: 2,
+                                style: "currency",
+                                currency: "INR",
+                              }
+                            )}
                           </div>
                           <p
                             className="mb-0 loss-section1-card"
@@ -612,13 +619,14 @@ const Section1 = () => {
                         </div>
                         <div className="d-flex justify-content-between align-items-center w-100 mt-3">
                           <div className="mb-0 gentextsect-1">
-                            {(
-                              Math.round(cards.last * 100) / 100
-                            ).toLocaleString("en-IN", {
-                              maximumFractionDigits: 2,
-                              style: "currency",
-                              currency: "INR",
-                            })}
+                            {(Math.round(cards.bid * 100) / 100).toLocaleString(
+                              "en-IN",
+                              {
+                                maximumFractionDigits: 2,
+                                style: "currency",
+                                currency: "INR",
+                              }
+                            )}
                           </div>
                           <p
                             className="mb-0 loss-section1-card"
